@@ -1,0 +1,409 @@
+[
+ {
+  "country": "Argentina",
+  "officials": [
+   {
+    "slug": "argentina-genua",
+    "name": "Darío Leandro Genua",
+    "title": "Secretary of Innovation, Science and Technology",
+    "ministry": "Chief of Cabinet Office (Jefatura de Gabinete de Ministros)"
+   },
+   {
+    "slug": "argentina-lavigne",
+    "name": "Pablo Lavigne",
+    "title": "Secretary of Production Coordination (exercising Industry & Commerce functions)",
+    "ministry": "Ministry of Economy"
+   }
+  ]
+ },
+ {
+  "country": "Australia",
+  "officials": [
+   {
+    "slug": "australia-farrell",
+    "name": "Don Farrell",
+    "title": "Minister for Trade and Tourism (also Special Minister of State; Deputy Leader of the Government in the Senate)",
+    "ministry": "Department of Foreign Affairs and Trade (DFAT); trade promotion agency Austrade"
+   }
+  ]
+ },
+ {
+  "country": "Brazil",
+  "officials": [
+   {
+    "slug": "brazil-siqueira",
+    "name": "Frederico de Siqueira Filho",
+    "title": "Minister of Communications",
+    "ministry": "Ministry of Communications (Ministério das Comunicações)"
+   },
+   {
+    "slug": "brazil-santos",
+    "name": "Luciana Santos",
+    "title": "Minister of Science, Technology and Innovation",
+    "ministry": "Ministry of Science, Technology and Innovation (Ministério da Ciência, Tecnologia e Inovação, MCTI)"
+   },
+   {
+    "slug": "brazil-rosa",
+    "name": "Márcio Fernando Elias Rosa",
+    "title": "Minister of Development, Industry, Trade and Services",
+    "ministry": "Ministry of Development, Industry, Trade and Services (Ministério do Desenvolvimento, Indústria, Comércio e Serviços, MDIC)"
+   },
+   {
+    "slug": "brazil-ferraz",
+    "name": "Lucas Pedreira do Couto Ferraz",
+    "title": "Secretary of Foreign Trade (SECEX)",
+    "ministry": "Ministry of Development, Industry, Trade and Services (MDIC) - Secretariat of Foreign Trade (SECEX)"
+   }
+  ]
+ },
+ {
+  "country": "Canada",
+  "officials": [
+   {
+    "slug": "canada-solomon",
+    "name": "Evan Solomon",
+    "title": "Minister of Artificial Intelligence and Digital Innovation",
+    "ministry": "Innovation, Science and Economic Development Canada (ISED)"
+   },
+   {
+    "slug": "canada-sidhu",
+    "name": "Maninder Sidhu",
+    "title": "Minister of International Trade",
+    "ministry": "Global Affairs Canada"
+   },
+   {
+    "slug": "canada-leblanc",
+    "name": "Dominic LeBlanc",
+    "title": "President of the King's Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy",
+    "ministry": "Privy Council Office / Global Affairs Canada (Canada-U.S. trade file)"
+   }
+  ]
+ },
+ {
+  "country": "China",
+  "officials": [
+   {
+    "slug": "china-lilecheng",
+    "name": "Li Lecheng",
+    "title": "Minister of Industry and Information Technology",
+    "ministry": "Ministry of Industry and Information Technology (MIIT)"
+   },
+   {
+    "slug": "china-wangwentao",
+    "name": "Wang Wentao",
+    "title": "Minister of Commerce",
+    "ministry": "Ministry of Commerce (MOFCOM)"
+   },
+   {
+    "slug": "china-lichenggang",
+    "name": "Li Chenggang",
+    "title": "China International Trade Representative (full ministerial rank) and Vice Minister of Commerce",
+    "ministry": "Ministry of Commerce (MOFCOM)"
+   }
+  ]
+ },
+ {
+  "country": "France",
+  "officials": [
+   {
+    "slug": "france-lehenanff",
+    "name": "Anne Le Hénanff",
+    "title": "Minister Delegate for Artificial Intelligence and Digital Affairs",
+    "ministry": "Ministry for the Economy, Finance and Industrial, Energy and Digital Sovereignty (attached to Minister Roland Lescure)"
+   },
+   {
+    "slug": "france-forissier",
+    "name": "Nicolas Forissier",
+    "title": "Minister Delegate for Foreign Trade and Attractiveness",
+    "ministry": "Ministry for Europe and Foreign Affairs (Minister Delegate attached to the Minister for Europe and Foreign Affairs)"
+   }
+  ]
+ },
+ {
+  "country": "Germany",
+  "officials": [
+   {
+    "slug": "germany-wildberger",
+    "name": "Karsten Wildberger",
+    "title": "Federal Minister for Digital Transformation and Government Modernisation",
+    "ministry": "Federal Ministry for Digital Transformation and Government Modernisation (BMDS)"
+   },
+   {
+    "slug": "germany-reiche",
+    "name": "Katherina Reiche",
+    "title": "Federal Minister for Economic Affairs and Energy",
+    "ministry": "Federal Ministry for Economic Affairs and Energy (BMWE)"
+   }
+  ]
+ },
+ {
+  "country": "India",
+  "officials": [
+   {
+    "slug": "india-vaishnaw",
+    "name": "Ashwini Vaishnaw",
+    "title": "Union Minister of Electronics and Information Technology (concurrently Minister of Railways and Minister of Information & Broadcasting)",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)"
+   },
+   {
+    "slug": "india-goyal",
+    "name": "Piyush Goyal",
+    "title": "Union Minister of Commerce and Industry",
+    "ministry": "Ministry of Commerce and Industry"
+   },
+   {
+    "slug": "india-agrawal",
+    "name": "Rajesh Agrawal",
+    "title": "Commerce Secretary (Secretary, Department of Commerce) and India's Chief Negotiator for the India-US Bilateral Trade Agreement",
+    "ministry": "Ministry of Commerce and Industry, Department of Commerce"
+   }
+  ]
+ },
+ {
+  "country": "Indonesia",
+  "officials": [
+   {
+    "slug": "indonesia-hafid",
+    "name": "Meutya Viada Hafid",
+    "title": "Minister of Communication and Digital Affairs",
+    "ministry": "Ministry of Communication and Digital Affairs (Kementerian Komunikasi dan Digital, 'Komdigi')"
+   },
+   {
+    "slug": "indonesia-santoso",
+    "name": "Budi Santoso",
+    "title": "Minister of Trade",
+    "ministry": "Ministry of Trade (Kementerian Perdagangan)"
+   },
+   {
+    "slug": "indonesia-airlangga",
+    "name": "Airlangga Hartarto",
+    "title": "Coordinating Minister for Economic Affairs",
+    "ministry": "Coordinating Ministry for Economic Affairs (Kementerian Koordinator Bidang Perekonomian)"
+   }
+  ]
+ },
+ {
+  "country": "Italy",
+  "officials": [
+   {
+    "slug": "italy-butti",
+    "name": "Alessio Butti",
+    "title": "Undersecretary of State to the Presidency of the Council of Ministers with responsibility for Technological Innovation",
+    "ministry": "Presidency of the Council of Ministers (Presidenza del Consiglio dei Ministri) - Department for Digital Transformation"
+   },
+   {
+    "slug": "italy-tajani",
+    "name": "Antonio Tajani",
+    "title": "Deputy Prime Minister (Vice President of the Council of Ministers) and Minister of Foreign Affairs and International Cooperation",
+    "ministry": "Ministry of Foreign Affairs and International Cooperation (Ministero degli Affari Esteri e della Cooperazione Internazionale - MAECI / 'Farnesina')"
+   },
+   {
+    "slug": "italy-urso",
+    "name": "Adolfo Urso",
+    "title": "Minister of Enterprises and Made in Italy",
+    "ministry": "Ministry of Enterprises and Made in Italy (Ministero delle Imprese e del Made in Italy - MIMIT)"
+   }
+  ]
+ },
+ {
+  "country": "Japan",
+  "officials": [
+   {
+    "slug": "japan-matsumoto",
+    "name": "Matsumoto Hisashi",
+    "title": "Minister for Digital Transformation",
+    "ministry": "Digital Agency (Cabinet)"
+   },
+   {
+    "slug": "japan-akazawa",
+    "name": "Akazawa Ryosei",
+    "title": "Minister of Economy, Trade and Industry",
+    "ministry": "Ministry of Economy, Trade and Industry (METI)"
+   }
+  ]
+ },
+ {
+  "country": "Mexico",
+  "officials": [
+   {
+    "slug": "mexico-pena",
+    "name": "José Antonio Peña Merino",
+    "title": "Head of the Agency for Digital Transformation and Telecommunications",
+    "ministry": "Agencia de Transformación Digital y Telecomunicaciones (ATDT) - Office of the President (State-Secretariat rank)"
+   },
+   {
+    "slug": "mexico-ebrard",
+    "name": "Marcelo Luis Ebrard Casaubón",
+    "title": "Secretary of Economy",
+    "ministry": "Secretaría de Economía"
+   },
+   {
+    "slug": "mexico-gutierrez",
+    "name": "Luis Rosendo Gutiérrez Romano",
+    "title": "Undersecretary for Foreign Trade",
+    "ministry": "Secretaría de Economía"
+   }
+  ]
+ },
+ {
+  "country": "Poland",
+  "officials": [
+   {
+    "slug": "poland-gawkowski",
+    "name": "Krzysztof Gawkowski",
+    "title": "Deputy Prime Minister and Minister of Digital Affairs",
+    "ministry": "Ministry of Digital Affairs (Ministerstwo Cyfryzacji)"
+   },
+   {
+    "slug": "poland-domanski",
+    "name": "Andrzej Domański",
+    "title": "Minister of Finance and Economy",
+    "ministry": "Ministry of Finance and Economy (Ministerstwo Finansow i Gospodarki)"
+   },
+   {
+    "slug": "poland-baranowski",
+    "name": "Michał Baranowski",
+    "title": "Undersecretary of State (Deputy Minister) responsible for trade and economic security",
+    "ministry": "Ministry of Finance and Economy (profile still hosted under the former Ministry of Economic Development and Technology, since merged)"
+   }
+  ]
+ },
+ {
+  "country": "Russia",
+  "officials": [
+   {
+    "slug": "russia-shadayev",
+    "name": "Maksut Shadayev",
+    "title": "Minister of Digital Development, Communications and Mass Media of the Russian Federation",
+    "ministry": "Ministry of Digital Development, Communications and Mass Media (Mintsifry)"
+   },
+   {
+    "slug": "russia-reshetnikov",
+    "name": "Maxim Reshetnikov",
+    "title": "Minister of Economic Development of the Russian Federation",
+    "ministry": "Ministry of Economic Development (Minekonomrazvitiya)"
+   },
+   {
+    "slug": "russia-alikhanov",
+    "name": "Anton Alikhanov",
+    "title": "Minister of Industry and Trade of the Russian Federation",
+    "ministry": "Ministry of Industry and Trade (Minpromtorg)"
+   }
+  ]
+ },
+ {
+  "country": "Saudi Arabia",
+  "officials": [
+   {
+    "slug": "saudi-alswaha",
+    "name": "Abdullah bin Amer Alswaha",
+    "title": "Minister of Communications and Information Technology",
+    "ministry": "Ministry of Communications and Information Technology (MCIT)"
+   },
+   {
+    "slug": "saudi-alqasabi",
+    "name": "Majid bin Abdullah Al-Qasabi",
+    "title": "Minister of Commerce",
+    "ministry": "Ministry of Commerce"
+   },
+   {
+    "slug": "saudi-abduljabbar",
+    "name": "Mohammed bin Abdulaziz Al-Abduljabbar",
+    "title": "Acting Governor, General Authority for Foreign Trade (GAFT)",
+    "ministry": "General Authority for Foreign Trade (GAFT)"
+   }
+  ]
+ },
+ {
+  "country": "South Korea",
+  "officials": [
+   {
+    "slug": "korea-bae",
+    "name": "Bae Kyung-hoon",
+    "title": "Deputy Prime Minister and Minister of Science and ICT",
+    "ministry": "Ministry of Science and ICT (MSIT)"
+   },
+   {
+    "slug": "korea-kim",
+    "name": "Kim Jung-kwan",
+    "title": "Minister of Trade, Industry and Resources",
+    "ministry": "Ministry of Trade, Industry and Resources (MOTIR)"
+   },
+   {
+    "slug": "korea-yeo",
+    "name": "Yeo Han-koo",
+    "title": "Minister for Trade (Head of the Office of Trade Negotiations)",
+    "ministry": "Ministry of Trade, Industry and Resources (MOTIR)"
+   }
+  ]
+ },
+ {
+  "country": "Türkiye",
+  "officials": [
+   {
+    "slug": "turkiye-kacir",
+    "name": "Mehmet Fatih Kacır",
+    "title": "Minister of Industry and Technology",
+    "ministry": "Ministry of Industry and Technology (Sanayi ve Teknoloji Bakanlığı)"
+   },
+   {
+    "slug": "turkiye-bolat",
+    "name": "Ömer Bolat",
+    "title": "Minister of Trade",
+    "ministry": "Ministry of Trade (Ticaret Bakanlığı)"
+   }
+  ]
+ },
+ {
+  "country": "United Kingdom",
+  "officials": [
+   {
+    "slug": "uk-kendall",
+    "name": "Liz Kendall",
+    "title": "Secretary of State for Science, Innovation and Technology",
+    "ministry": "Department for Science, Innovation and Technology (DSIT)"
+   },
+   {
+    "slug": "uk-kyle",
+    "name": "Peter Kyle",
+    "title": "Secretary of State for Business and Trade, and President of the Board of Trade",
+    "ministry": "Department for Business and Trade (DBT)"
+   },
+   {
+    "slug": "uk-bryant",
+    "name": "Chris Bryant",
+    "title": "Minister of State (Minister for Trade Policy and Economic Security)",
+    "ministry": "Department for Business and Trade (DBT)"
+   }
+  ]
+ },
+ {
+  "country": "United States",
+  "officials": [
+   {
+    "slug": "us-kratsios",
+    "name": "Michael Kratsios",
+    "title": "Director of the Office of Science and Technology Policy (OSTP) and Assistant to the President for Science and Technology",
+    "ministry": "Executive Office of the President / White House Office of Science and Technology Policy"
+   },
+   {
+    "slug": "us-roth",
+    "name": "Arielle Roth",
+    "title": "Assistant Secretary of Commerce for Communications and Information and Administrator, National Telecommunications and Information Administration (NTIA)",
+    "ministry": "U.S. Department of Commerce (NTIA)"
+   },
+   {
+    "slug": "us-lutnick",
+    "name": "Howard Lutnick",
+    "title": "United States Secretary of Commerce",
+    "ministry": "U.S. Department of Commerce"
+   },
+   {
+    "slug": "us-greer",
+    "name": "Jamieson Greer",
+    "title": "United States Trade Representative (USTR), with rank of Ambassador",
+    "ministry": "Office of the United States Trade Representative (Executive Office of the President)"
+   }
+  ]
+ }
+]

@@ -53,6 +53,16 @@ w("- **Saudi Arabia:** the raw research wrongly included the U.S. Secretary of C
   "trade-officials list (context bleed from U.S.-specific instructions). Removed; Saudi Arabia's trade officials are the Minister of "
   "Commerce (Al-Qasabi) and the acting GAFT Governor (Al-Abduljabbar).")
 w("")
+w("## Portraits pending (monogram placeholder shown on the slide)")
+w("")
+_missing=[(c['country'],o['name'],o.get('title','')) for c in CO for g in ('digital_ministers','trade_ministers')
+          for o in c[g] if o.get('display') in ('full','half') and o.get('portrait_status')=='placeholder']
+if _missing:
+    for cn,nm,ti in _missing:
+        w(f"- **{cn}** — {nm} ({ti}): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.")
+else:
+    w("- None — every displayed official has an official portrait embedded.")
+w("")
 w("## Name spellings to preserve exactly (incl. diacritics)")
 w("")
 w("- Türkiye, Darío Leandro Genua, José Antonio Peña Merino, Katherina Reiche, Maroš Šefčovič, Mehmet Fatih Kacır, "
