@@ -356,7 +356,7 @@
           "portrait_slug": "canada-solomon",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-canada-solomon.png"
+          "portrait_file": "assets/portraits/canada-solomon.png"
         }
       ],
       "trade_ministers": [
@@ -442,7 +442,7 @@
           "portrait_slug": "china-lilecheng",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-china-lilecheng.png"
+          "portrait_file": "assets/portraits/china-lilecheng.png"
         },
         {
           "name": "Yin Hejun",
@@ -462,7 +462,7 @@
           "portrait_slug": "china-hejun",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-china-hejun.png"
+          "portrait_file": "assets/portraits/china-hejun.png"
         }
       ],
       "trade_ministers": [
@@ -484,7 +484,7 @@
           "portrait_slug": "china-wangwentao",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-china-wangwentao.png"
+          "portrait_file": "assets/portraits/china-wangwentao.png"
         },
         {
           "name": "Li Chenggang",
@@ -504,7 +504,7 @@
           "portrait_slug": "china-lichenggang",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-china-lichenggang.png"
+          "portrait_file": "assets/portraits/china-lichenggang.png"
         }
       ],
       "div_note_digital": "MIIT (Li Lecheng) regulates industry, telecommunications and the digital economy, while MOST (Yin Hejun) sets national science, technology and innovation policy, including basic research and the 2026-2030 sci-tech plan.",
@@ -550,7 +550,7 @@
           "portrait_slug": "france-lehenanff",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-france-lehenanff.png"
+          "portrait_file": "assets/portraits/france-lehenanff.png"
         }
       ],
       "trade_ministers": [
@@ -571,7 +571,7 @@
           "portrait_slug": "france-forissier",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-france-forissier.png"
+          "portrait_file": "assets/portraits/france-forissier.png"
         }
       ],
       "div_note_digital": "",
@@ -616,7 +616,7 @@
           "portrait_slug": "germany-wildberger",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-germany-wildberger.png"
+          "portrait_file": "assets/portraits/germany-wildberger.png"
         }
       ],
       "trade_ministers": [
@@ -637,7 +637,7 @@
           "portrait_slug": "germany-reiche",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-germany-reiche.png"
+          "portrait_file": "assets/portraits/germany-reiche.png"
         },
         {
           "name": "Maroš Šefčovič",
@@ -697,7 +697,7 @@
           "portrait_slug": "india-vaishnaw",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-india-vaishnaw.png"
+          "portrait_file": "assets/portraits/india-vaishnaw.png"
         },
         {
           "name": "Jitin Prasada",
@@ -734,7 +734,7 @@
           "portrait_slug": "india-goyal",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-india-goyal.png"
+          "portrait_file": "assets/portraits/india-goyal.png"
         },
         {
           "name": "Rajesh Agrawal",
@@ -754,7 +754,7 @@
           "portrait_slug": "india-agrawal",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-india-agrawal.png"
+          "portrait_file": "assets/portraits/india-agrawal.png"
         }
       ],
       "div_note_digital": "",
@@ -799,7 +799,7 @@
           "portrait_slug": "indonesia-hafid",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-indonesia-hafid.png"
+          "portrait_file": "assets/portraits/indonesia-hafid.png"
         }
       ],
       "trade_ministers": [
@@ -821,7 +821,7 @@
           "portrait_slug": "indonesia-santoso",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-indonesia-santoso.png"
+          "portrait_file": "assets/portraits/indonesia-santoso.png"
         },
         {
           "name": "Airlangga Hartarto",
@@ -841,7 +841,7 @@
           "portrait_slug": "indonesia-airlangga",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-indonesia-airlangga.png"
+          "portrait_file": "assets/portraits/indonesia-airlangga.png"
         }
       ],
       "div_note_digital": "",
@@ -884,7 +884,7 @@
           "portrait_slug": "italy-butti",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-italy-butti.png"
+          "portrait_file": "assets/portraits/italy-butti.png"
         }
       ],
       "trade_ministers": [
@@ -906,7 +906,7 @@
           "portrait_slug": "italy-tajani",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-italy-tajani.png"
+          "portrait_file": "assets/portraits/italy-tajani.png"
         },
         {
           "name": "Adolfo Urso",
@@ -926,7 +926,7 @@
           "portrait_slug": "italy-urso",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-italy-urso.png"
+          "portrait_file": "assets/portraits/italy-urso.png"
         }
       ],
       "div_note_digital": "",
@@ -971,7 +971,7 @@
           "portrait_slug": "japan-matsumoto",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-japan-matsumoto.png"
+          "portrait_file": "assets/portraits/japan-matsumoto.png"
         }
       ],
       "trade_ministers": [
@@ -992,7 +992,7 @@
           "portrait_slug": "japan-akazawa",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-japan-akazawa.png"
+          "portrait_file": "assets/portraits/japan-akazawa.png"
         },
         {
           "name": "Motegi Toshimitsu",
@@ -1072,7 +1072,7 @@
           "portrait_slug": "mexico-ebrard",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-mexico-ebrard.png"
+          "portrait_file": "assets/portraits/mexico-ebrard.png"
         },
         {
           "name": "Luis Rosendo Gutiérrez Romano",
@@ -1092,7 +1092,7 @@
           "portrait_slug": "mexico-gutierrez",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-mexico-gutierrez.png"
+          "portrait_file": "assets/portraits/mexico-gutierrez.png"
         }
       ],
       "div_note_digital": "",
