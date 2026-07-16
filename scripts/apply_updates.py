@@ -146,19 +146,70 @@ if ru: ru[0]['is_primary'] = True
 for o in ru[1:]: o['is_primary'] = False
 
 # ---------- 3. compressed bios ----------
+def sentence_trim(bio, max_words=58):
+    """Fallback compression: keep whole leading sentences up to the word budget.
+    Pure truncation — never invents content."""
+    words = bio.split()
+    if len(words) <= max_words:
+        return bio
+    ABBR = ['U.S.', 'U.K.', 'U.N.', 'D.C.', 'Dr.', 'Mr.', 'Ms.', 'St.', 'Jr.', 'Sr.', 'Inc.', 'Co.', 'No.']
+    guarded = bio.strip()
+    for i, a in enumerate(ABBR):
+        guarded = guarded.replace(a, f'\x00{i}\x00')
+    out = []
+    for sent in re.split(r'(?<=[.!?])\s+', guarded):
+        if len(' '.join(out + [sent]).split()) > max_words and out:
+            break
+        out.append(sent)
+    joined = ' '.join(out)
+    for i, a in enumerate(ABBR):
+        joined = joined.replace(f'\x00{i}\x00', a)
+    return joined
+
 trims = {t['key']: t['bio_short'] for t in U.get('trims', []) if t}
-matched = 0
+import os as _os
+if _os.path.exists(ROOT + 'data/_trim_output.json'):
+    for t in json.load(open(ROOT + 'data/_trim_output.json')):
+        trims[t['key']] = t['bio_short']
+matched = fallback = 0
 for c in D['countries']:
     for key in ('digital_ministers','trade_ministers'):
         for o in c[key]:
             k = f"{c['country']}|{o['name']}"
             if k in trims:
                 o['bio_display'] = trims[k].strip(); matched += 1
+            elif o.get('display') == 'half' and len((o.get('bio_display') or '').split()) < 26 and len((o.get('bio') or '').split()) > len((o.get('bio_display') or '').split()):
+                o['bio_display'] = sentence_trim(o['bio']); fallback += 1
             elif o.get('display') == 'half' and not o.get('bio_display'):
-                o['bio_display'] = o.get('bio','')
+                o['bio_display'] = sentence_trim(o.get('bio','')); fallback += 1
             elif o.get('display') == 'full' and not o.get('bio_display'):
                 o['bio_display'] = o.get('bio','')
-print('trimmed bios matched:', matched, 'of', len(trims))
+print(f'trimmed bios: {matched} from agents, {fallback} sentence-trim fallback')
+
+# hand-compressed bios where sentence splitting can't fit the box (compression only, no new facts)
+BIO_OVERRIDES = {
+    ('Canada','LeBlanc'): ("Dominic LeBlanc, a lawyer and Liberal MP for Beausejour since 2000, is a veteran "
+        "minister who has held Fisheries, Intergovernmental Affairs, Public Safety and Finance. Since "
+        "May 13, 2025 he has led the Canada-U.S. trade file as Privy Council President."),
+}
+for c in D['countries']:
+    for key in ('digital_ministers','trade_ministers'):
+        for o in c[key]:
+            for (cn, sub), txt in BIO_OVERRIDES.items():
+                if c['country'] == cn and sub in o['name']:
+                    o['bio_display'] = txt
+
+# enforce fit budgets (Open Sans metrics): half columns ~44 words; full profiles
+# that carry an Also/division note ~62 words
+for c in D['countries']:
+    for key, div in (('digital_ministers','div_note_digital'), ('trade_ministers','div_note_trade')):
+        offs = c[key]
+        has_note = bool(c.get(div)) or any(o.get('display') == 'note' for o in offs)
+        for o in offs:
+            if o.get('display') == 'half':
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 44)
+            elif o.get('display') == 'full' and has_note:
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 62)
 
 # ---------- 4. portraits ----------
 port_by_name = {}
@@ -209,7 +260,9 @@ if ut.get('exports_goods_world_b') is not None:
 
 # ---------- 6. seal ----------
 seal = U.get('seal') or {}
-D['meta']['seal_file'] = seal.get('file') if seal.get('status') == 'ok' else None
+_sf = seal.get('file') if seal.get('status') == 'ok' else None
+if _sf and _sf.startswith(ROOT): _sf = _sf[len(ROOT):]
+D['meta']['seal_file'] = _sf
 D['meta']['seal_source'] = seal.get('source_url','')
 
 # ---------- 7. roll-up + roster reference for QA ----------

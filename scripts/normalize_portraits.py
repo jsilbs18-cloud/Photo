@@ -7,8 +7,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = '/home/user/Photo/'
 W, H = 400, 500  # 4:5
-SLATE = (0x44, 0x54, 0x6A)
-NAVY = (0x1F, 0x38, 0x64)
+SLATE = (0xB1, 0xBB, 0xCA)  # Trade Slate
+NAVY = (0x0A, 0x31, 0x4D)   # Trade Navy
 FONT = '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
 
 def normalize(src, dst):
@@ -38,11 +38,11 @@ def placeholder(name, dst):
     txt = initials(name)
     f = ImageFont.truetype(FONT, 150)
     bb = d.textbbox((0, 0), txt, font=f)
-    d.text(((W - bb[2] + bb[0]) / 2 - bb[0], (H - bb[3] + bb[1]) / 2 - bb[1] - 20), txt, font=f, fill='white')
+    d.text(((W - bb[2] + bb[0]) / 2 - bb[0], (H - bb[3] + bb[1]) / 2 - bb[1] - 20), txt, font=f, fill=NAVY)
     f2 = ImageFont.truetype(FONT, 26)
     lab = 'PORTRAIT PENDING'
     bb2 = d.textbbox((0, 0), lab, font=f2)
-    d.text(((W - bb2[2]) / 2, H - 70), lab, font=f2, fill=(0xC7, 0xD3, 0xE8))
+    d.text(((W - bb2[2]) / 2, H - 70), lab, font=f2, fill=NAVY)
     im.save(ROOT + dst, 'PNG')
 
 def main():

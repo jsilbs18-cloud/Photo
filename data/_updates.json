@@ -1,0 +1,645 @@
+{
+ "verifies": [
+  {
+   "country": "Australia",
+   "verify": {
+    "country": "Australia",
+    "answer": "The user's direction matches reality as of 2026-07-16. Andrew Charlton and Tim Ayres are correctly displayed as the two officials sharing Australia's digital/technology portfolio. Note that for both men the titles queried in the brief are not either/or alternatives — each holds both: Charlton is simultaneously Cabinet Secretary AND Assistant Minister for Science, Technology and the Digital Economy (sworn in 13 May 2025, still serving — he issued National AI Plan statements and spoke on AI policy in July 2026). Ayres is simultaneously Minister for Industry and Innovation AND Minister for Science (sworn in 13 May 2025, still serving — he was announcing Australia's AI standards framework as of 15 July 2026). Don Farrell remains Minister for Trade and Tourism (and Special Minister of State), in office since 1 June 2022, with media releases dated 2 July 2026 on trademinister.gov.au. Sources: ministers.pmc.gov.au, minister.industry.gov.au, trademinister.gov.au, Wikipedia, directory.gov.au (via search).",
+    "corrections": [
+     "Charlton's two titles in the brief (Assistant Minister for Science, Technology and the Digital Economy; Cabinet Secretary) are both correct and held concurrently, not alternatives.",
+     "Ayres's two titles in the brief (Minister for Industry and Innovation; Minister for Science) are both correct and held concurrently, not alternatives.",
+     "Farrell also holds a second title, Special Minister of State, alongside Minister for Trade and Tourism."
+    ],
+    "division_note_digital": "Ayres holds the senior cabinet portfolio — industry, innovation, science and AI policy through the Department of Industry, Science and Resources — while Charlton supports him as Assistant Minister focused on technology, AI and the digital economy (alongside his Cabinet Secretary role in PM&C); Communications Minister Anika Wells separately covers telecommunications, media and online safety, including the under-16 social media ban.",
+    "division_note_trade": "Farrell is the sole senior minister for trade and tourism within the Department of Foreign Affairs and Trade; Ayres, formerly his Assistant Minister for Trade, moved up to the industry portfolio in May 2025.",
+    "officials": [
+     {
+      "portfolio": "digital",
+      "name": "Andrew Charlton",
+      "title": "Cabinet Secretary; Assistant Minister for Science, Technology and the Digital Economy",
+      "role_label": "Assistant Minister, Science, Technology and the Digital Economy",
+      "ministry": "Department of Industry, Science and Resources (also Department of the Prime Minister and Cabinet as Cabinet Secretary)",
+      "assumed_office": "2025-05-13",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Cabinet Secretary and Assistant Minister for Science, Technology and the Digital Economy since 13 May 2025; Labor MP for Parramatta since 2022. An economist and Rhodes Scholar with an Oxford PhD, he was chief economic adviser to Prime Minister Kevin Rudd (2007–2010), founded AlphaBeta Advisors (acquired by Accenture in 2020), and co-authored Fair Trade for All with Joseph Stiglitz.",
+      "source_url": "https://ministers.pmc.gov.au/hon-dr-andrew-charlton-mp",
+      "notes": "Still serving: delivered AI Safety Forum speech 7 July 2026 and issued National AI Plan statements in July 2026 (minister.industry.gov.au/charlton). Holds both titles concurrently."
+     },
+     {
+      "portfolio": "digital",
+      "name": "Tim Ayres",
+      "title": "Minister for Industry and Innovation; Minister for Science",
+      "role_label": "Minister, Industry, Innovation and Science",
+      "ministry": "Department of Industry, Science and Resources",
+      "assumed_office": "2025-05-13",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Minister for Industry and Innovation and Minister for Science since 13 May 2025; Labor Senator for New South Wales since 2019. A former Australian Manufacturing Workers' Union NSW state secretary (elected 2010), he served as Assistant Minister for Trade and Assistant Minister for a Future Made in Australia (2022–2025), championing manufacturing and the National AI Plan.",
+      "source_url": "https://www.minister.industry.gov.au/ministers/timayres",
+      "notes": "Still serving: announcing Australia's AI standards framework as of 15 July 2026. Holds both titles concurrently."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Don Farrell",
+      "title": "Minister for Trade and Tourism; Special Minister of State",
+      "role_label": "Minister, Trade and Tourism",
+      "ministry": "Department of Foreign Affairs and Trade",
+      "assumed_office": "2022-06-01",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "full",
+      "bio_short": "Minister for Trade and Tourism and Special Minister of State since 1 June 2022; Labor Senator for South Australia (2008–2013, and again since 2016). Born 6 June 1954, he spent 32 years with the Shop, Distributive and Allied Employees' Association and held junior ministries under the Rudd and Gillard governments, including Science and Research.",
+      "source_url": "https://www.trademinister.gov.au/minister/don-farrell",
+      "notes": "Still serving: media releases on trademinister.gov.au dated 2 July 2026."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Argentina",
+   "verify": {
+    "country": "Argentina",
+    "answer": "Neither answer is quite right as phrased, because Argentina has no standalone trade ministry — but for an ITA briefing the minister-level trade counterpart is Pablo Quirno, not Pablo Lavigne. Quirno became Minister of Foreign Affairs, International Trade and Worship (Canciller) in October 2025 — announced Oct 23, sworn in Oct 27, succeeding Gerardo Werthein (resigned Oct 22) — and international trade policy sits in his ministry; he remains in office as of July 2026 (publicly active as Canciller in early July 2026). Pablo Lavigne is NOT a minister: he is Secretary of Production Coordination inside the Economy Ministry (since Dec 11, 2024, Decree 1098/2024), and since Decree 215/2026 (published Mar 31, 2026) he additionally exercises the functions of the vacant Secretariat of Industry and Commerce/SMEs on an acting basis — making him the top official for DOMESTIC commerce and industry. Working-level counterpart for external trade negotiations is Fernando Brun, Secretary of International Economic Relations under the Cancillería (confirmed active May 2026). Digital lead reconfirmed: Darío Leandro Genua, Secretary of Innovation, Science and Technology (Chief of Cabinet's Office), who opened the Argentina Digital Summit 2026 on April 22, 2026.",
+    "division_note_trade": "External trade policy and negotiations sit with the Cancillería (Canciller Pablo Quirno, with Fernando Brun as Secretary of International Economic Relations); domestic commerce, industry and SME policy sits in the Economy Ministry under Pablo Lavigne (acting over the vacant Industry & Commerce secretariat per Decree 215/2026).",
+    "division_note_digital": "Digital and tech policy is led from the Chief of Cabinet's Office via the Secretariat of Innovation, Science and Technology (Darío Genua) — there is no standalone digital ministry.",
+    "corrections": [
+     "Quirno's succession dates: Werthein resigned Oct 22, 2025; Quirno's appointment was announced Oct 23 and he was sworn in Oct 27, 2025 — so 'assumed office' should be cited as Oct 27, 2025 (some databases list Oct 23).",
+     "Lavigne's acting Industry & Commerce role via Decree 215/2026 is explicitly temporary — 'until the coverage of the Secretariat is arranged' — so it may lapse if a permanent Secretary of Industry and Commerce is named; re-check before publication.",
+     "Neither Quirno nor Lavigne holds the literal title 'Trade Minister' — Argentina folds international trade into the Foreign Ministry and domestic commerce into the Economy Ministry."
+    ],
+    "officials": [
+     {
+      "portfolio": "trade",
+      "name": "Pablo Quirno",
+      "title": "Minister of Foreign Affairs, International Trade and Worship (Canciller)",
+      "ministry": "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
+      "role_label": "Foreign & Trade Minister",
+      "assumed_office": "2025-10-27",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Minister of Foreign Affairs, International Trade and Worship since October 27, 2025, succeeding Gerardo Werthein. Economist (born August 24, 1966) and former longtime JPMorgan executive; served as Secretary of Finance under Economy Minister Luis Caputo from December 2023, leading Argentina's debt operations. His appointment deepened alignment between the Cancillería, the Economy Ministry and Washington.",
+      "source_url": "https://en.wikipedia.org/wiki/Pablo_Quirno",
+      "notes": "Announced Oct 23, 2025; sworn in Oct 27, 2025 in the Casa Rosada. Still in office as of July 2026 — traveled to Washington as Canciller in mid-July 2026 (mdzol.com) and led Venezuela assistance flights July 5, 2026 (misionesonline.net). Also: https://buenosairesherald.com/politics/argentinas-finance-secretary-pablo-quirno-promoted-to-foreign-minister"
+     },
+     {
+      "portfolio": "trade",
+      "name": "Pablo Lavigne",
+      "title": "Secretary of Production Coordination (also exercising Industry & Commerce functions, acting)",
+      "ministry": "Ministerio de Economía",
+      "role_label": "Domestic commerce & industry lead (secretary-level, not minister)",
+      "assumed_office": "2024-12-11",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": true,
+      "display": "half",
+      "bio_short": "Secretary of Production Coordination in the Economy Ministry since December 11, 2024 (Decree 1098/2024); under Decree 215/2026 he also exercises the vacant Secretariat of Industry and Commerce, SMEs and knowledge economy on an acting basis. Economist (UCA; CEMA doctorate) who as Secretary of Industry and Commerce (2023–2024) drove trade deregulation and tariff reform.",
+      "source_url": "https://www.ambito.com/economia/unifican-forma-transitoria-dos-areas-clave-y-le-asignan-mas-funciones-pablo-lavigne-n6261559",
+      "notes": "Decree 215/2026 (signed Milei/Caputo, reported Mar 31, 2026) assigns him the Industry & Commerce functions only 'until the coverage of the Secretariat is arranged.' Original designation: Boletín Oficial Decreto 1098/2024 (https://www.boletinoficial.gob.ar/detalleAviso/primera/318270/20241217). Also reported by Infobae 2026-03-31 and El Destape."
+     },
+     {
+      "portfolio": "digital",
+      "name": "Darío Leandro Genua",
+      "title": "Secretary of Innovation, Science and Technology",
+      "ministry": "Jefatura de Gabinete de Ministros (Chief of Cabinet's Office)",
+      "role_label": "Digital policy lead",
+      "assumed_office": "2024-06",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "full",
+      "bio_short": "Secretary of Innovation, Science and Technology under the Chief of Cabinet's Office since mid-2024 (Decree 528/2024), succeeding Alejandro Cosentino; Argentina's lead official for digital policy, connectivity and AI strategy. Business administration graduate; former executive coordinator of the ENACOM intervention and Telecom director (2016–2018). Opened the Argentina Digital Summit 2026 in Buenos Aires on April 22, 2026.",
+      "source_url": "https://www.argentina.gob.ar/noticias/dario-genua-abrio-el-argentina-digital-summit-2026",
+      "notes": "Reconfirmed active April 22, 2026 at Argentina Digital Summit 2026 (also Infobae 2026-04-10 preview, Canal-AR coverage). Appointment background: ambito.com n6011006 and redgealc.org."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Fernando Brun",
+      "title": "Secretary of International Economic Relations",
+      "ministry": "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
+      "role_label": "Working-level external trade counterpart",
+      "assumed_office": "2025-06",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "note",
+      "bio_short": "Secretary of International Economic Relations at the Cancillería since June 2025, overseeing Argentina's trade negotiations and economic diplomacy under Canciller Quirno. Career diplomat and former ambassador to Germany, appointed with Karina Milei's backing; chaired the IX Plenary Session of the Federal Council of Foreign Relations and International Trade in Bariloche, May 28–29, 2026.",
+      "source_url": "https://www.cancilleria.gob.ar/es/ministerio-de-relaciones-exteriores-comercio-internacional-y-culto/secretaria-de-relaciones-economicas-internacionales",
+      "notes": "Confirmed still in role via May 28–29, 2026 Federal Council plenary (cancilleria.gob.ar) and 2026 meeting with Ukraine's ambassador (argentina.mfa.gov.ua). Appointment reported June 2025 by politicargentina.com."
+     }
+    ]
+   }
+  },
+  {
+   "country": "China",
+   "verify": {
+    "answer": "Verified as of 2026-07-16. (a) Dr. Yin Hejun is confirmed as Minister of Science and Technology (MOST) and the ministry's Party Secretary — appointed minister by the NPC Standing Committee on 24 October 2023 (Party secretary since 7 October 2023) — and is still serving: he outlined China's 2026-2030 sci-tech innovation plans in October 2025 and gave a ministerial interview at the March 2026 NPC session. He has been added to the digital/technology section as directed. (b) All three other officials reconfirmed in office: Li Lecheng remains MIIT Minister (appointed 30 April 2025, succeeding Jin Zhuanglong; active statements March and May 2026); Wang Wentao remains MOFCOM Minister (since December 2020; co-chaired China-EU and China-UK trade meetings covered at MOFCOM's 2 July 2026 press conference); Li Chenggang remains China International Trade Representative with full ministerial rank and Vice Minister of Commerce (appointed 16 April 2025; leading U.S. trade talks through 2026, attended APEC trade meeting May 2026). No vacancies or acting arrangements found for any of the four posts.",
+    "country": "China",
+    "corrections": [
+     "Added Dr. Yin Hejun (MOST) to the digital/technology section per user direction; his portfolio (science, technology and innovation policy) is distinct from Li Lecheng's MIIT portfolio (industry, telecom, digital economy).",
+     "Li Chenggang no longer holds the WTO ambassadorship — he was removed from that post on 20 October 2025 and now serves solely as International Trade Representative and Vice Minister of Commerce; any briefing text listing him as WTO envoy should be updated."
+    ],
+    "division_note_digital": "MIIT (Li Lecheng) regulates industry, telecommunications and the digital economy, while MOST (Yin Hejun) sets national science, technology and innovation policy, including basic research and the 2026-2030 sci-tech plan.",
+    "division_note_trade": "MOFCOM Minister Wang Wentao leads overall commerce policy and bilateral economic relationships, while International Trade Representative Li Chenggang (vice-minister of commerce, full ministerial rank) serves as chief negotiator in the U.S. tariff talks.",
+    "officials": [
+     {
+      "portfolio": "digital",
+      "name": "Li Lecheng",
+      "title": "Minister of Industry and Information Technology",
+      "ministry": "Ministry of Industry and Information Technology (MIIT)",
+      "role_label": "Minister",
+      "assumed_office": "2025-04-30",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Minister of Industry and Information Technology since April 30, 2025, and MIIT Party Secretary since February 2025, succeeding Jin Zhuanglong. Born March 27, 1965, in Jianli, Hubei, Li Lecheng (李乐成) served as Governor of Liaoning (October 2021–February 2025) and Executive Vice Governor of Hubei (2021). In 2026 he is prioritizing AI-manufacturing integration and next-generation breakthroughs including 6G.",
+      "source_url": "https://www.chinadaily.com.cn/a/202504/30/WS68120fb7a310a04af22bd237.html",
+      "notes": "Still active: March 2026 statements on AI-manufacturing integration (Global Times) and May 2026 Bloomberg interview on modernizing older sectors."
+     },
+     {
+      "portfolio": "digital",
+      "name": "Yin Hejun",
+      "title": "Minister of Science and Technology",
+      "ministry": "Ministry of Science and Technology (MOST)",
+      "role_label": "Minister",
+      "assumed_office": "2023-10-24",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Minister of Science and Technology since October 24, 2023, and MOST Party Secretary since October 7, 2023. Born January 14, 1963, he earned a 1995 doctorate in electromagnetic field and microwave technology and twice served as vice president of the Chinese Academy of Sciences, most recently from November 2020. He is leading China's 2026–2030 sci-tech innovation planning.",
+      "source_url": "https://en.most.gov.cn/organization/leadership/202404/t20240411_190178.htm",
+      "notes": "Added per user direction. Still serving: outlined 2026-2030 innovation plans (gov.cn, Oct 2025) and gave a ministerial interview at the March 2026 NPC session (https://english.www.gov.cn/news/202510/24/content_WS68fb6f9bc6d00ca5f9a07016.html)."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Wang Wentao",
+      "title": "Minister of Commerce",
+      "ministry": "Ministry of Commerce (MOFCOM)",
+      "role_label": "Minister",
+      "assumed_office": "2020-12",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Minister of Commerce since December 2020. Born May 1964 in Nantong, Jiangsu, Wang graduated from Fudan University (philosophy, 1985). He previously served as Governor of Heilongjiang (2018–2020), Party Secretary of Jinan, and in Shanghai's Huangpu and Songjiang districts. In mid-2026 he co-chaired the first China–EU Trade and Investment Consultations and the 15th China–UK trade commission.",
+      "source_url": "https://english.mofcom.gov.cn/News/PressConference/art/2026/art_af9691957bef4456be63899a4966e416.html",
+      "notes": "Confirmed active into July 2026: MOFCOM press conference of July 2, 2026 details his June 29 China-EU TIC meeting; co-chaired China-UK JETCO July 2 and China-Netherlands committee July 7, 2026."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Li Chenggang",
+      "title": "China International Trade Representative (full ministerial rank) and Vice Minister of Commerce",
+      "ministry": "Ministry of Commerce (MOFCOM)",
+      "role_label": "International Trade Representative / Chief trade negotiator",
+      "assumed_office": "2025-04-16",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "China International Trade Representative (full ministerial rank) and Vice Minister of Commerce since April 16, 2025, succeeding Wang Shouwen. A veteran trade lawyer and long-serving MOFCOM official, he was China's Permanent Representative and Ambassador to the WTO from February 2021 to October 2025. He now leads China's tariff negotiations with the United States, including the October 2025 Kuala Lumpur framework.",
+      "source_url": "https://www.cnbc.com/2026/05/22/china-apec-trade-meeting-li-chenggang-cooperation-us-china-deals.html",
+      "notes": "Still in role: led talks with U.S. negotiators in Paris (CGTN, March 2026), profiled by Reuters (Jan 2026) as leader of China's U.S. trade talks, attended APEC trade meeting May 2026. Removed from WTO post October 20, 2025."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Russia",
+   "verify": {
+    "country": "Russia",
+    "answer": "All three claims verify as of 2026-07-16. (a) Anton Alikhanov remains Minister of Industry and Trade (appointed 14 May 2024, succeeding Denis Manturov); he held bilateral talks at INNOPROM 2026 on 6 July 2026, confirming he is active in the role this month. (b) Maxim Reshetnikov remains Minister of Economic Development (since 21 January 2020, reappointed May 2024); he represented Russia at SPIEF in June 2026 and met President Putin on 12 May 2026. (c) Maksut Shadayev remains Minister of Digital Development, Communications and Mass Media (since 21 January 2020, reappointed 14 May 2024); he announced VPN restrictions in March 2026 and reported to a government meeting in April 2026. No cabinet reshuffle affecting these portfolios was found. Note: government.ru, economy.gov.ru, and en.wikipedia.org were unreachable through the network gateway (403 policy denials), so verification rests on WebSearch results citing those official pages plus dated 2026 news coverage.",
+    "officials": [
+     {
+      "portfolio": "trade",
+      "name": "Anton Alikhanov",
+      "title": "Minister of Industry and Trade",
+      "ministry": "Ministry of Industry and Trade of the Russian Federation (Minpromtorg)",
+      "role_label": "Minister",
+      "assumed_office": "2024-05-14",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Anton Andreyevich Alikhanov (born 17 September 1986, Sukhumi) has served as Minister of Industry and Trade since 14 May 2024, succeeding Denis Manturov. He was Governor of Kaliningrad Oblast from 2016 (acting) to May 2024, Russia's youngest regional head at 30. He holds a candidate of economic sciences degree and led bilateral talks at INNOPROM 2026 in July 2026.",
+      "source_url": "https://armenia.news-pravda.com/en/russia/2026/07/06/36732.html",
+      "notes": "USER DIRECTION: display prominently for the trade portfolio. Latest evidence: bilateral talks with Armenian, Myanmar and Serbian ministers at INNOPROM 2026, 6 July 2026. Also listed as Minister on government.ru persons page (http://government.ru/en/persons/503/) per search results; direct fetch of government.ru blocked by network gateway. Confirmation via State Duma approval (interfax.com/newsroom/top-stories/102259/) and biography (en.iz.ru/en/1952227/2025-09-10/)."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Maxim Reshetnikov",
+      "title": "Minister of Economic Development",
+      "ministry": "Ministry of Economic Development of the Russian Federation (Minekonomrazvitiya)",
+      "role_label": "Minister",
+      "assumed_office": "2020-01-21",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "bio_short": "Maxim Gennadyevich Reshetnikov (born 11 July 1979, Perm) has been Minister of Economic Development since 21 January 2020, reappointed in May 2024. Previously Governor of Perm Krai (2017-2020) and head of Moscow's Department of Economic Policy and City Development (2012-2017), he oversees macroeconomic forecasting and external trade negotiations; he spoke at SPIEF in June 2026.",
+      "source_url": "https://www.thenationalnews.com/news/europe/2026/06/08/russias-economy-is-sustainable-and-balanced-despite-global-uncertainty-minister-says/",
+      "notes": "Latest evidence: SPIEF remarks reported 8 June 2026 (The National) and working meeting with Putin 12 May 2026 (en.kremlin.ru/events/president/news/79728). Also listed as current minister on en.economy.gov.ru/material/structure/minister/ per search results; direct fetch blocked by network gateway. State Duma reapproval May 2024 (interfax.com/newsroom/top-stories/102261/)."
+     },
+     {
+      "portfolio": "digital",
+      "name": "Maksut Shadayev",
+      "title": "Minister of Digital Development, Communications and Mass Media",
+      "ministry": "Ministry of Digital Development, Communications and Mass Media of the Russian Federation (Mintsifry)",
+      "role_label": "Minister",
+      "assumed_office": "2020-01-21",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "full",
+      "bio_short": "Maksut Igorevich Shadayev (born 11 November 1979, Moscow) has been Minister of Digital Development, Communications and Mass Media since 21 January 2020, reappointed 14 May 2024. Formerly Vice President for Digital Platforms at Rostelecom (2018-2020) and a Presidential Administration adviser on information-society policy, he leads Russia's e-government, telecom, and internet-regulation agenda, including 2026 VPN restrictions.",
+      "source_url": "https://www.themoscowtimes.com/2026/03/31/russias-digital-ministry-declares-war-on-vpns-a92384",
+      "notes": "Latest evidence: announced VPN crackdown as Digital Development Minister, 31 March 2026 (Moscow Times); reported on rural internet expansion at a government meeting with Putin, 23 April 2026 (globalsecurity.org/wmd/library/news/russia/2026/04/russia-260423-kremlin02.htm). Reappointment 14 May 2024 in Mishustin's second cabinet (interfax.com/newsroom/top-stories/102265/)."
+     }
+    ],
+    "division_note_trade": "Trade policy and international trade/economic negotiations sit with the Ministry of Economic Development (Reshetnikov), while industry policy, trade in goods, and export support sit with the Ministry of Industry and Trade (Alikhanov).",
+    "division_note_digital": "Digital government, telecommunications, IT-sector policy, and internet/media regulation are consolidated under the Ministry of Digital Development, Communications and Mass Media (Shadayev).",
+    "corrections": []
+   }
+  },
+  {
+   "country": "Poland",
+   "verify": {
+    "country": "Poland",
+    "answer": "The user's direction to add Krzysztof Paszyk does NOT match the current Polish cabinet, so he is not included as an official. Live-web verification (as of 2026-07-16): (a) Paszyk (PSL) served as Minister of Economic Development and Technology from May 2024, but that ministry was liquidated in the 23-24 July 2025 cabinet reshuffle and Paszyk left the government (TVN24: \"Likwidacja Ministerstwa Rozwoju i Technologii. Krzysztof Paszyk odchodzi z rzadu\", https://tvn24.pl/biznes/z-kraju/likwidacja-ministerstwa-rozwoju-i-technologii-krzysztof-paszyk-odchodzi-z-rzadu-st8568373). He is now a Sejm MP and chairman of the PSL-Trzecia Droga parliamentary club (psl.pl; wiadomosci.wp.pl reporting in 2026 still styles him \"szef klubu PSL\"), a party/parliamentary role, not a government post. (b) The trade/economy portfolio is owned by the merged \"superministry\" — the Ministry of Finance and Economy (Ministerstwo Finansow i Gospodarki), created 24 July 2025 and headed by Andrzej Domanski (Bloomberg 2025-07-23; LSE and Ukrainian MoF events in 2026 style him \"Poland's Minister of Finance and Economy\"). Michal Baranowski remains the deputy minister (undersecretary of state) handling trade — as recently as 14 July 2026 he led EU-India FTA engagement as \"Poland's Undersecretary of State\" (aninews.in). This confirms the prior dual-verified research. (c) Krzysztof Gawkowski reconfirmed as Deputy Prime Minister and Minister of Digital Affairs (since 13 December 2023), also Government Plenipotentiary for Cybersecurity. Recommendation: keep Domanski and Baranowski as the trade officials (display half/half), Gawkowski full for digital; do not add Paszyk. Sources: https://tvn24.pl/biznes/z-kraju/likwidacja-ministerstwa-rozwoju-i-technologii-krzysztof-paszyk-odchodzi-z-rzadu-st8568373, https://www.bloomberg.com/news/articles/2025-07-23/poland-reshuffles-cabinet-to-create-economy-superministry, https://aninews.in/news/world/asia/eu-india-fta-huge-deal-for-europe-including-polish-businesses-polands-undersecretary-of-state-michal-baranowski20260714221423/, https://www.gov.pl/web/primeminister/krzysztof-gawkowski, https://www.psl.pl/krzysztof-paszyk-szefem-klubu-poselskiego-psl-trzecia-droga/",
+    "corrections": [
+     "USER DIRECTION REJECTED: Krzysztof Paszyk should not be added — he left the government in the 23-24 July 2025 reshuffle when the Ministry of Economic Development and Technology (MRiT) was liquidated; he is now PSL-Trzecia Droga parliamentary club chairman (a Sejm/party post, not a cabinet post).",
+     "Prior dual-verified research CONFIRMED: MRiT was merged into the Ministry of Finance and Economy under Andrzej Domanski (created 24 July 2025), with Michal Baranowski as the deputy minister responsible for trade.",
+     "Caution on stale sources: gov.pl still serves Baranowski's bio and Paszyk's old minister page under legacy 'rozwoj-technologia' / 'development-technology' URLs (the portal now also publishes the Journal of the Minister of Finance and Economy there); do not cite those URLs as evidence that MRiT still exists.",
+     "Exact day of Paszyk's election as PSL club chairman (late July 2025) not pinned to a specific date in accessible sources; his May 2024 swearing-in day (reported 13 May 2024) also worth a spot-check if exact dates go in print."
+    ],
+    "division_note_digital": "Digital portfolio unchanged by the July 2025 reshuffle: the Ministry of Digital Affairs (Ministerstwo Cyfryzacji) is led by Krzysztof Gawkowski (Nowa Lewica), who is simultaneously Deputy Prime Minister and Government Plenipotentiary for Cybersecurity — Poland's counterpart for digital economy, AI, and cyber issues.",
+    "division_note_trade": "Since 24 July 2025 the trade/economy portfolio sits in a single merged \"superministry\": the Ministry of Finance and Economy (Ministerstwo Finansow i Gospodarki) under Andrzej Domanski, created by absorbing the former Ministry of Economic Development and Technology. Day-to-day international trade (EU FAC-Trade, EU-India FTA, US trade files) is handled by Undersecretary of State Michal Baranowski. There is no separate economy ministry under Krzysztof Paszyk.",
+    "officials": [
+     {
+      "portfolio": "digital",
+      "name": "Krzysztof Gawkowski",
+      "title": "Deputy Prime Minister and Minister of Digital Affairs",
+      "role_label": "Deputy PM; Minister of Digital Affairs; Government Plenipotentiary for Cybersecurity",
+      "ministry": "Ministry of Digital Affairs (Ministerstwo Cyfryzacji)",
+      "assumed_office": "2023-12-13",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "full",
+      "source_url": "https://www.gov.pl/web/primeminister/krzysztof-gawkowski",
+      "bio_short": "Deputy Prime Minister and Minister of Digital Affairs since 13 December 2023, and Government Plenipotentiary for Cybersecurity. A Nowa Lewica politician and MP for Bydgoszcz since 2019, he holds a doctorate in humanities. He unveiled Poland's Digitalization Strategy 2035 on 28 October 2024 and leads national AI funding and responses to Russian and Belarusian cyberattacks.",
+      "notes": "Reconfirmed in post as of July 2026; unaffected by the July 2025 reshuffle."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Andrzej Domański",
+      "title": "Minister of Finance and Economy",
+      "role_label": "Minister of Finance and Economy (merged superministry)",
+      "ministry": "Ministry of Finance and Economy (Ministerstwo Finansów i Gospodarki)",
+      "assumed_office": "2025-07-24",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "source_url": "https://www.bloomberg.com/news/articles/2025-07-23/poland-reshuffles-cabinet-to-create-economy-superministry",
+      "bio_short": "Minister of Finance and Economy since 24 July 2025, heading the superministry created by merging the finance and economic development portfolios; previously Minister of Finance from 13 December 2023. An economist born 27 August 1981 in Kraków, he co-authored Civic Coalition's economic programme, sits on the EIB Board of Governors, and hosts the Ukraine Recovery Conference 2026.",
+      "notes": "Styled 'Minister of Finance and Economy' in 2026 sources (LSE, EIB, Ukrainian MoF)."
+     },
+     {
+      "portfolio": "trade",
+      "name": "Michał Baranowski",
+      "title": "Undersecretary of State (deputy minister) responsible for trade",
+      "role_label": "Deputy minister for trade, Ministry of Finance and Economy",
+      "ministry": "Ministry of Finance and Economy (Ministerstwo Finansów i Gospodarki)",
+      "assumed_office": "2024-12-30",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_vacant_or_acting": false,
+      "display": "half",
+      "source_url": "https://aninews.in/news/world/asia/eu-india-fta-huge-deal-for-europe-including-polish-businesses-polands-undersecretary-of-state-michal-baranowski20260714221423/",
+      "bio_short": "Undersecretary of State responsible for trade, appointed 30 December 2024 to the then Ministry of Economic Development and Technology and continuing under the merged Ministry of Finance and Economy. A former German Marshall Fund vice president who founded its Warsaw office, he led EU trade files during Poland's 2025 EU presidency and EU-India FTA engagement in July 2026.",
+      "notes": "Active as of 14 July 2026 (EU-India FTA talks). His gov.pl bio still sits under the legacy 'development-technology' URL now operated by the merged ministry."
+     }
+    ]
+   }
+  }
+ ],
+ "portraits": [
+  {
+   "country": "Brazil",
+   "portraits": {
+    "country": "Brazil",
+    "results": [
+     {
+      "name": "Frederico de Siqueira Filho",
+      "slug": "brazil-siqueira",
+      "status": "failed",
+      "source_url": "https://www.gov.br/mcom/pt-br/composicao/ministro",
+      "source_desc": "Official Ministry of Communications minister profile page (located via search, not downloadable)",
+      "error": "Egress proxy policy denies www.gov.br (403 on CONNECT), which hosts the Ministry of Communications site; alternative official hosts (camara.leg.br, senado.leg.br, ebc.com.br/Agencia Gov, official Flickr CDN) are also policy-denied, and Wikimedia is blocked. No permitted route to download an official portrait."
+     },
+     {
+      "name": "Luciana Santos",
+      "slug": "brazil-santos",
+      "status": "failed",
+      "source_url": "https://www.gov.br/mcti/pt-br/composicao/gm/ministra",
+      "source_desc": "Official MCTI minister profile page (located via search, not downloadable)",
+      "error": "Egress proxy policy denies www.gov.br (403 on CONNECT), which hosts the MCTI site; parliament (camara.leg.br/senado.leg.br), EBC/Agencia Gov, and official Flickr hosts are likewise policy-denied, and Wikimedia is blocked. No permitted route to download an official portrait."
+     },
+     {
+      "name": "Márcio Fernando Elias Rosa",
+      "slug": "brazil-rosa",
+      "status": "failed",
+      "source_url": "https://www.gov.br/mdic/pt-br/composicao/ministro",
+      "source_desc": "Official MDIC minister page (located via search, not downloadable)",
+      "error": "Egress proxy policy denies www.gov.br (403 on CONNECT), which hosts the MDIC site; all alternative official Brazilian hosts tested (leg.br parliament sites, ebc.com.br, official Flickr) are also policy-denied, and Wikimedia is blocked. No permitted route to download an official portrait."
+     },
+     {
+      "name": "Lucas Pedreira do Couto Ferraz",
+      "slug": "brazil-ferraz",
+      "status": "failed",
+      "source_url": "https://www.gov.br/economia/pt-br/composicao/secretaria-especial-de-comercio-exterior-e-assuntos-internacionais/secretaria-de-comercio-exterior/lucas-pedreira-do-couto-ferraz",
+      "source_desc": "Official gov.br SECEX secretary profile page (located via search, not downloadable)",
+      "error": "Egress proxy policy denies www.gov.br (403 on CONNECT), which hosts the MDIC/SECEX and Economia profile pages; alternative official hosts (leg.br, ebc.com.br, official Flickr) are also policy-denied, and Wikimedia is blocked. No permitted route to download an official portrait."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Canada",
+   "portraits": {
+    "country": "Canada",
+    "results": [
+     {
+      "name": "Evan Solomon",
+      "slug": "canada-solomon",
+      "status": "failed",
+      "error": "Egress proxy policy denies all Canadian government hosts (CONNECT 403 from proxy for canada.ca, pm.gc.ca, ourcommons.ca, ised-isde.canada.ca) via both curl and WebFetch. Official bio page identified (https://www.canada.ca/en/government/ministers/evan-solomon.html) but unreachable; proxy README forbids routing around policy denials. No allowed host serves an official portrait (only github.com and package registries are reachable).",
+      "source_url": "https://www.canada.ca/en/government/ministers/evan-solomon.html",
+      "source_desc": "Official Canada.ca ministerial biography page (located via search, blocked by egress policy)"
+     },
+     {
+      "name": "Maninder Sidhu",
+      "slug": "canada-sidhu",
+      "status": "failed",
+      "error": "Same egress policy denial: all official sources (canada.ca ministers page, pm.gc.ca cabinet, ourcommons.ca MP photo https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/45/SidhuManinder_Lib.jpg, international.gc.ca) return CONNECT 403 from the organization egress proxy for both curl and WebFetch. No reachable official source available.",
+      "source_url": "https://www.pm.gc.ca/en/cabinet",
+      "source_desc": "Official PMO cabinet page (blocked by egress policy)"
+     },
+     {
+      "name": "Dominic LeBlanc",
+      "slug": "canada-leblanc",
+      "status": "failed",
+      "error": "Same egress policy denial: canada.ca, pm.gc.ca, and ourcommons.ca (official MP photo URL pattern .../OfficialMPPhotos/45/LeBlancDominic_Lib.jpg) all rejected with CONNECT 403 by the organization egress proxy; WebFetch equally blocked. No reachable official source available.",
+      "source_url": "https://www.pm.gc.ca/en/cabinet",
+      "source_desc": "Official PMO cabinet page (blocked by egress policy)"
+     }
+    ]
+   }
+  },
+  {
+   "country": "France",
+   "portraits": {
+    "country": "France",
+    "results": [
+     {
+      "name": "Anne Le Hénanff",
+      "slug": "france-lehenanff",
+      "status": "failed",
+      "error": "All official sources are blocked by the egress proxy (HTTP 403 / CONNECT rejected): www.info.gouv.fr/personnalite/anne-le-henanff, www.economie.gouv.fr/ministres/anne-le-henanff, assemblee-nationale.fr (deputy profile), vie-publique.fr, lannuaire.service-public.gouv.fr, gouvernement.fr, numerique.gouv.fr; Wikimedia is also blocked. No unofficial source was used, per instructions."
+     },
+     {
+      "name": "Nicolas Forissier",
+      "slug": "france-forissier",
+      "status": "failed",
+      "error": "All official sources are blocked by the egress proxy (HTTP 403 / CONNECT rejected): www.diplomatie.gouv.fr/en/the-ministry/ministers/nicolas-forissier, jp.diplomatie.gouv.fr, fi.diplomatie.gouv.fr, www.info.gouv.fr/personnalite/nicolas-forissier, assemblee-nationale.fr, senat.fr, lannuaire.service-public.gouv.fr; Wikimedia is also blocked. No unofficial source was used, per instructions."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Germany",
+   "portraits": {
+    "country": "Germany",
+    "results": [
+     {
+      "name": "Karsten Wildberger",
+      "slug": "germany-wildberger",
+      "status": "failed",
+      "source_url": "https://bmds.bund.de/en/the-ministry/leadership/minister",
+      "source_desc": "Official portrait (credit BMDS/Woithe) identified on the BMDS ministry leadership page and on bundesregierung.de cabinet profile and bundesrat.de profile, but all hosts are denied by the egress proxy.",
+      "error": "All 4 official sources blocked by egress policy (proxy CONNECT 403): bmds.bund.de, www.bundesregierung.de (DE and EN cabinet pages), www.bundesrat.de. WebFetch and curl both fail; only GitHub/package-registry hosts are allowed by this session's proxy allowlist. No image could be downloaded."
+     },
+     {
+      "name": "Katherina Reiche",
+      "slug": "germany-reiche",
+      "status": "failed",
+      "source_url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Bilder/Pressefoto/pressefoto-reiche.html",
+      "source_desc": "Official press photo (2350x1567, credit Presse- und Informationsamt der Bundesregierung) identified on the BMWE Pressefoto page and bundesregierung.de cabinet profile, but all hosts are denied by the egress proxy.",
+      "error": "All official sources blocked by egress policy (proxy CONNECT 403): www.bundeswirtschaftsministerium.de, www.bundesregierung.de, www.bmwk.de, www.bundesrat.de. WebFetch and curl both fail; the session proxy allowlist only permits GitHub/package-registry hosts. No image could be downloaded."
+     }
+    ]
+   }
+  },
+  {
+   "country": "India",
+   "portraits": {
+    "country": "India",
+    "results": [
+     {
+      "name": "Ashwini Vaishnaw",
+      "slug": "india-vaishnaw",
+      "status": "failed",
+      "error": "All official sources blocked by egress proxy (CONNECT/HTTP 403): tried meity.gov.in minister profile (https://www.meity.gov.in/ministry/our-team/details/Shri%20Ashwini%20Vaishnaw), mib.gov.in profile (https://mib.gov.in/en/ministry/about-us/shri-ashwini-vaishnaw), stpi.in know-your-minister page, and dot.gov.in minister page. Both curl (proxy policy denial 'CONNECT tunnel failed, response 403') and WebFetch (HTTP 403) failed for every host; Wikimedia is explicitly blocked and non-official sources are disallowed."
+     },
+     {
+      "name": "Piyush Goyal",
+      "slug": "india-goyal",
+      "status": "failed",
+      "error": "All official sources blocked by egress proxy (CONNECT/HTTP 403): tried dpiit.gov.in minister profile (https://www.dpiit.gov.in/ministry/our-team/details/Shri%20Piyush%20Goyal), commerce.gov.in ministers page (https://www.commerce.gov.in/about-us/ministers/), pib.gov.in press/photo releases, and piyushgoyal.in. curl returned proxy policy denial (CONNECT 403) and WebFetch returned HTTP 403 for every candidate; no official image URL could even be enumerated."
+     },
+     {
+      "name": "Rajesh Agrawal",
+      "slug": "india-agrawal",
+      "status": "failed",
+      "error": "All official sources blocked by egress proxy (CONNECT/HTTP 403): the only official sources for the Commerce Secretary's portrait are commerce.gov.in (Department of Commerce who's-who) and pib.gov.in, both denied by the proxy for curl (CONNECT 403 policy denial) and WebFetch (HTTP 403). Wikimedia blocked; unofficial sources disallowed, so no image was saved."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Indonesia",
+   "portraits": {
+    "country": "Indonesia",
+    "results": [
+     {
+      "name": "Meutya Viada Hafid",
+      "slug": "indonesia-hafid",
+      "status": "failed",
+      "error": "Official source located (Ministry of Communication and Digital Affairs profile at https://www.komdigi.go.id/profil/daftar-menteri) but the egress proxy returns CONNECT 403 (policy denial) for komdigi.go.id and all other .go.id domains (presidenri.go.id, setkab.go.id, dpr.go.id), for both curl and WebFetch. Archive/Wikimedia fallbacks are also blocked. No image could be downloaded or verified.",
+      "source_url": "https://www.komdigi.go.id/profil/daftar-menteri",
+      "source_desc": "Ministry of Communication and Digital Affairs (Komdigi) official ministers page — unreachable through the policy proxy"
+     },
+     {
+      "name": "Budi Santoso",
+      "slug": "indonesia-santoso",
+      "status": "failed",
+      "error": "Official source located (Ministry of Trade official profile at https://www.kemendag.go.id/tentang/pejabat/dr-budi-santoso-msi) but the egress proxy returns CONNECT 403 (policy denial) for kemendag.go.id and every other Indonesian government domain, for both curl and WebFetch. Archive and cache fallbacks are also blocked. No image could be downloaded or verified.",
+      "source_url": "https://www.kemendag.go.id/tentang/pejabat/dr-budi-santoso-msi",
+      "source_desc": "Ministry of Trade (Kemendag) official profile of Minister Budi Santoso — unreachable through the policy proxy"
+     },
+     {
+      "name": "Airlangga Hartarto",
+      "slug": "indonesia-airlangga",
+      "status": "failed",
+      "error": "Official source located (Coordinating Ministry for Economic Affairs profile at https://www.ekon.go.id/profil/menteri-detail/4/dr-hc-ir-airlangga-hartarto-mba-mmt) but the egress proxy returns CONNECT 403 (policy denial) for ekon.go.id and all .go.id domains, for both curl and WebFetch. Archive/Wikimedia/news-CDN fallbacks are also blocked; only GitHub hosts pass the proxy, which offers no official source. No image could be downloaded or verified.",
+      "source_url": "https://www.ekon.go.id/profil/menteri-detail/4/dr-hc-ir-airlangga-hartarto-mba-mmt",
+      "source_desc": "Coordinating Ministry for Economic Affairs (Kemenko Perekonomian) official minister profile — unreachable through the policy proxy"
+     }
+    ]
+   }
+  },
+  {
+   "country": "Japan",
+   "portraits": {
+    "country": "Japan",
+    "results": [
+     {
+      "name": "Matsumoto Hisashi",
+      "slug": "japan-matsumoto",
+      "status": "failed",
+      "source_url": "https://www.digital.go.jp/en/about/member/matsumotohisashi",
+      "source_desc": "Official Digital Agency member profile (also Kantei cabinet roster https://www.kantei.go.jp/jp/105/meibo/daijin/matsumoto_hisashi.html); pages located via search but unreachable",
+      "error": "All download paths blocked: egress proxy returned CONNECT 403 (policy denial) for digital.go.jp, kantei.go.jp and every other *.go.jp host, and WebFetch returned HTTP 403 for the Digital Agency and Kantei profile pages. Attempted curl of https://www.kantei.go.jp/jp/content/matsumoto_hisashi.jpg failed with curl exit 56 (CONNECT tunnel failed, response 403). No image bytes could be retrieved from any official source."
+     },
+     {
+      "name": "Akazawa Ryosei",
+      "slug": "japan-akazawa",
+      "status": "failed",
+      "source_url": "https://www.meti.go.jp/intro/minister/profile_minister.html",
+      "source_desc": "Official METI minister profile (also Kantei cabinet roster https://www.kantei.go.jp/jp/105/meibo/daijin/akazawa_ryousei.html); pages located via search but unreachable",
+      "error": "All download paths blocked: egress proxy returned CONNECT 403 (policy denial) for meti.go.jp, kantei.go.jp and cao.go.jp, and WebFetch returned HTTP 403 for the METI profile page. Attempted curl of https://www.meti.go.jp/intro/minister/img/photo_minister.jpg and https://www.cao.go.jp/minister/2410_r_akazawa/photo.jpg both failed with curl exit 56 (CONNECT tunnel failed, response 403). No image bytes could be retrieved from any official source."
+     }
+    ]
+   }
+  },
+  {
+   "country": "Italy",
+   "portraits": {
+    "country": "Italy",
+    "results": [
+     {
+      "name": "Alessio Butti",
+      "slug": "italy-butti",
+      "status": "failed",
+      "error": "Download impossible: egress proxy returns CONNECT 403 (policy denial) for all official hosts (www.governo.it, presidenza.governo.it, innovazione.gov.it) and for the site's image CDN (assets.innovazione.gov.it, www.datocms-assets.com). WebFetch is blocked by the same policy. Official profile pages were located but no image bytes could be retrieved.",
+      "source_desc": "Official profile identified (not downloadable through proxy): https://www.governo.it/it/governo/meloni/sottosegretari-pcm/alessio-butti and https://innovazione.gov.it/sottosegretario/"
+     },
+     {
+      "name": "Antonio Tajani",
+      "slug": "italy-tajani",
+      "status": "failed",
+      "error": "Download impossible: egress proxy returns CONNECT 403 (policy denial) for www.esteri.it, www.governo.it, camera.it and every other official host tested; WebFetch is blocked by the same policy. Official minister page located but no image bytes could be retrieved.",
+      "source_desc": "Official profile identified (not downloadable through proxy): https://www.esteri.it/it/ministero/struttura/ministro/ (MAECI minister page)"
+     },
+     {
+      "name": "Adolfo Urso",
+      "slug": "italy-urso",
+      "status": "failed",
+      "error": "Download impossible: egress proxy returns CONNECT 403 (policy denial) for www.mimit.gov.it, www.governo.it, senato.it and every other official host tested; WebFetch is blocked by the same policy. Official minister page located but no image bytes could be retrieved.",
+      "source_desc": "Official profile identified (not downloadable through proxy): https://www.mimit.gov.it/it/ministero/il-ministro (MIMIT minister page)"
+     }
+    ]
+   }
+  },
+  {
+   "country": "Saudi Arabia",
+   "portraits": {
+    "country": "Saudi Arabia",
+    "results": [
+     {
+      "name": "Abdullah bin Amer Alswaha",
+      "slug": "saudi-alswaha",
+      "status": "failed",
+      "error": "Official MCIT profile page located (https://mcit.gov.sa/en/he-eng-abdullah-alswaha-minister-communications-information-technology), but all download paths blocked: the session's egress proxy returns CONNECT 403 policy denial for mcit.gov.sa and every other candidate host (including example.com and google.com), for both curl and WebFetch. No image bytes could be retrieved, so no portrait was saved.",
+      "source_url": "https://mcit.gov.sa/en/he-eng-abdullah-alswaha-minister-communications-information-technology",
+      "source_desc": "Official Ministry of Communications and Information Technology (MCIT) minister biography page — identified via WebSearch but unreachable through the egress proxy"
+     },
+     {
+      "name": "Majid bin Abdullah Al-Qasabi",
+      "slug": "saudi-alqasabi",
+      "status": "failed",
+      "error": "Official Ministry of Commerce minister CV page located (https://mc.gov.sa/en/About/CVs-Ministry-officials/Pages/Minister.aspx), but mc.gov.sa is denied by the egress proxy (CONNECT tunnel 403) for both curl and WebFetch; all fallback hosts (my.gov.sa, spa.gov.sa, arabnews.com, wikipedia.org) are also policy-blocked. No portrait could be downloaded.",
+      "source_url": "https://mc.gov.sa/en/About/CVs-Ministry-officials/Pages/Minister.aspx",
+      "source_desc": "Official Saudi Ministry of Commerce minister biography page — identified via WebSearch but unreachable through the egress proxy"
+     },
+     {
+      "name": "Mohammed bin Abdulaziz Al-Abduljabbar",
+      "slug": "saudi-abduljabbar",
+      "status": "failed",
+      "error": "GAFT official site pages located (https://gaft.gov.sa/en/about-gaft/board-members/ and gaft.gov.sa/en), but gaft.gov.sa is denied by the egress proxy (CONNECT tunnel 403) for both curl and WebFetch; every alternative host tested is likewise blocked, leaving no channel to retrieve image bytes. No portrait could be downloaded.",
+      "source_url": "https://gaft.gov.sa/en/about-gaft/board-members/",
+      "source_desc": "Official General Authority for Foreign Trade (GAFT) site — identified via WebSearch but unreachable through the egress proxy"
+     }
+    ]
+   }
+  },
+  {
+   "country": "Mexico",
+   "portraits": {
+    "country": "Mexico",
+    "results": [
+     {
+      "name": "José Antonio Peña Merino",
+      "slug": "mexico-pena",
+      "status": "failed",
+      "source_url": "https://www.gob.mx/atdt",
+      "source_desc": "Official ATDT (Agencia de Transformación Digital y Telecomunicaciones) site on gob.mx — identified as the correct official source but unreachable",
+      "error": "All official sources unreachable: *.gob.mx is denied by the org egress proxy policy (HTTP 403 on CONNECT), and gob.mx also returns HTTP 403 to WebFetch at the origin (WAF). Fallbacks (web.archive.org, Wikimedia, Flickr, embassy/senate/DOF hosts) are likewise policy-blocked; no verifiable official portrait could be downloaded."
+     },
+     {
+      "name": "Marcelo Luis Ebrard Casaubón",
+      "slug": "mexico-ebrard",
+      "status": "failed",
+      "source_url": "https://www.gob.mx/se/estructuras/marcelo-ebrard",
+      "source_desc": "Official Secretaría de Economía profile page on gob.mx — identified as the correct official source but unreachable",
+      "error": "All official sources unreachable: www.gob.mx (including the /cms/uploads image host) is denied by the org egress proxy (403 policy CONNECT denial) and returns 403 to WebFetch at the origin. Alternate official hosts (senado.gob.mx, sre.gob.mx, embamex, dof.gob.mx) and archive/Wikimedia fallbacks are also blocked; no verifiable official portrait could be downloaded."
+     },
+     {
+      "name": "Luis Rosendo Gutiérrez Romano",
+      "slug": "mexico-gutierrez",
+      "status": "failed",
+      "source_url": "https://www.gob.mx/se/estructuras/luis-rosendo-gutierrez-romano",
+      "source_desc": "Official Secretaría de Economía profile page on gob.mx — identified as the correct official source but unreachable",
+      "error": "All official sources unreachable: gob.mx blocked both by the egress proxy policy (403 CONNECT) and at the origin (403 to WebFetch). No permitted host serves a verifiable official portrait (only GitHub is allowed through the proxy); per instructions, refusing to save an unverifiable image."
+     }
+    ]
+   }
+  }
+ ],
+ "usTotals": {
+  "exports_goods_world_b": 2197.5,
+  "imports_goods_world_b": 3438.4,
+  "balance_goods_world_b": -1240.9,
+  "reference_year": "2025",
+  "as_of": "2026-07-16",
+  "source": "U.S. Census Bureau / U.S. Bureau of Economic Analysis, FT-900 \"U.S. International Trade in Goods and Services, December and Annual 2025\" (released February 2026)",
+  "source_url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+  "notes": "Full-year 2025 U.S. total (world) goods trade, nominal USD, balance-of-payments basis as published in the FT-900 annual release: goods exports $2,197.5B (up $117.7B from 2024; highest on record), goods imports $3,438.4B (up $143.2B; highest on record), goods deficit $1,240.9B (highest on record). Figures reconcile exactly: 2,197.5 - 3,438.4 = -1,240.9. Confirmed via live web search on 2026-07-16 against the BEA release page (bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025), the BEA PDF (bea.gov/sites/default/files/2026-02/trad1225.pdf), and Census Annual 2025 Press Highlights (census.gov/foreign-trade/statistics/highlights/AnnualPressHighlights.pdf). Direct fetch of .gov PDFs was blocked by the environment's egress proxy (403), so figures were verified via search excerpts of those official pages; the three independent excerpts are mutually consistent and reconcile arithmetically. 2025 services surplus was $339.5B (context, not part of goods figures)."
+ },
+ "seal": {
+  "status": "ok",
+  "file": "/home/user/Photo/assets/seal/doc-seal.png",
+  "source_url": "https://raw.githubusercontent.com/detain/svg-logos/master/svg/u/us-department-of-commerce.svg",
+  "notes": "Fetched live 2026-07-16 (as_of for all claims/downloads: 2026-07-16). Saved /home/user/Photo/assets/seal/doc-seal.png (1200x1200 RGBA PNG, 339 KB) rasterized with python3 cairosvg from the true-vector SVG at the source_url (repo detain/svg-logos, located via GitHub code search filename:us-department-of-commerce.svg; downloaded over verified TLS from raw.githubusercontent.com, one of the only reachable hosts). Design verified by rendering and visual inspection with PIL/Read: gold eagle crest, shield with three-masted ship on blue chief and lighthouse on gold base, ring text \"DEPARTMENT OF COMMERCE / UNITED STATES OF AMERICA\" with two stars — matches the official DOC seal (a U.S. government work, public domain, 15 U.S.C. 1501 seal design approved 1913). Cross-checked against a second independent copy in an official U.S. government repo: GSA/USSM assets/images/governance/sopac-logos/department-of-commerce.svg (https://raw.githubusercontent.com/GSA/USSM/master/assets/images/governance/sopac-logos/department-of-commerce.svg) — identical design; that file wraps an embedded 720x720 PNG (same nominal size as the Wikimedia Commons original) so the vector source was preferred for the 1200px render. Bonus completed: /home/user/Photo/assets/seal/ita-logo.png (1200x1200 PNG, 156 KB) — classic ITA emblem (eagle over globe, ring \"U.S. DEPARTMENT OF COMMERCE / INTERNATIONAL TRADE ADMINISTRATION\") from https://raw.githubusercontent.com/detain/svg-logos/master/svg/u/u-s-department-of-commerce.svg; note ITA's post-2021 web branding uses a newer wordmark, but trade.gov was unreachable to fetch it. Both PNGs validated with PIL (Image.open + verify). Egress constraints confirmed by testing: commerce.gov, trade.gov, noaa.gov, nist.gov, ntia.gov, bis.doc.gov, uspto.gov, bea.gov, eda.gov, govinfo.gov, en.wikipedia.org and github.com all blocked (CONNECT 403); only raw.githubusercontent.com and api.github.com (session-scoped) were reachable via curl."
+ },
+ "trims": []
+}

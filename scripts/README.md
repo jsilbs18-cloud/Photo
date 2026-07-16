@@ -45,3 +45,14 @@ binary (set `CHROME=` if not at the default Playwright path). Scripts assume the
   JSON for all 19, diacritics survive into every format, minister names/titles/ministries
   match the research char-for-char, flags embedded, and a font-metric text-fit measurement
   that proves no PPTX bio/box overflows.
+
+## v2/v3 revisions (2026-07-16)
+
+- `apply_updates.py` merges `data/_updates.json` (live-verified roster changes, US world
+  totals, seal) and `data/_trim_output.json` (compressed bios) into `data/g20.json`.
+- `normalize_portraits.py` crops portraits to 4:5 and generates monogram placeholders —
+  drop official photos into `assets/portraits/<slug>.png` (see GAPS.md) and rerun build.sh.
+- Deck styled per the **ITA Visual Style Guide (Jan 2026)**: Trade Navy #0A314D / Trade
+  Blue #00558C, Trade Gold rules, Open Sans (Calibri is the approved O365 alternate),
+  DOC seal white-line rendering, official document footer signatures. Fonts installed
+  from Google Fonts GitHub into /usr/local/share/fonts/ita for the PDF render.

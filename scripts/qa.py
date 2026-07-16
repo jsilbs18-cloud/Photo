@@ -98,8 +98,8 @@ for idx, c in enumerate(CO):
     for o in shown:
         check(o['name'] in txt and o['title'] in txt, f"pptx name+title {c['country']}/{o['name']}")
     pics = [sh for sh in sl.shapes if sh.shape_type == 13]
-    need = 1 + len(shown) + (1 if D['meta'].get('seal_file') else 0)
-    check(len(pics) >= need, f"pptx images {c['country']} ({len(pics)}>={need}: flag+portraits+seal)")
+    need = 1 + len(shown)  # flag + one portrait per displayed official (footer is a text signature per ITA guide)
+    check(len(pics) >= need, f"pptx images {c['country']} ({len(pics)}>={need}: flag+portraits)")
     check('NEEDS CHECK' not in txt and 'VACANT / ACTING' not in txt,
           f"pptx no confidence badge {c['country']}")
 us_txt = stext(country_slides[names.index('United States')])
@@ -145,14 +145,15 @@ for c in CO:
 for c in CO:
     im = Image.open(ROOT + c['flag_file']); im.load()
     check(im.width > 0, f"flag valid {c['country']}")
-if D['meta'].get('seal_file'):
-    im = Image.open(ROOT + D['meta']['seal_file']); im.load()
-    check(im.width >= 300, "seal valid & high-res")
+for sp in ('assets/seal/doc-seal.png', 'assets/seal/doc-seal-white.png'):
+    if os.path.exists(ROOT + sp):
+        im = Image.open(ROOT + sp); im.load()
+        check(im.width >= 300, f"seal valid & high-res ({sp})")
 
 # ---------- 11. text-fit (font metrics, v2 geometry) ----------
-FP = {'reg': '/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf',
-      'bold': '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf',
-      'ital': '/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf'}
+FP = {'reg': '/usr/local/share/fonts/ita/OpenSans-Regular.ttf',
+      'bold': '/usr/local/share/fonts/ita/OpenSans-Bold.ttf',
+      'ital': '/usr/local/share/fonts/ita/OpenSans-Italic.ttf'}
 _fc = {}
 def font(style, pt):
     k = (style, round(pt * 96 / 72))
@@ -183,7 +184,7 @@ for c in CO:
             bh = nlines(bio, 11, RW) * 11 * 1.03 / 72
             note_line = '; '.join(f"{n['name']} ({n['title']})" for n in notes)
             dn = c.get(div) or ''
-            full_note = (dn + (' Also: ' + note_line if note_line else '')) if dn else ('Also: ' + note_line if note_line else '')
+            full_note = dn if dn else ('Also: ' + note_line if note_line else '')
             nh = (5/72 + nlines('Also: ' + full_note, 9, RW, 'ital') * 9 * 1.2 / 72) if full_note else 0
             fits = tl <= 3 and ml <= 2 and (bh + nh) <= (H - 1.56) + 0.02
             tight.append(((bh + nh) / (H - 1.56), c['country'], g[:3], 'full'))
