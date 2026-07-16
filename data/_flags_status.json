@@ -1,0 +1,154 @@
+{
+  "Argentina": {
+    "status": "ok",
+    "size": [
+      640,
+      400
+    ],
+    "file": "assets/flags/argentina.png"
+  },
+  "Australia": {
+    "status": "ok",
+    "size": [
+      800,
+      400
+    ],
+    "file": "assets/flags/australia.png"
+  },
+  "Brazil": {
+    "status": "ok",
+    "size": [
+      571,
+      400
+    ],
+    "file": "assets/flags/brazil.png"
+  },
+  "Canada": {
+    "status": "ok",
+    "size": [
+      800,
+      400
+    ],
+    "file": "assets/flags/canada.png"
+  },
+  "China": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/china.png"
+  },
+  "France": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/france.png"
+  },
+  "Germany": {
+    "status": "ok",
+    "size": [
+      667,
+      400
+    ],
+    "file": "assets/flags/germany.png"
+  },
+  "India": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/india.png"
+  },
+  "Indonesia": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/indonesia.png"
+  },
+  "Italy": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/italy.png"
+  },
+  "Japan": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/japan.png"
+  },
+  "Mexico": {
+    "status": "ok",
+    "size": [
+      700,
+      400
+    ],
+    "file": "assets/flags/mexico.png"
+  },
+  "Poland": {
+    "status": "ok",
+    "size": [
+      640,
+      400
+    ],
+    "file": "assets/flags/poland.png"
+  },
+  "Russia": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/russia.png"
+  },
+  "Saudi Arabia": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/saudi-arabia.png"
+  },
+  "South Korea": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/south-korea.png"
+  },
+  "Türkiye": {
+    "status": "ok",
+    "size": [
+      600,
+      400
+    ],
+    "file": "assets/flags/turkiye.png"
+  },
+  "United Kingdom": {
+    "status": "ok",
+    "size": [
+      800,
+      400
+    ],
+    "file": "assets/flags/united-kingdom.png"
+  },
+  "United States": {
+    "status": "ok",
+    "size": [
+      760,
+      400
+    ],
+    "file": "assets/flags/united-states.png"
+  }
+}

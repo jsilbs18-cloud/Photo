@@ -1,0 +1,1354 @@
+{
+  "meta": {
+    "compiled": "2026-07-16",
+    "scope_note": "19 G20 sovereign members. Poland substituted for South Africa per instruction. European Union and African Union bloc seats excluded.",
+    "gdp": {
+      "source": "IMF World Economic Outlook, October 2025 release (reference-year 2025 estimates/projections). Primary tabulation: StatisticsTimes.com country GDP pages, which explicitly cite \"IMF World Economic Outlook (October 2025)\". Direct IMF sources (DataMapper API and WEO statistical-appendix PDFs) and WebFetch were unreachable in this environment (HTTP 403 on every host), so figures were obtained from IMF-WEO-based aggregators via web search. Thirteen countries are from the single consistent StatisticsTimes/IMF-Oct-2025 source; six countries (Argentina, Australia, Brazil, Mexico, Poland, Saudi Arabia) could not be pinned from that exact table via search snippets and were supplemented from other IMF-based aggregators (Statista/Worldometer), which may reflect the later April 2026 WEO revision.",
+      "source_url": "https://statisticstimes.com/economy/countries-by-projected-gdp.php",
+      "reference_year": "2025",
+      "as_of": "2026-07-16",
+      "units": "USD billions, nominal (current prices)"
+    },
+    "us_trade": {
+      "source": "U.S. Census Bureau, Foreign Trade Division — full-year 2025 trade in GOODS (customs/FAS basis). census.gov country balance pages were not directly reachable from this environment (proxy returned 403), so the underlying Census goods figures were obtained via two Census-derived channels: (1) USTR country trade fact sheets, which quote Census full-year 2025 goods exports/imports with year-over-year changes; and (2) the Census/UN COMTRADE goods series mirrored by Trading Economics for EU members not given standalone USTR fact sheets (Germany, Italy, Poland). All values are goods only, not goods+services.",
+      "source_url": "https://www.census.gov/foreign-trade/balance/",
+      "reference_year": "2025",
+      "basis": "goods only",
+      "as_of": "2026-07-16",
+      "units": "USD billions"
+    },
+    "flags": {
+      "source": "hampusborgos/country-flags (public domain), raster via cairosvg — Wikimedia Commons was egress-blocked in the build environment",
+      "note": "Uniform 400px height, true aspect ratios preserved."
+    },
+    "convention": "U.S. bilateral balance = U.S. exports to country minus U.S. imports from country; negative = U.S. deficit."
+  },
+  "countries": [
+    {
+      "country": "Argentina",
+      "flag_file": "assets/flags/argentina.png",
+      "gdp_usd_b": 681.5,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": 11.3,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.infobae.com/economia/2026/01/20/argentina-cerro-el-2025-con-un-saldo-comercial-positivo-de-usd-11286-millones/",
+      "us_exports_usd_b": 9.9,
+      "us_imports_usd_b": 8.3,
+      "us_bilateral_usd_b": 1.6,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Darío Leandro Genua",
+          "title": "Secretary of Innovation, Science and Technology",
+          "ministry": "Chief of Cabinet Office (Jefatura de Gabinete de Ministros)",
+          "assumed_office": "2024-06-06",
+          "bio": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening. His secretariat leads state digitalization, digital public services, connectivity and telecommunications policy under the Chief of Cabinet. In 2026 he opened the Argentina Digital Summit.",
+          "source_url": "https://mapadelestado.dyte.gob.ar/ministerios/Jefatura-de-Gabinete-de-Ministros/897/detalle",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / science, technology & telecommunications lead",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Pablo Lavigne",
+          "title": "Secretary of Production Coordination (exercising Industry & Commerce functions)",
+          "ministry": "Ministry of Economy",
+          "assumed_office": "2024-12-17",
+          "bio": "Pablo Lavigne, an economist trained at UCA with a master's and doctorate from Universidad del CEMA, has been Secretary of Production Coordination in the Ministry of Economy since December 2024. Under Mauricio Macri he directed foreign-trade facilitation and ran the single foreign-trade window (VUCEA). He earlier led the Secretariat of Industry and Commerce, driving import deregulation, courier-limit increases and tariff cuts. After the Industry & Commerce secretariat fell vacant, a March 2026 decree merged those functions into his secretariat, which he now exercises on an acting basis.",
+          "source_url": "https://www.infobae.com/politica/2026/03/31/el-gobierno-fusiono-temporalmente-dos-secretarias-clave-del-ministerio-de-economia-hasta-que-designen-un-nuevo-titular/",
+          "as_of": "2026-07-16",
+          "confidence": "Vacant / acting",
+          "is_acting": true,
+          "role_label": "Domestic commerce & industry (acting; secretariat vacant/merged)",
+          "is_primary": true
+        },
+        {
+          "name": "Fernando Brun",
+          "title": "Secretary of International Economic Relations",
+          "ministry": "Ministry of Foreign Affairs, International Trade and Worship (Cancilleria)",
+          "assumed_office": "2025-06-25",
+          "bio": "Fernando Brun is Secretary of International Economic Relations at Argentina's Foreign Ministry, appointed in June 2025 (Decree 413/2025) amid Secretary General Karina Milei's drive to consolidate commercial diplomacy in the Cancilleria. A career diplomat with the rank of Ambassador Extraordinary and Plenipotentiary, he previously served as Argentina's ambassador to Germany. He leads Argentina's bilateral and multilateral trade negotiations, including MERCOSUR, ALADI and the WTO. In May 2026 he chaired the IX Plenary Session of the Federal Council of Foreign Relations and International Trade in Bariloche.",
+          "source_url": "https://www.cancilleria.gob.ar/es/ministerio-de-relaciones-exteriores-comercio-internacional-y-culto/secretaria-de-relaciones-economicas-internacionales",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / external economic & trade relations",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "Domestic commerce/industry (Lavigne, acting) sits under the Economy Ministry; external trade negotiation (Brun) under the Foreign Ministry.",
+      "row_confidence": "Vacant / acting",
+      "source_notes": "Trade/commerce portfolio also held by: Fernando Brun (Secretary of International Economic Relations). Balance: Independently re-verified via fresh searches. Full-year 2025 merchandise (goods) trade SURPLUS of US$11.286 billion (positive). Exports US$87.077bn (+9.3% YoY); imports US$75.791bn (+24.7% YoY). Surplus down 40.3% vs 2024. Figure confirmed by Infobae (20 Jan 2026), Perfil, cholilaonline citing INDEC, and La Nacion (which reported the Dec-2025 monthly surplus of US$1.892bn). INDEC PDF returned HTTP",
+      "gaps": [
+        "Acting/interim official: Pablo Lavigne — Secretary of Production Coordination (exercising Industry & Commerce functions)",
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision)."
+      ]
+    },
+    {
+      "country": "Australia",
+      "flag_file": "assets/flags/australia.png",
+      "gdp_usd_b": 1840.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": 4.5,
+      "overall_balance_basis": "goods+services",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Needs check",
+      "overall_balance_url": "https://www.abs.gov.au/statistics/economy/international-trade/international-trade-supplementary-information-calendar-year/latest-release",
+      "us_exports_usd_b": 33.7,
+      "us_imports_usd_b": 29.1,
+      "us_bilateral_usd_b": 4.6,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Anika Wells",
+          "title": "Minister for Communications (also Minister for Sport)",
+          "ministry": "Portfolio of Infrastructure, Transport, Regional Development, Communications, Sport and the Arts (Department of Infrastructure, Transport, Regional Development, Communications, Sport and the Arts)",
+          "assumed_office": "2025-05-13",
+          "bio": "Anika Shay Wells (born 1985) is a Labor MP for the Queensland seat of Lilley, held since the 2019 federal election. A Griffith University law graduate, she practised as a compensation lawyer at Maurice Blackburn before entering Parliament. She served as Minister for Aged Care and Minister for Sport from 2022 to 2025, then was sworn in as Minister for Communications on 13 May 2025 in the second Albanese ministry (taking over from Michelle Rowland, who moved to Attorney-General), retaining Sport. She remains in the role as of July 2026.",
+          "source_url": "https://minister.infrastructure.gov.au/wells",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for telecommunications and the digital/information economy",
+          "is_primary": true
+        },
+        {
+          "name": "Andrew Charlton",
+          "title": "Assistant Minister for Science, Technology and the Digital Economy (also Cabinet Secretary)",
+          "ministry": "Department of Industry, Science and Resources",
+          "assumed_office": "2025-05-13",
+          "bio": "Dr Andrew Henry George Charlton (born 1978) is a Labor MP for the New South Wales seat of Parramatta, held since 2022. An economist and University of Sydney and Oxford (Rhodes Scholar) graduate, he served as chief economic adviser to Prime Minister Kevin Rudd (2007-2010), founded the consultancy AlphaBeta (later acquired by Accenture) and co-authored 'Fair Trade for All' with Joseph Stiglitz. He was sworn in as Cabinet Secretary and Assistant Minister for Science, Technology and the Digital Economy on 13 May 2025 and remains in the role as of mid-2026.",
+          "source_url": "https://www.minister.industry.gov.au/ministers/charlton",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Assistant Minister with explicit digital economy / technology remit",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Don Farrell",
+          "title": "Minister for Trade and Tourism (also Special Minister of State; Deputy Leader of the Government in the Senate)",
+          "ministry": "Department of Foreign Affairs and Trade (DFAT); trade promotion agency Austrade",
+          "assumed_office": "2022-06-01",
+          "bio": "Senator Donald Edward Farrell (born 1954) is a Labor Senator for South Australia and a former trade unionist who was state secretary of the Shop, Distributive and Allied Employees Association (SDA) from 1993 to 2008. A University of Adelaide law graduate, he served in the Senate from 2008-2014 and again from 2016, holding ministries under the Rudd and Gillard governments. He was sworn in as Minister for Trade and Tourism on 1 June 2022 and retained the portfolio after the May 2025 federal election, remaining in the role as of July 2026.",
+          "source_url": "https://www.trademinister.gov.au/minister/don-farrell",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for foreign/external trade",
+          "is_primary": true
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Needs check",
+      "source_notes": "Digital/technology portfolio also held by: Andrew Charlton (Assistant Minister for Science, Technology and the Digital Economy (also Cabinet Secretary)). Balance: INDEPENDENTLY RE-CONFIRMED via a second live ABS search snippet: CY2025 balance on goods and services was a surplus of A$6.9b; total exports/credits A$665.2b (+3.1%), total imports/debits A$658.3b (+6.9%), Balance of Payments basis. The A$6.9b headline is therefore VERIFIED. The value_usd_billions of ~4.45 is a CONVERSION (A$6.9b x ~0.645 average 2025 AUD/USD) and remains approximate, so confidenc",
+      "gaps": [
+        "Overall trade balance (goods+services, 2025) flagged 'Needs check'.",
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision).",
+        "Overall balance is goods+services (not goods-only) — basis differs from other countries."
+      ]
+    },
+    {
+      "country": "Brazil",
+      "flag_file": "assets/flags/brazil.png",
+      "gdp_usd_b": 2280.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": 68.3,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.seplan.pi.gov.br/balanca-comercial-brasileira-superavit-de-683-bilhoes-de-dolares-em-2025/",
+      "us_exports_usd_b": 54.4,
+      "us_imports_usd_b": 39.9,
+      "us_bilateral_usd_b": 14.5,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Frederico de Siqueira Filho",
+          "title": "Minister of Communications",
+          "ministry": "Ministry of Communications (Ministério das Comunicações)",
+          "assumed_office": "2025-05",
+          "bio": "Brazilian engineer and telecom executive with more than 26 years in the telecommunications/IT sector, including some 21 years at operator Oi in operations, planning, regulatory and commercial roles. From 2023 to 2025 he led state-owned Telebras. President Lula named him Minister of Communications in April 2025, with the handover ceremony in early May 2025, succeeding Juscelino Filho. He oversees telecom policy, digital inclusion, broadcasting/spectrum, postal services and the TV 3.0 initiative. In May 2026 he publicly stated he intends to remain in the ministry through the end of 2026.",
+          "source_url": "https://telesintese.com.br/frederico-siqueira-diz-que-pretende-seguir-no-ministerio-ate-o-fim-de-2026/",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister of Communications (telecommunications, digital inclusion, broadcasting, postal)",
+          "is_primary": true
+        },
+        {
+          "name": "Luciana Santos",
+          "title": "Minister of Science, Technology and Innovation",
+          "ministry": "Ministry of Science, Technology and Innovation (Ministério da Ciência, Tecnologia e Inovação, MCTI)",
+          "assumed_office": "2023-01-01",
+          "bio": "Electrical engineer (Federal University of Pernambuco) and politician, national president of the Communist Party of Brazil (PCdoB). She was mayor of Olinda (2001-2008), a federal deputy and vice-governor of Pernambuco. Since 1 January 2023 she has been Brazil's Minister of Science, Technology and Innovation, overseeing R&D funding, innovation, artificial-intelligence policy and the national science, technology and innovation strategy. Despite 2025-2026 press speculation she might move to the Ministry of Women in a reshuffle, the official MCTI page (updated 28 May 2026) still lists her as minister as of mid-2026.",
+          "source_url": "https://www.gov.br/mcti/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister of Science, Technology and Innovation (broader technology / digital economy / AI policy)",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Márcio Fernando Elias Rosa",
+          "title": "Minister of Development, Industry, Trade and Services",
+          "ministry": "Ministry of Development, Industry, Trade and Services (Ministério do Desenvolvimento, Indústria, Comércio e Serviços, MDIC)",
+          "assumed_office": "2026-04-06",
+          "bio": "Retired public prosecutor, lawyer and law professor, born in Ibiúna, São Paulo, in 1962. He spent his career in the São Paulo Public Prosecutor's Office, serving twice as Attorney General of Justice (2012-2016) and as São Paulo State Secretary of Justice. He joined MDIC as Executive Secretary in January 2023, and was sworn in as Minister on 6 April 2026, succeeding Vice President Geraldo Alckmin, who left the post to run for re-election as Lula's running mate. His agenda centers on the Nova Indústria Brasil program, expanding investment and foreign trade.",
+          "source_url": "https://agenciagov.ebc.com.br/noticias/202604/marcio-elias-rosa-e-o-novo-ministro-do-desenvolvimento-industria-comercio-e-servicos",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister responsible for trade, industry and commerce (MDIC)",
+          "is_primary": true
+        },
+        {
+          "name": "Lucas Pedreira do Couto Ferraz",
+          "title": "Secretary of Foreign Trade (SECEX)",
+          "ministry": "Ministry of Development, Industry, Trade and Services (MDIC) - Secretariat of Foreign Trade (SECEX)",
+          "assumed_office": "2023-01-01",
+          "bio": "Economist and academic. He holds chemical-engineering degrees from the University of São Paulo's Polytechnic School and a PhD in Economics from FGV's EPGE, where he is a professor and has coordinated WTO-chair and trade-modeling work. He has served as MDIC Secretary of Foreign Trade (SECEX) since January 2023, leading trade negotiations, the Mercosur-EU and OECD agendas, trade facilitation and export promotion, and fronting SECEX's monthly trade-balance releases and 2026 outlook statements.",
+          "source_url": "https://www.gov.br/mdic/pt-br/composicao/secretaria-de-comercio-exterior-secex",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief foreign-trade official / trade negotiator (SECEX)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Needs check",
+      "source_notes": "Digital/technology portfolio also held by: Luciana Santos (Minister of Science, Technology and Innovation). Trade/commerce portfolio also held by: Lucas Pedreira do Couto Ferraz (Secretary of Foreign Trade (SECEX)). Balance: INDEPENDENTLY CONFIRMED. Brazil's full-year 2025 merchandise (goods) trade balance was a SURPLUS of +US$68.3 billion (customs/merchandise basis), per MDIC/SECEX official data. Multiple 2026-dated Brazilian sources corroborate the US$68.3bn figure, including LegisMap and Times Brasil/CNBC, and SECEX's own 2026 outlook statements reference '2025, when the balance closed at +US$68.3 billion.' The 202",
+      "gaps": [
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision)."
+      ]
+    },
+    {
+      "country": "Canada",
+      "flag_file": "assets/flags/canada.png",
+      "gdp_usd_b": 2284.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -22.4,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260219/dq260219a-eng.htm",
+      "us_exports_usd_b": 336.5,
+      "us_imports_usd_b": 383.0,
+      "us_bilateral_usd_b": -46.5,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Evan Solomon",
+          "title": "Minister of Artificial Intelligence and Digital Innovation",
+          "ministry": "Innovation, Science and Economic Development Canada (ISED)",
+          "assumed_office": "2025-05-13",
+          "bio": "Solomon, a longtime Canadian broadcaster and author, was elected Liberal MP for Toronto Centre in April 2025 and sworn in May 13, 2025 as Canada's first Minister of Artificial Intelligence and Digital Innovation, a portfolio created by PM Mark Carney. Before politics he hosted CTV's Power Play and Question Period and a CFRB talk-radio show, wrote for Maclean's, and co-founded Shift magazine. He studied at McGill University and now leads federal AI, quantum and digital policy within ISED.",
+          "source_url": "https://www.canada.ca/en/government/ministers/evan-solomon.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / AI & digital innovation lead",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Maninder Sidhu",
+          "title": "Minister of International Trade",
+          "ministry": "Global Affairs Canada",
+          "assumed_office": "2025-05-13",
+          "bio": "Sidhu (born 1984) is a businessman and Liberal politician first elected MP for Brampton East in 2019. A University of Waterloo graduate, he ran an international-trade and customs-brokerage consulting business before politics, and served as Parliamentary Secretary to the Ministers of Foreign Affairs and International Development. Sworn into PM Mark Carney's cabinet on May 13, 2025 as Minister of International Trade within Global Affairs Canada, he leads Canada's trade-diversification and export agenda, targeting a trio of trade deals in 2026. He lives in Brampton, Ontario.",
+          "source_url": "https://www.canada.ca/en/government/ministers/maninder-sidhu.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister of International Trade (foreign trade / export promotion lead)",
+          "is_primary": true
+        },
+        {
+          "name": "Dominic LeBlanc",
+          "title": "President of the King's Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy",
+          "ministry": "Privy Council Office / Global Affairs Canada (Canada-U.S. trade file)",
+          "assumed_office": "2025-05-13",
+          "bio": "LeBlanc (born December 14, 1967), a lawyer and Liberal MP for Beausejour since 2000 and son of former governor general Romeo LeBlanc, is a veteran minister who has held Fisheries, Intergovernmental Affairs, Public Safety and Finance and is often called a political 'fixer.' Since May 13, 2025 he has served as President of the King's Privy Council and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy, leading Canada's response to U.S. tariffs and the 2026 CUSMA joint review, and coordinating with provincial trade ministers.",
+          "source_url": "https://www.canada.ca/en/government/ministers/dominic-leblanc.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for Canada-U.S. Trade (bilateral trade with the United States / CUSMA)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Dominic LeBlanc (President of the King's Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy). Balance: Independently confirmed: Statistics Canada reports Canada's full-year 2025 merchandise (goods) trade deficit with the world at CAD 31.3 billion — the largest since 2020 (excluding the pandemic), a third consecutive annual deficit. Secondary coverage (Canadian Mortgage Trends: 'widest on record excluding pandemic'; Statista) corroborates. The USD -22.4B figure is a derived conversion at the ~0.7158",
+      "gaps": []
+    },
+    {
+      "country": "China",
+      "flag_file": "assets/flags/china.png",
+      "gdp_usd_b": 19399.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 1190.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.npr.org/2026/01/14/nx-s1-5677029/chinas-trade-surplus-surges-1-2-trillion-trump-tariffs",
+      "us_exports_usd_b": 106.3,
+      "us_imports_usd_b": 308.4,
+      "us_bilateral_usd_b": -202.1,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Li Lecheng",
+          "title": "Minister of Industry and Information Technology",
+          "ministry": "Ministry of Industry and Information Technology (MIIT)",
+          "assumed_office": "2025-04-30",
+          "bio": "Li Lecheng (born 27 March 1965), a mechanical-engineering graduate of Huazhong University of Science and Technology, began his career at the Shayang Machinery Factory in Hubei. He held provincial economic-planning and city-leadership posts, including director of Hubei's Development and Reform Commission, party secretary of Xiangyang, executive vice governor of Hubei, and Governor of Liaoning (2021-2025). He became MIIT party secretary in February 2025 and was appointed Minister on 30 April 2025, replacing Jin Zhuanglong. MIIT leads China's telecommunications, IT, industrial digital transformation and digital-economy policy.",
+          "source_url": "https://www.chinadaily.com.cn/a/202504/30/WS68120fb7a310a04af22bd237.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Lead ministry official for industry, telecommunications, digitalization and the digital economy",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Wang Wentao",
+          "title": "Minister of Commerce",
+          "ministry": "Ministry of Commerce (MOFCOM)",
+          "assumed_office": "2020-12-26",
+          "bio": "Wang Wentao (born May 1964) has served as China's Minister of Commerce since December 2020. Trained in management, he built his career largely in Shanghai municipal government and later Jiangxi province, serving as mayor of Nanchang before rising to Governor of Heilongjiang province (2018-2020) and then moving to MOFCOM. As Commerce Minister he leads China's overall trade, investment and market-access policy. In 2026 he co-chaired the first China-EU Trade and Investment Consultations with EU Commissioner Maros Sefcovic and remained MOFCOM's senior figure through mid-2026.",
+          "source_url": "https://english.mofcom.gov.cn/News/PressConference/art/2026/art_af9691957bef4456be63899a4966e416.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister responsible for commerce and foreign trade",
+          "is_primary": true
+        },
+        {
+          "name": "Li Chenggang",
+          "title": "China International Trade Representative (full ministerial rank) and Vice Minister of Commerce",
+          "ministry": "Ministry of Commerce (MOFCOM)",
+          "assumed_office": "2025-04-16",
+          "bio": "Li Chenggang (born February 1967, Taihu County, Anhui) is a Peking University-trained lawyer with a master's in law and economics from the University of Hamburg. A career MOFCOM official, he headed the Department of Treaty and Law, served as vice mayor of Qingdao, became Assistant Minister of Commerce in 2016, and from February 2021 was China's Ambassador and Permanent Representative to the WTO in Geneva. On 16 April 2025 the State Council appointed him China International Trade Representative (full ministerial rank) and Vice Minister of Commerce, replacing Wang Shouwen, making him Beijing's chief trade negotiator.",
+          "source_url": "https://en.wikipedia.org/wiki/Li_Chenggang",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / trade representative (portfolio split: dedicated external-trade negotiator alongside the Commerce Minister)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "Commerce Minister Wang Wentao leads MOFCOM; Li Chenggang is the full-rank China International Trade Representative (chief negotiator).",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Li Chenggang (China International Trade Representative (full ministerial rank) and Vice Minister of Commerce). Balance: Independently re-confirmed against multiple current sources. China's 2025 full-year merchandise (goods) trade SURPLUS was a record ~US$1.19 trillion (positive = surplus), up ~20% from 2024. Derived from exports of US$3.77 trillion (+5.5%) minus imports of US$2.58 trillion (flat): 3.77T - 2.58T = ~1.19T. Widely rounded to 'almost $1.2 trillion' in press (NPR, CNN, Euronews, ABC). Goods-only customs",
+      "gaps": []
+    },
+    {
+      "country": "France",
+      "flag_file": "assets/flags/france.png",
+      "gdp_usd_b": 3362.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -76.1,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.douane.gouv.fr/sites/default/files/2026-02/09/chiffre-comex-Analyse-Annuelle-2025.pdf",
+      "us_exports_usd_b": 44.4,
+      "us_imports_usd_b": 61.1,
+      "us_bilateral_usd_b": -16.7,
+      "us_trade_year": "2024",
+      "us_trade_confidence": "low",
+      "digital_ministers": [
+        {
+          "name": "Anne Le Hénanff",
+          "title": "Minister Delegate for Artificial Intelligence and Digital Affairs",
+          "ministry": "Ministry for the Economy, Finance and Industrial, Energy and Digital Sovereignty (attached to Minister Roland Lescure)",
+          "assumed_office": "2026-02-26",
+          "bio": "Anne Le Hénanff (born 22 July 1969 in Vannes) is a Horizons-party politician and, since the Lecornu II government, France's Minister Delegate for Artificial Intelligence and Digital Affairs, attached to the Economy ministry. With a background in cybersecurity (she held a cyber chair at Université Bretagne-Sud), she was a deputy mayor of Vannes for digital affairs and was elected deputy for Morbihan's 1st constituency in 2022, re-elected in 2024, sitting on the Defence Committee. She succeeded Clara Chappaz in the digital portfolio.",
+          "source_url": "https://www.info.gouv.fr/personnalite/anne-le-henanff",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / AI / technology portfolio",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Nicolas Forissier",
+          "title": "Minister Delegate for Foreign Trade and Attractiveness",
+          "ministry": "Ministry for Europe and Foreign Affairs (Minister Delegate attached to the Minister for Europe and Foreign Affairs)",
+          "assumed_office": "2025-10-12",
+          "bio": "Nicolas Forissier (born 17 February 1961) is a Les Républicains politician and, since October 2025 (retained in the Lecornu II government), France's Minister Delegate for Foreign Trade and Attractiveness, attached to the Minister for Europe and Foreign Affairs. A Sciences Po Paris graduate with a Sorbonne history degree, he was mayor of La Châtre (1995-2017) and has represented Indre's 2nd constituency in the National Assembly across several terms since 1993. He earlier served as Secretary of State for Agriculture (2004-2005).",
+          "source_url": "https://www.info.gouv.fr/personnalite/nicolas-forissier",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Foreign trade (external trade / commerce extérieur)",
+          "is_primary": true
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Needs check",
+      "source_notes": "Balance: CONFIRMED. Official headline is a GOODS deficit of -EUR 69.2 billion for full-year 2025 (FAB/FAB customs basis), an improvement of ~EUR 10bn vs 2024. Exports +2.5% to EUR 614.7bn (led by aeronautics); imports +0.7% to EUR 703.6bn amid lower energy prices. The -USD 76.1bn shown is an approximate conversion of -EUR 69.2bn at ~1.10 EUR/USD (2025 avg); the authoritative figure is in euros. Goods-only ",
+      "gaps": [
+        "U.S. bilateral goods figures low-confidence (EU member without standalone USTR fact sheet)."
+      ]
+    },
+    {
+      "country": "Germany",
+      "flag_file": "assets/flags/germany.png",
+      "gdp_usd_b": 5014.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 226.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.destatis.de/EN/Press/2026/02/PE26_042_51.html",
+      "us_exports_usd_b": 82.7,
+      "us_imports_usd_b": 159.0,
+      "us_bilateral_usd_b": -76.3,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "medium",
+      "digital_ministers": [
+        {
+          "name": "Karsten Wildberger",
+          "title": "Federal Minister for Digital Transformation and Government Modernisation",
+          "ministry": "Federal Ministry for Digital Transformation and Government Modernisation (BMDS)",
+          "assumed_office": "2025-05-06",
+          "bio": "Karsten Wildberger (born 5 September 1969, Gießen) holds a doctorate in solid-state physics from RWTH Aachen and an INSEAD MBA. After Boston Consulting Group he held senior roles at T-Mobile, Vodafone and Telstra, sat on E.ON's management board (2016-2021), then led Ceconomy AG (parent of MediaMarktSaturn) from 2021 to 2025. On 6 May 2025 he became Germany's first federal digital minister under Chancellor Friedrich Merz, heading a new ministry consolidating digital responsibilities previously spread across several ministries.",
+          "source_url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett/2342876-2342876",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital / technology portfolio lead",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Katherina Reiche",
+          "title": "Federal Minister for Economic Affairs and Energy",
+          "ministry": "Federal Ministry for Economic Affairs and Energy (BMWE)",
+          "assumed_office": "2025-05-06",
+          "bio": "Katherina Reiche (born 16 July 1973, Luckenwalde) is a CDU politician and former energy executive, a trained chemist. She was a Bundestag member 1998-2015, including deputy chair of the CDU/CSU parliamentary group and parliamentary state secretary roles. She then led the municipal-utilities association VKU (2015-2019) and chaired the board of E.ON subsidiary Westenergie AG (2020-2025). On 6 May 2025 she became Federal Minister for Economic Affairs and Energy in Chancellor Merz's cabinet; her ministry sets Germany's national foreign-trade-policy positions.",
+          "source_url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett/katherina-reiche-2342740",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "National minister responsible for foreign/external trade policy",
+          "is_primary": true
+        },
+        {
+          "name": "Maroš Šefčovič",
+          "title": "European Commissioner for Trade and Economic Security",
+          "ministry": "European Commission (DG Trade)",
+          "assumed_office": "2024-12-01",
+          "bio": "Maroš Šefčovič (born 24 July 1966, Slovakia) is a veteran Slovak diplomat and long-serving European commissioner. Since December 2024 he has been European Commissioner for Trade and Economic Security in the second von der Leyen Commission (2024-2029), directing EU trade negotiations with partners such as the US, China and India, and also holding the interinstitutional relations and transparency portfolio. Because common commercial policy is an exclusive EU competence, he negotiates trade agreements on behalf of all member states, including Germany.",
+          "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "EU-level trade negotiator (Germany's trade competence exercised at EU level)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Maroš Šefčovič (European Commissioner for Trade and Economic Security). Balance: Independently confirmed via Destatis. Germany's full-year 2025 merchandise (goods) foreign-trade balance was an export SURPLUS of EUR 200.4 billion (exports EUR 1,562.9bn; imports EUR 1,362.5bn), published 6 Feb 2026. Positive = surplus. Exports +0.9%, imports +4.3% y/y; surplus fell from EUR 242.9bn in 2024. Destatis publishes only EUR; the ~226bn USD figure is an approximate conversion at ~1.13 ",
+      "gaps": [
+        "U.S. bilateral goods figures medium-confidence (EU member without standalone USTR fact sheet)."
+      ]
+    },
+    {
+      "country": "India",
+      "flag_file": "assets/flags/india.png",
+      "gdp_usd_b": 4125.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -333.2,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "FY 2025-26",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2252272&lang=1&reg=3",
+      "us_exports_usd_b": 45.6,
+      "us_imports_usd_b": 103.8,
+      "us_bilateral_usd_b": -58.2,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Ashwini Vaishnaw",
+          "title": "Union Minister of Electronics and Information Technology (concurrently Minister of Railways and Minister of Information & Broadcasting)",
+          "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+          "assumed_office": "2024-06-10",
+          "bio": "Ashwini Vaishnaw (born 18 July 1970), a 1994-batch former IAS officer of the Odisha cadre, holds engineering degrees from MBM Jodhpur and IIT Kanpur and an MBA from Wharton. After district-collector postings and corporate roles at GE Transportation and Siemens, he entered the Rajya Sabha from Odisha in 2019. He first took charge of Railways, IT and Communications in July 2021, and after the 2024 general election was assigned the Electronics & IT, Railways, and Information & Broadcasting portfolios. He leads flagship efforts including the India Semiconductor Mission and IndiaAI Mission.",
+          "source_url": "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet Minister for digital / IT / electronics / telecom portfolio",
+          "is_primary": true
+        },
+        {
+          "name": "Jitin Prasada",
+          "title": "Union Minister of State for Electronics and Information Technology (also Minister of State for Commerce and Industry)",
+          "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+          "assumed_office": "2024-06-10",
+          "bio": "Jitin Prasada (born 29 November 1973) is a Lok Sabha MP from Pilibhit, Uttar Pradesh, elected in 2024. A long-serving politician who was a Congress MP and union minister before joining the BJP in 2021, he became Minister of State in the Modi government after the 2024 election, holding junior-minister charge of both Electronics & IT (MeitY) and Commerce & Industry. In 2026 he championed initiatives such as the India Semiconductor Mission and IndiaAI Mission, including at the STPI Tech Summit 2026, advancing India's digital-economy agenda.",
+          "source_url": "https://stpi.in/en/know-your-minister/shri-jitin-prasada",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister of State for digital / IT / electronics portfolio",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Piyush Goyal",
+          "title": "Union Minister of Commerce and Industry",
+          "ministry": "Ministry of Commerce and Industry",
+          "assumed_office": "2019-05-31",
+          "bio": "Piyush Goyal (born 13 June 1964) is a chartered accountant and lawyer and a BJP parliamentarian, elected to the Lok Sabha from Mumbai North in 2024 after years in the Rajya Sabha from Maharashtra. He has served as Union Minister of Commerce and Industry since 2019 and leads India's overall trade policy and free-trade-agreement strategy, including the India-US bilateral trade talks, India-EU FTA, and pacts with the UK, Australia and EFTA. He has previously held the Railways, Power, and Textiles portfolios.",
+          "source_url": "https://en.wikipedia.org/wiki/Piyush_Goyal",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet Minister for commerce / foreign trade",
+          "is_primary": true
+        },
+        {
+          "name": "Rajesh Agrawal",
+          "title": "Commerce Secretary (Secretary, Department of Commerce) and India's Chief Negotiator for the India-US Bilateral Trade Agreement",
+          "ministry": "Ministry of Commerce and Industry, Department of Commerce",
+          "assumed_office": "2025-10-01",
+          "bio": "Rajesh Agrawal is a senior IAS officer who took charge as Commerce Secretary on 1 October 2025, having earlier served as Special Secretary and Additional Secretary in the Department of Commerce. In that role he has been India's chief negotiator for major trade deals, including the India-US Bilateral Trade Agreement, the Indo-Pacific Economic Framework, the India-Australia CECA, and the ASEAN FTA review. In July 2026 he said the India-US framework agreement's groundwork was complete and both sides were ready to sign, making him India's de facto lead trade negotiator.",
+          "source_url": "https://theprint.in/diplomacy/india-us-framework-trade-deal-ready-will-be-signed-at-right-time-says-commerce-secretary/2985216/",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / senior-most trade civil servant",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "Cabinet Minister Goyal leads Commerce & Industry; Commerce Secretary Agrawal is the senior civil servant and chief India-US negotiator.",
+      "row_confidence": "Verified",
+      "source_notes": "Digital/technology portfolio also held by: Jitin Prasada (Union Minister of State for Electronics and Information Technology (also Minister of State for Commerce and Industry)). Trade/commerce portfolio also held by: Rajesh Agrawal (Commerce Secretary (Secretary, Department of Commerce) and India's Chief Negotiator for the India-US Bilateral Trade Agreement). Balance: Independently confirmed via live search of PIB (PRID 2252272) and DD News on 2026-07-16. India's fiscal year runs April-March; latest full year is FY 2025-26. Merchandise exports US$441.78B, merchandise imports US$774.98B, yielding a goods-only trade deficit of US$333.19B (negative = deficit), up from US$283.50B in FY 2024-25. For reference the OVERALL (goods+services) deficit was ~US$119.30B (tot",
+      "gaps": [
+        "Overall balance uses fiscal year FY 2025-26, not calendar 2025."
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "flag_file": "assets/flags/indonesia.png",
+      "gdp_usd_b": 1443.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 41.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.bps.go.id/en/news/2026/01/05/836/indonesia-s-balance-of-trade-continues-to-record-a-surplus.html",
+      "us_exports_usd_b": 11.0,
+      "us_imports_usd_b": 34.7,
+      "us_bilateral_usd_b": -23.7,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Meutya Viada Hafid",
+          "title": "Minister of Communication and Digital Affairs",
+          "ministry": "Ministry of Communication and Digital Affairs (Kementerian Komunikasi dan Digital, 'Komdigi')",
+          "assumed_office": "2024-10-21",
+          "bio": "Meutya Viada Hafid (born 3 May 1978, Bandung) is an Indonesian former television journalist and Golkar politician who became Minister of Communication and Digital Affairs on 21 October 2024 in President Prabowo Subianto's Red and White Cabinet, the first woman to lead the ministry. A former Metro TV newscaster, she previously served multiple terms in the House of Representatives (DPR), chairing Commission I on defense, foreign affairs and information. As minister she has prioritized child protection online, combating online gambling and illegal lending, and digital-economy value retention.",
+          "source_url": "https://en.wikipedia.org/wiki/Meutya_Hafid",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / telecommunications / digitalization portfolio (lead)",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Budi Santoso",
+          "title": "Minister of Trade",
+          "ministry": "Ministry of Trade (Kementerian Perdagangan)",
+          "assumed_office": "2024-10-21",
+          "bio": "Budi Santoso (born 9 February 1968) is an Indonesian career civil servant and technocrat serving as Minister of Trade since October 2024 in President Prabowo Subianto's Red and White Cabinet. A long-serving Ministry of Trade official, he was Director General of Foreign Trade from 2022 to 2024 before his elevation to minister. He holds a bachelor's in communication science from Sebelas Maret University, a master's in administrative sciences from the University of Indonesia, and a doctorate from Sahid University. As minister he emphasizes expanding exports through trade agreements and manufacturing competitiveness.",
+          "source_url": "https://en.wikipedia.org/wiki/Budi_Santoso_(politician)",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Foreign trade / commerce minister",
+          "is_primary": true
+        },
+        {
+          "name": "Airlangga Hartarto",
+          "title": "Coordinating Minister for Economic Affairs",
+          "ministry": "Coordinating Ministry for Economic Affairs (Kementerian Koordinator Bidang Perekonomian)",
+          "assumed_office": "2019-10-23",
+          "bio": "Airlangga Hartarto (born 1 October 1962) is an Indonesian politician and businessman serving as Coordinating Minister for Economic Affairs, a post he has held since 2019 and retained in President Prabowo Subianto's cabinet. He has acted as Indonesia's chief negotiator in trade talks with the United States, leading discussions on the reciprocal-tariff framework. Previously Minister of Industry (2016-2019) and former chairman of the Golkar Party (2017-2024), he holds a mechanical-engineering degree from Gadjah Mada University and postgraduate business degrees from Monash and Melbourne universities.",
+          "source_url": "https://en.wikipedia.org/wiki/Airlangga_Hartarto",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / coordinating economic minister (external trade negotiations, incl. US tariff deal)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Airlangga Hartarto (Coordinating Minister for Economic Affairs). Balance: Full-year Jan-Dec 2025 merchandise (goods-only) trade surplus of USD 41.05 billion per BPS. Exports USD 282.91B (+6.15% y/y); imports USD 241.86B (+2.83% y/y). Non-oil/gas surplus ~USD 60.72B partly offset by oil/gas deficit ~USD 19.70B. Positive value = surplus. Independently re-verified against BPS primary English press page (now returns 200, not 403 as draft claimed) and multiple secondary outl",
+      "gaps": []
+    },
+    {
+      "country": "Italy",
+      "flag_file": "assets/flags/italy.png",
+      "gdp_usd_b": 2544.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 56.8,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.istat.it/en/press-release/foreign-trade-and-import-prices-december-2025/",
+      "us_exports_usd_b": 43.7,
+      "us_imports_usd_b": 78.7,
+      "us_bilateral_usd_b": -35.0,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "medium",
+      "digital_ministers": [
+        {
+          "name": "Alessio Butti",
+          "title": "Undersecretary of State to the Presidency of the Council of Ministers with responsibility for Technological Innovation",
+          "ministry": "Presidency of the Council of Ministers (Presidenza del Consiglio dei Ministri) - Department for Digital Transformation",
+          "assumed_office": "2022-11-02",
+          "bio": "Alessio Butti (born 1959) is an Italian politician of Fratelli d'Italia and a longtime senator and deputy who served as the party's head of media and telecommunications. In the Meloni government he holds the digital portfolio as Undersecretary of State to the Presidency of the Council with responsibility for Technological Innovation, inheriting functions of the former standalone Ministry for Technological Innovation and Digital Transition (held under Draghi by Vittorio Colao) that Meloni abolished. He oversees the Department for Digital Transformation, PNRR digital targets, digital identity (IT Wallet), cloud, AI and broadband.",
+          "source_url": "https://www.governo.it/en/governo/meloni/undersecretary-presidency-council-ministers/alessio-butti",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Government official responsible for digital economy / technological innovation / digitalization",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Antonio Tajani",
+          "title": "Deputy Prime Minister (Vice President of the Council of Ministers) and Minister of Foreign Affairs and International Cooperation",
+          "ministry": "Ministry of Foreign Affairs and International Cooperation (Ministero degli Affari Esteri e della Cooperazione Internazionale - MAECI / 'Farnesina')",
+          "assumed_office": "2022-10-22",
+          "bio": "Antonio Tajani (born 1953), a founder and national coordinator of Forza Italia, is a veteran EU figure: former European Commissioner for Transport and for Industry/Entrepreneurship and President of the European Parliament (2017-2019). Since October 2022 he has been Deputy Prime Minister and Foreign Minister in the Meloni government, where the Farnesina holds Italy's foreign-trade (commercio estero) and export-promotion competency, coordinating ITA/ICE, SACE, SIMEST and CDP. He remains active in 2026, meeting US Secretary Rubio and China's Wang Yi.",
+          "source_url": "https://www.governo.it/en/governo/meloni/minister/antonio-tajani",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for foreign trade / export promotion / internationalization (primary foreign-trade authority)",
+          "is_primary": true
+        },
+        {
+          "name": "Adolfo Urso",
+          "title": "Minister of Enterprises and Made in Italy",
+          "ministry": "Ministry of Enterprises and Made in Italy (Ministero delle Imprese e del Made in Italy - MIMIT)",
+          "assumed_office": "2022-10-22",
+          "bio": "Adolfo Urso (born 12 July 1957 in Padua), an Italian politician and journalist, is a longtime figure of the Italian right (AN, then Fratelli d'Italia) and served in the Chamber of Deputies (1994-2013). He was Deputy Minister of Economic Development responsible for Foreign Trade in the second and fourth Berlusconi governments. Since 22 October 2022 he has led the renamed Ministry of Enterprises and Made in Italy, covering industrial policy, business competitiveness, the telecommunications industry and promotion of Italian production, working alongside the Foreign Ministry on exports.",
+          "source_url": "https://www.governo.it/en/governo/meloni/minister/adolfo-urso",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for enterprises, industry, and domestic commerce (industrial/trade policy)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Adolfo Urso (Minister of Enterprises and Made in Italy). Balance: Independently confirmed via ISTAT December 2025 release: Italy's full-year 2025 goods (merchandise) trade balance was a surplus of +EUR 50,746 million, up from +EUR 48,287 million in 2024; exports +3.3% and imports +3.1% y/y. The ~USD 56.8bn figure is a rate-based conversion (EUR 50.746bn x ~1.12 average 2025 EUR/USD); no official USD figure is published. The authoritative native value is EUR 50.7",
+      "gaps": [
+        "U.S. bilateral goods figures medium-confidence (EU member without standalone USTR fact sheet)."
+      ]
+    },
+    {
+      "country": "Japan",
+      "flag_file": "assets/flags/japan.png",
+      "gdp_usd_b": 4280.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -17.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.nippon.com/en/japan-data/h02684/",
+      "us_exports_usd_b": 82.1,
+      "us_imports_usd_b": 146.0,
+      "us_bilateral_usd_b": -63.9,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Matsumoto Hisashi",
+          "title": "Minister for Digital Transformation",
+          "ministry": "Digital Agency (Cabinet)",
+          "assumed_office": "2025-10-21",
+          "bio": "Matsumoto Hisashi (born June 13, 1962) is a Liberal Democratic Party member of the House of Representatives for Chiba's 13th district, elected in 2021. A former emergency and trauma surgeon and specially appointed professor at Nippon Medical School, he was named Minister for Digital Transformation by Prime Minister Takaichi Sanae on October 21, 2025, and reappointed in the Second Takaichi cabinet on February 18, 2026. He concurrently serves as Minister in charge of Cybersecurity and holds administrative, fiscal and regulatory reform portfolios.",
+          "source_url": "https://www.digital.go.jp/en/about/member/matsumotohisashi",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / digitalization portfolio (cabinet minister heading the Digital Agency)",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Akazawa Ryosei",
+          "title": "Minister of Economy, Trade and Industry",
+          "ministry": "Ministry of Economy, Trade and Industry (METI)",
+          "assumed_office": "2025-10-21",
+          "bio": "Akazawa Ryosei is a Liberal Democratic Party member of the House of Representatives for Tottori's 2nd district, first elected in 2005. A University of Tokyo Law graduate with a Cornell MBA, he spent about two decades as an MLIT-lineage bureaucrat. Under PM Ishiba he was Minister for Economic Revitalization and Japan's chief negotiator in the 2025 US tariff talks. PM Takaichi appointed him METI Minister on October 21, 2025, reappointed February 18, 2026. He continues leading Japan-US tariff implementation, meeting US Treasury Secretary Bessent in May 2026.",
+          "source_url": "https://www.meti.go.jp/english/aboutmeti/profiles/individual/aMinister.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Primary trade/commerce authority + chief US tariff negotiator",
+          "is_primary": true
+        },
+        {
+          "name": "Motegi Toshimitsu",
+          "title": "Minister for Foreign Affairs",
+          "ministry": "Ministry of Foreign Affairs (MOFA)",
+          "assumed_office": "2025-10-21",
+          "bio": "Motegi Toshimitsu is a veteran LDP House of Representatives politician who previously served as Foreign Minister (2019-2021) and as METI Minister (2012-2014), and was Japan's lead negotiator on the earlier US-Japan Trade Agreement and CPTPP. In the Takaichi cabinet he returned as Minister for Foreign Affairs (appointed October 2025, reappointed February 18, 2026 in the Second Takaichi cabinet). MOFA handles trade diplomacy and FTAs; Motegi coordinates overall Japan-US economic and tariff negotiation affairs while METI Minister Akazawa conducts the negotiations.",
+          "source_url": "https://www.mofa.go.jp/about/hq/profile/motegi.html",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Overseer of external economic/US trade negotiations (foreign-affairs side)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Motegi Toshimitsu (Minister for Foreign Affairs). Balance: Independently confirmed by two sources. AP/Yahoo Finance and Nippon.com report Japan's full-year (calendar) 2025 merchandise (customs-basis, goods-only) trade deficit at about -2.65 to -2.7 trillion yen, the fifth consecutive annual deficit and ~53% narrower than 2024. AP states this equals about $17 billion USD; the draft's conversion at the 2025 average rate (149.66 JPY/USD) yields about -18 bil",
+      "gaps": []
+    },
+    {
+      "country": "Mexico",
+      "flag_file": "assets/flags/mexico.png",
+      "gdp_usd_b": 1830.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": 0.8,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://mexiconewsdaily.com/business/mexicos-2025-exports-trade-surplus/",
+      "us_exports_usd_b": 338.0,
+      "us_imports_usd_b": 534.9,
+      "us_bilateral_usd_b": -196.9,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "José Antonio Peña Merino",
+          "title": "Head of the Agency for Digital Transformation and Telecommunications",
+          "ministry": "Agencia de Transformación Digital y Telecomunicaciones (ATDT) - Office of the President (State-Secretariat rank)",
+          "assumed_office": "2024-10-01",
+          "bio": "José Antonio 'Pepe' Peña Merino is a political scientist and data specialist. He studied Political Science and International Relations at CIDE and earned a PhD in Political Science from New York University, specializing in political economy and quantitative methods. He co-founded Data Cívica and led Mexico City's Agencia Digital de Innovación Pública (ADIP) under then-Mayor Claudia Sheinbaum. Named by Sheinbaum to head the newly created cabinet-rank ATDT, which unifies federal digital, technology and telecommunications policy, he took office with her administration in October 2024 and remains in post.",
+          "source_url": "https://es.wikipedia.org/wiki/Agencia_de_Transformaci%C3%B3n_Digital_y_Telecomunicaciones",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Head of digital transformation / telecommunications (cabinet-rank digital lead)",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Marcelo Luis Ebrard Casaubón",
+          "title": "Secretary of Economy",
+          "ministry": "Secretaría de Economía",
+          "assumed_office": "2024-10-01",
+          "bio": "Marcelo Ebrard Casaubón (born 10 October 1959) is a veteran Mexican politician (Morena). He holds a degree in international relations from El Colegio de México and studied at France's École Nationale d'Administration. He was Head of Government of Mexico City 2006-2012 and Secretary of Foreign Affairs 2018-2023 under López Obrador. After losing Morena's 2024 presidential nomination to Claudia Sheinbaum, he was appointed Secretary of Economy, taking office 1 October 2024. He leads Mexico's trade policy, including the 2026 USMCA review and US tariff negotiations.",
+          "source_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/joint-statement-ambassador-jamieson-greer-and-mexican-secretary-economy-marcelo-ebrard",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister for trade/economy",
+          "is_primary": true
+        },
+        {
+          "name": "Luis Rosendo Gutiérrez Romano",
+          "title": "Undersecretary for Foreign Trade",
+          "ministry": "Secretaría de Economía",
+          "assumed_office": "2024-10-01",
+          "bio": "Luis Rosendo Gutiérrez Romano is Mexico's Undersecretary for Foreign Trade, the government's lead technical trade negotiator. He holds degrees in Economics and Political Science from ITAM, a master's in Economic Development from the London School of Economics, and a PhD in Government from the University of Essex. A close associate of Marcelo Ebrard, he was appointed to the Secretaría de Economía in October 2024 and leads tariff and trade-treaty negotiations with the US and others, including the T-MEC/USMCA review and trade diversification efforts.",
+          "source_url": "https://www.gob.mx/se/estructuras/luis-rosendo-gutierrez-romano",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / vice-minister for foreign trade",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Needs check",
+      "source_notes": "Trade/commerce portfolio also held by: Luis Rosendo Gutiérrez Romano (Undersecretary for Foreign Trade). Balance: Independently confirmed via a second source. Full-year 2025 (Jan-Dec): exports US$664.84B (+7.6%, record), imports US$664.07B (+4.4%), yielding a small merchandise trade SURPLUS of ~US$771 million. Goods-only (merchandise). Reverses four consecutive deficit years (2024 deficit ~US$18.5B); Mexico News Daily frames it as the first trade surplus since 2020. INEGI figure is preliminary and subject to ",
+      "gaps": [
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision)."
+      ]
+    },
+    {
+      "country": "Poland",
+      "flag_file": "assets/flags/poland.png",
+      "gdp_usd_b": 1040.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": -8.7,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://wbj.pl/pie-77-billion-trade-deficit-in-2025-imports-grew-faster-than-exports/post/148928",
+      "us_exports_usd_b": 14.1,
+      "us_imports_usd_b": 14.5,
+      "us_bilateral_usd_b": -0.4,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "medium",
+      "digital_ministers": [
+        {
+          "name": "Krzysztof Gawkowski",
+          "title": "Deputy Prime Minister and Minister of Digital Affairs",
+          "ministry": "Ministry of Digital Affairs (Ministerstwo Cyfryzacji)",
+          "assumed_office": "2023-12-13",
+          "bio": "Krzysztof Gawkowski (b. 1980) is a Polish political scientist and New Left (Nowa Lewica) politician, serving as the party's deputy chairman. A member of the Sejm since 2019 and former leader of the Left parliamentary caucus, he became Deputy Prime Minister and Minister of Digital Affairs in Donald Tusk's cabinet on 13 December 2023 and remains in the role in 2026. He oversees digitalization, cybersecurity, telecommunications and AI policy, chairing telecom sessions during Poland's 2025 EU Council presidency, and has authored works on cybersecurity and public administration.",
+          "source_url": "https://www.gov.pl/web/primeminister/krzysztof-gawkowski",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / technology / telecommunications / digitalization portfolio lead",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Andrzej Domański",
+          "title": "Minister of Finance and Economy",
+          "ministry": "Ministry of Finance and Economy (Ministerstwo Finansow i Gospodarki)",
+          "assumed_office": "2023-12-13",
+          "bio": "Andrzej Domanski (b. 1981, Krakow) is a Polish economist and Civic Coalition (KO) politician. A graduate in economics, he worked as an analyst, fund manager and investment director in financial institutions before entering the Sejm. He became Minister of Finance on 13 December 2023. After Prime Minister Tusk's July 2025 reshuffle merged the finance ministry with the dissolved Ministry of Development and Technology into a single economic super-ministry, he now heads it as Minister of Finance and Economy, directing fiscal, economic and trade-related policy. In 2026 he publicly ruled out near-term euro adoption.",
+          "source_url": "https://www.gov.pl/web/finance/andrzej-domanski",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Senior minister responsible for economy and trade policy",
+          "is_primary": true
+        },
+        {
+          "name": "Michał Baranowski",
+          "title": "Undersecretary of State (Deputy Minister) responsible for trade and economic security",
+          "ministry": "Ministry of Finance and Economy (profile still hosted under the former Ministry of Economic Development and Technology, since merged)",
+          "assumed_office": "2024-12-30",
+          "bio": "Michal Baranowski is a Polish think-tank expert and policy specialist educated at Mercer University, Oxford and Maastricht. He spent nearly two decades at the German Marshall Fund of the United States, founding its Warsaw office in 2011 and later leading GMF East, specializing in transatlantic relations, trade and security. On 30 December 2024 he was appointed Undersecretary of State (deputy minister) responsible for trade. He represents Poland at the EU Foreign Affairs Council (Trade), chaired trade sessions during Poland's 2025 EU Council presidency, and in July 2026 championed the EU-India FTA as a 'huge deal' for Polish business.",
+          "source_url": "https://www.gov.pl/web/development-technology/michal-baranowski",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade official / de facto trade representative (Deputy Minister for trade)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Needs check",
+      "source_notes": "Trade/commerce portfolio also held by: Michał Baranowski (Undersecretary of State (Deputy Minister) responsible for trade and economic security). Balance: Poland ran a full-year 2025 merchandise (goods) trade DEFICIT, its first in two years, reversing a 2024 surplus. PIE (Polish Economic Institute) puts the 2025 deficit at EUR 7.7 billion (exports +~4%, imports +over 6%, driven by domestic demand and rising imports from China). Converted at 2025 avg EUR/USD ~1.13 => approx -USD 8.7 bn. SOURCING CORRECTION vs draft: the EUR 7.7bn headline is PIE's fi",
+      "gaps": [
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision).",
+        "U.S. bilateral goods figures medium-confidence (EU member without standalone USTR fact sheet)."
+      ]
+    },
+    {
+      "country": "Russia",
+      "flag_file": "assets/flags/russia.png",
+      "gdp_usd_b": 2541.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 139.3,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://interfax.com/newsroom/top-stories/116055/",
+      "us_exports_usd_b": 0.6,
+      "us_imports_usd_b": 3.8,
+      "us_bilateral_usd_b": -3.2,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Maksut Shadayev",
+          "title": "Minister of Digital Development, Communications and Mass Media of the Russian Federation",
+          "ministry": "Ministry of Digital Development, Communications and Mass Media (Mintsifry)",
+          "assumed_office": "2020-01-21",
+          "bio": "Maksut Igorevich Shadayev (born 11 November 1979) has led Russia's digital ministry since 21 January 2020 and was reappointed on 14 May 2024. Trained at the Russian State Social University, he built his career in ICT and public administration: department director at the communications ministry, aide to Sergey Naryshkin, IT minister of Moscow Oblast (2014-2018), then Rostelecom vice-president. He oversees state digitalization, telecommunications, mass media and internet regulation, including 2026 measures targeting VPNs and rural internet expansion.",
+          "source_url": "https://en.wikipedia.org/wiki/Maksut_Shadayev",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for digital economy / technology / telecommunications",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Maxim Reshetnikov",
+          "title": "Minister of Economic Development of the Russian Federation",
+          "ministry": "Ministry of Economic Development (Minekonomrazvitiya)",
+          "assumed_office": "2020-01-21",
+          "bio": "Maxim Gennadyevich Reshetnikov (born 11 July 1979) has served as Minister of Economic Development since 21 January 2020 and was reappointed in May 2024. His ministry directs macroeconomic policy plus foreign economic activity, international trade negotiations and export promotion. A Perm State University economics graduate, he headed Moscow's economic-policy department (2012-2017) and governed Perm Krai (2017-2020). He remains active internationally, holding meetings with President Putin and describing Russia's economy as balanced despite global uncertainty in mid-2026.",
+          "source_url": "https://en.economy.gov.ru/material/structure/minister/",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister for foreign economic activity / international trade policy and negotiations",
+          "is_primary": true
+        },
+        {
+          "name": "Anton Alikhanov",
+          "title": "Minister of Industry and Trade of the Russian Federation",
+          "ministry": "Ministry of Industry and Trade (Minpromtorg)",
+          "assumed_office": "2024-05-14",
+          "bio": "Anton Andreyevich Alikhanov (born 17 September 1986, Sukhumi) has been Minister of Industry and Trade since 14 May 2024. Minpromtorg oversees industrial policy, domestic and foreign trade in goods, export support and import substitution. Previously governor of Kaliningrad Oblast (2016-2024), he earlier worked in the federal industry-and-trade and justice ministries. Holding degrees in finance and law, he represents Russia in bilateral trade and industrial talks, most recently a series of bilateral meetings at the INNOPROM 2026 industrial fair in July 2026.",
+          "source_url": "http://government.ru/en/persons/503/",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister for industry and trade (domestic/foreign trade in goods, export support)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Anton Alikhanov (Minister of Industry and Trade of the Russian Federation). Balance: Full-year 2025 merchandise (goods) trade surplus of +$139.3 billion, down 8.17% year-on-year (2024 was $151.7bn). Goods exports $418.3bn (-3.7%), goods imports $279.0bn (-1.4%), total turnover $697.3bn (-2.8%). FTS customs/goods basis, released 10 Feb 2026. Independently cross-checked against TASS (tass.com/economy/2084701) and Xinhua (english.news.cn/20260211), both citing the identical $139.3bn ",
+      "gaps": []
+    },
+    {
+      "country": "Saudi Arabia",
+      "flag_file": "assets/flags/saudi-arabia.png",
+      "gdp_usd_b": 1277.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "low",
+      "overall_balance_usd_b": 59.9,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Needs check",
+      "overall_balance_url": "https://www.stats.gov.sa/en/w/news/168",
+      "us_exports_usd_b": 14.1,
+      "us_imports_usd_b": 10.5,
+      "us_bilateral_usd_b": 3.6,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Abdullah bin Amer Alswaha",
+          "title": "Minister of Communications and Information Technology",
+          "ministry": "Ministry of Communications and Information Technology (MCIT)",
+          "assumed_office": "2017-04-24",
+          "bio": "Abdullah bin Amer Alswaha, a Saudi engineer, has been Minister of Communications and Information Technology since 24 April 2017 and remains in office in 2026 (the ministry publicly welcomed the 2026 budget under his name). He holds electrical-engineering and computer-science degrees from KFUPM and the University of Washington plus Harvard executive education. Before government he led Cisco Saudi Arabia as managing director, then served as the Kingdom's Chief Digital Officer. As minister he drives Saudi Arabia's digital transformation and AI agenda under Vision 2030 and chairs related technology and space bodies.",
+          "source_url": "https://mcit.gov.sa/en/minister-mcit",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / ICT / telecommunications portfolio (lead cabinet minister)",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Majid bin Abdullah Al-Qasabi",
+          "title": "Minister of Commerce",
+          "ministry": "Ministry of Commerce",
+          "assumed_office": "2016-05-07",
+          "bio": "Majid bin Abdullah Al-Qasabi has been Saudi Arabia's Minister of Commerce since May 2016 (renamed from Commerce and Investment in 2020) and remains in office in 2026, active in GCC commerce meetings. He concurrently chairs the board of the General Authority for Foreign Trade, which handles WTO representation and trade negotiations. Holding a US doctorate in industrial engineering, he previously led the King Khalid Foundation and served as acting Minister of Media (2020-2023). He is central to Vision 2030 regulatory reforms, overseeing domestic commerce, consumer protection and foreign-trade policy.",
+          "source_url": "https://mc.gov.sa/en/About/CVs-Ministry-officials/Pages/Minister.aspx",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Foreign trade / commerce (lead cabinet minister; also chairs the foreign-trade authority board)",
+          "is_primary": true
+        },
+        {
+          "name": "Mohammed bin Abdulaziz Al-Abduljabbar",
+          "title": "Acting Governor, General Authority for Foreign Trade (GAFT)",
+          "ministry": "General Authority for Foreign Trade (GAFT)",
+          "assumed_office": "",
+          "bio": "Mohammed bin Abdulaziz Al-Abduljabbar serves as Acting Governor of the General Authority for Foreign Trade (GAFT), the operational chief of Saudi Arabia's foreign-trade authority. GAFT, established 2019, represents the Kingdom at the WTO, supervises the Saudi negotiating team and leads free-trade-agreement and bilateral/regional trade negotiations; its board is chaired by the Minister of Commerce, Majid Al-Qasabi. Founding governor Abdulrahman Al-Harbi (royal order, March 2019) left in 2022 to become Ambassador to China. Al-Abduljabbar appears in an acting capacity in GAFT's own 2025-2026 communications rather than as a confirmed permanent governor.",
+          "source_url": "https://x.com/gaft_sa/status/1975121378769871186",
+          "as_of": "2026-07-16",
+          "confidence": "Vacant / acting",
+          "is_acting": true,
+          "role_label": "Chief trade negotiator / WTO & FTA lead (operational head of the foreign-trade authority)",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Vacant / acting",
+      "source_notes": "Trade/commerce portfolio also held by: Mohammed bin Abdulaziz Al-Abduljabbar (Acting Governor, General Authority for Foreign Trade (GAFT)). Balance: INDEPENDENTLY RE-VERIFIED. Full-year 2025 merchandise (goods) trade SURPLUS is DERIVED by summing GASTAT quarterly surpluses, each now confirmed from fresh sources: Q1 2025 'surpasses SAR63bn' (+52%, SPA N2346002); Q2 2025 ~SAR43.1bn (computed from GASTAT's reported 56.2% YoY decline vs Q2 2024's SAR98.368bn); Q3 2025 SAR66.1bn (exports SAR303.3bn / imports SAR237.2bn); Q4 2025 SAR52.4bn (+26% YoY",
+      "gaps": [
+        "Acting/interim official: Mohammed bin Abdulaziz Al-Abduljabbar — Acting Governor, General Authority for Foreign Trade (GAFT)",
+        "Overall trade balance (goods-only, 2025) flagged 'Needs check'.",
+        "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision)."
+      ]
+    },
+    {
+      "country": "South Korea",
+      "flag_file": "assets/flags/south-korea.png",
+      "gdp_usd_b": 1859.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": 78.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2470/view",
+      "us_exports_usd_b": 68.8,
+      "us_imports_usd_b": 125.2,
+      "us_bilateral_usd_b": -56.4,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Bae Kyung-hoon",
+          "title": "Deputy Prime Minister and Minister of Science and ICT",
+          "ministry": "Ministry of Science and ICT (MSIT)",
+          "assumed_office": "2025-07-16",
+          "bio": "Bae Kyung-hoon is an AI specialist who holds a PhD in computer vision (Kwangwoon University, 2006) and led LG AI Research, where he developed the Exaone large language model. President Lee Jae-myung appointed him Minister of Science and ICT on 16 July 2025; the post was later elevated to Deputy Prime Minister rank. He also serves as standing vice chairman of the National AI Strategy Committee and pursues Lee's goal of making Korea a top-three global AI power with record R&D budgets and a large GPU buildout.",
+          "source_url": "https://en.wikipedia.org/wiki/Bae_Kyung-hoon",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Digital economy / AI / science & ICT lead (cabinet)",
+          "is_primary": true
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Kim Jung-kwan",
+          "title": "Minister of Trade, Industry and Resources",
+          "ministry": "Ministry of Trade, Industry and Resources (MOTIR)",
+          "assumed_office": "2025-07",
+          "bio": "Kim Jung-kwan (born 1968) studied economics at Seoul National University and earned a master's and doctorate from the University of Missouri. A career finance technocrat, he served at the Ministry of Economy and Finance, the Bank of Korea and the World Bank before moving to industry, including senior roles and the presidency at Doosan Enerbility. Nominated by President Lee in June 2025, he took office in July 2025 leading the ministry, renamed MOTIR after energy functions moved to the new Ministry of Climate, Energy and Environment.",
+          "source_url": "https://en.wikipedia.org/wiki/Kim_Jung-kwan_(politician)",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Commerce / industry / trade cabinet minister",
+          "is_primary": true
+        },
+        {
+          "name": "Yeo Han-koo",
+          "title": "Minister for Trade (Head of the Office of Trade Negotiations)",
+          "ministry": "Ministry of Trade, Industry and Resources (MOTIR)",
+          "assumed_office": "2025-06",
+          "bio": "Yeo Han-koo is a veteran trade negotiator with nearly three decades of public service who previously served as Korea's chief trade negotiator in 2021-2022 and, before returning to government, was a senior fellow at the Peterson Institute for International Economics. He has led negotiations for RCEP and free-trade agreements with the UK, Central America, Indonesia and the Philippines. Appointed Minister for Trade in mid-2025 under President Lee, he heads MOTIR's Office of Trade Negotiations and leads tariff talks with the United States while weighing Korea's CPTPP accession.",
+          "source_url": "https://en.wikipedia.org/wiki/Yeo_Han-koo",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / trade representative",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Trade/commerce portfolio also held by: Yeo Han-koo (Minister for Trade (Head of the Office of Trade Negotiations)). Balance: Independently confirmed via live search 2026-07-16. Full-year 2025 merchandise (customs-clearance) figures: exports USD 709.7bn (+3.8% y/y, first-ever above USD 700bn, record high) and imports USD 631.7bn (-0.02% y/y, essentially flat). Goods trade surplus = USD 78.0bn, up USD 26.2bn y/y. Semiconductors hit an all-time high of USD 173.4bn (+22.2%). MOTIR press release and Korea Herald ($700b miles",
+      "gaps": []
+    },
+    {
+      "country": "Türkiye",
+      "flag_file": "assets/flags/turkiye.png",
+      "gdp_usd_b": 1565.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -92.0,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.turkiyetoday.com/business/turkiyes-foreign-trade-deficit-widens-to-over-92b-in-2025-3212367",
+      "us_exports_usd_b": 20.4,
+      "us_imports_usd_b": 16.4,
+      "us_bilateral_usd_b": 4.0,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Mehmet Fatih Kacır",
+          "title": "Minister of Industry and Technology",
+          "ministry": "Ministry of Industry and Technology (Sanayi ve Teknoloji Bakanlığı)",
+          "assumed_office": "2023-06-03",
+          "bio": "Mehmet Fatih Kacır (born 16 October 1984) became Minister of Industry and Technology on 3 June 2023, having previously served as a deputy minister in the same ministry. An industrial engineering graduate of Boğaziçi University (2008), he co-founded and chaired the T3 Foundation until 2018 and helped launch TEKNOFEST and the DENEYAP technology workshops. In 2026 he leads Türkiye's technology and AI agenda, including the multibillion-dollar HIT-30 High Technology Investment Programme, presented internationally, and national AI initiatives.",
+          "source_url": "https://en.wikipedia.org/wiki/Mehmet_Fatih_Kac%C4%B1r",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Technology / AI / digital-industry policy minister",
+          "is_primary": true
+        },
+        {
+          "name": "Ümit Önal",
+          "title": "Head of the Cybersecurity Presidency",
+          "ministry": "Cybersecurity Presidency (Siber Güvenlik Başkanlığı), affiliated with the Presidency of the Republic of Türkiye",
+          "assumed_office": "2025-10-24",
+          "bio": "Ümit Önal was appointed Türkiye's first head of the new Cybersecurity Presidency by presidential decree published on 24 October 2025. An Istanbul University Faculty of Communication graduate, he built his career in telecommunications and served as CEO of Türk Telekom from 2019 until this appointment. The Cybersecurity Presidency, created in early 2025, absorbed the abolished Digital Transformation Office and later gained digital-state and public-AI functions, making Önal the figure closest to a central digital-state coordinator. He remained in the role in 2026, speaking at an Ankara summit in April 2026.",
+          "source_url": "https://www.dailysabah.com/politics/president-erdogan-names-head-of-turkiyes-cybersecurity-directorate/news",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Central cybersecurity / digital-state / public-AI coordinator",
+          "is_primary": false
+        },
+        {
+          "name": "Abdulkadir Uraloğlu",
+          "title": "Minister of Transport and Infrastructure",
+          "ministry": "Ministry of Transport and Infrastructure (Ulaştırma ve Altyapı Bakanlığı)",
+          "assumed_office": "2023-06-03",
+          "bio": "Abdulkadir Uraloğlu has served as Minister of Transport and Infrastructure since 3 June 2023, the ministry governing telecommunications, mobile networks and national fiber infrastructure. A civil engineer, he was previously a senior transport-ministry bureaucrat, including director-general of highways. In 2026 he oversaw Türkiye's 5G launch (ceremony 31 March 2026, services from 1 April across all 81 provinces, ~29 million subscribers within days) and continued fiber expansion, and in June 2026 announced that 6G preparation work had begun.",
+          "source_url": "https://www.aa.com.tr/en/science-technology/turkiye-moves-into-5g-era-as-officials-say-technology-to-drive-digital-transformation/3886838",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Telecommunications / digital-infrastructure minister",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Ömer Bolat",
+          "title": "Minister of Trade",
+          "ministry": "Ministry of Trade (Ticaret Bakanlığı)",
+          "assumed_office": "2023-06-03",
+          "bio": "Prof. Dr. Ömer Bolat (born 30 August 1963, Istanbul) has been Minister of Trade since the cabinet formed after Türkiye's May 2023 elections. He graduated from Marmara University's Faculty of Economics and Administrative Sciences in international economic relations, becoming associate professor in 2014 and professor in 2019. Before politics he was General Coordinator/CEO of the Albayrak Group for about 23 years and chaired the MÜSİAD business association. As minister he directs export strategy, customs, FTA negotiations and WTO representation, and has led trade talks with the United States.",
+          "source_url": "https://www.tccb.gov.tr/en/cabinet/minister-of-trade",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister responsible for foreign and domestic trade (sole top trade official; no separate USTR-equivalent)",
+          "is_primary": true
+        }
+      ],
+      "div_note_digital": "No standalone digital ministry: cybersecurity (Önal, Cybersecurity Presidency) and telecom/digital infrastructure (Uraloğlu, Transport & Infrastructure) sit outside the Industry & Technology Ministry.",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Digital/technology portfolio also held by: Ümit Önal (Head of the Cybersecurity Presidency); Abdulkadir Uraloğlu (Minister of Transport and Infrastructure). Balance: Independently confirmed: full-year 2025 (Jan-Dec) exports USD 273.36B (+4.4% y/y), imports USD 365.37B (+6.2% y/y), giving a goods-only (merchandise, general trade system) deficit of ~USD 92.0B, widening ~11.9% vs 2024. Verified via three independent outlets citing the same TurkStat release: Türkiye Today, Daily Sabah ('deficit expands by nearly 12%'), and TradeInt ('USD 92B deficit on record'). T",
+      "gaps": []
+    },
+    {
+      "country": "United Kingdom",
+      "flag_file": "assets/flags/united-kingdom.png",
+      "gdp_usd_b": 3959.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "high",
+      "overall_balance_usd_b": -319.2,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/december2025",
+      "us_exports_usd_b": 97.0,
+      "us_imports_usd_b": 64.8,
+      "us_bilateral_usd_b": 32.2,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "high",
+      "digital_ministers": [
+        {
+          "name": "Liz Kendall",
+          "title": "Secretary of State for Science, Innovation and Technology",
+          "ministry": "Department for Science, Innovation and Technology (DSIT)",
+          "assumed_office": "2025-09-05",
+          "bio": "Liz Kendall is the Labour MP for Leicester West, first elected in 2010. She contested the 2015 Labour leadership election and held several shadow ministerial roles. After Labour's 2024 general election win she served as Secretary of State for Work and Pensions (July 2024 to September 2025). In Keir Starmer's September 2025 reshuffle she was appointed Secretary of State for Science, Innovation and Technology, succeeding Peter Kyle, taking charge of the UK's digital, technology, science, telecoms and AI-policy portfolio. She remains in post as of July 2026.",
+          "source_url": "https://www.gov.uk/government/ministers/secretary-of-state-for-science-innovation-and-technology",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister for technology / digital economy (portfolio head)",
+          "is_primary": true
+        },
+        {
+          "name": "Ian Murray",
+          "title": "Minister of State (Minister for Digital Government and Data)",
+          "ministry": "Jointly Department for Science, Innovation and Technology (DSIT) and Department for Culture, Media and Sport (DCMS)",
+          "assumed_office": "2025-09-06",
+          "bio": "Ian Murray is the Labour MP for Edinburgh South, elected in 2010, and was famously the only Scottish Labour MP from 2015 to 2017. He served as Secretary of State for Scotland from July 2024 until the September 2025 reshuffle. On 6 September 2025 he was appointed Minister of State for Digital Government and Data, a joint DSIT/DCMS role covering digital identity, digital public services, data policy and public-sector digital reform. He remained active in the role into 2026, including a April 2026 statement on UK Biobank data.",
+          "source_url": "https://www.gov.uk/government/ministers/minister-of-state-minister-for-digital-government-and-data",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Junior minister for digital government and data",
+          "is_primary": false
+        },
+        {
+          "name": "Kanishka Narayan",
+          "title": "Parliamentary Under-Secretary of State (Minister for AI and Online Safety)",
+          "ministry": "Department for Science, Innovation and Technology (DSIT)",
+          "assumed_office": "2025-09-07",
+          "bio": "Kanishka Narayan is the Labour MP for Vale of Glamorgan, first elected in July 2024, when he became Wales' first ethnic-minority MP. Born in India, he studied PPE at Oxford and gained an MBA from Stanford, and worked in technology and finance before politics. On 7 September 2025 he was appointed Parliamentary Under-Secretary at DSIT as Minister for AI and Online Safety, with responsibility for AI Opportunities, the AI Security Institute, the Intellectual Property Office, semiconductors, Tech for Growth and online safety. He remained active in the role in 2026.",
+          "source_url": "https://www.gov.uk/government/ministers/parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Junior minister for AI, online safety and digital economy",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Peter Kyle",
+          "title": "Secretary of State for Business and Trade, and President of the Board of Trade",
+          "ministry": "Department for Business and Trade (DBT)",
+          "assumed_office": "2025-09-05",
+          "bio": "Peter Kyle is the Labour MP for Hove and Portslade, elected in 2015. Following Labour's 2024 election victory he served as Secretary of State for Science, Innovation and Technology (July 2024 to September 2025). In the September 2025 reshuffle he was moved to become Secretary of State for Business and Trade and President of the Board of Trade, succeeding Jonathan Reynolds, giving him lead responsibility for UK business, industrial and external trade policy, including trade agreements and export promotion. He remains in post as of July 2026.",
+          "source_url": "https://www.gov.uk/government/ministers/secretary-of-state--2",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet minister for business and trade (President of the Board of Trade)",
+          "is_primary": true
+        },
+        {
+          "name": "Chris Bryant",
+          "title": "Minister of State (Minister for Trade Policy and Economic Security)",
+          "ministry": "Department for Business and Trade (DBT)",
+          "assumed_office": "2025-09-06",
+          "bio": "Sir Chris Bryant is the Labour MP for Rhondda and Ogmore (previously Rhondda), an MP since 2001 and a long-serving frontbencher and former Anglican priest. Earlier in the 2024 Labour government he served as a minister for creative industries and for data protection and telecoms across DCMS and DSIT. In the September 2025 reshuffle he was appointed Minister of State for Trade Policy and Economic Security at DBT on 6 September 2025, taking charge of trade negotiations, trade agreements and economic-security policy, succeeding Douglas Alexander. He remained active in the role in 2026.",
+          "source_url": "https://www.gov.uk/government/people/chris-bryant",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Minister responsible for trade policy / chief trade negotiations",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "",
+      "row_confidence": "Verified",
+      "source_notes": "Digital/technology portfolio also held by: Ian Murray (Minister of State (Minister for Digital Government and Data)); Kanishka Narayan (Parliamentary Under-Secretary of State (Minister for AI and Online Safety)). Trade/commerce portfolio also held by: Chris Bryant (Minister of State (Minister for Trade Policy and Economic Security)). Balance: Independently confirmed: ONS reports a full-year 2025 trade-in-goods (merchandise) deficit of GBP 242bn, partly offset by a GBP 203bn services surplus. Goods-only used for comparability with US bilateral goods data. USD conversion uses the confirmed 2025 average GBP/USD rate of ~1.319 (x-rates/exchangerates.org.uk): 242 x 1.319 = 319.2, hence approx -USD 319.2bn. This is an analyst conversion, not",
+      "gaps": []
+    },
+    {
+      "country": "United States",
+      "flag_file": "assets/flags/united-states.png",
+      "gdp_usd_b": 30620.0,
+      "gdp_year": "2025",
+      "gdp_confidence": "medium",
+      "overall_balance_usd_b": -1240.9,
+      "overall_balance_basis": "goods-only",
+      "overall_balance_year": "2025",
+      "overall_balance_confidence": "Verified",
+      "overall_balance_url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+      "us_exports_usd_b": null,
+      "us_imports_usd_b": null,
+      "us_bilateral_usd_b": null,
+      "us_trade_year": "2025",
+      "us_trade_confidence": "n/a",
+      "digital_ministers": [
+        {
+          "name": "Michael Kratsios",
+          "title": "Director of the Office of Science and Technology Policy (OSTP) and Assistant to the President for Science and Technology",
+          "ministry": "Executive Office of the President / White House Office of Science and Technology Policy",
+          "assumed_office": "2025-03-25",
+          "bio": "Michael Kratsios is the 13th Director of the White House Office of Science and Technology Policy and the President's science and technology adviser, confirmed by the Senate on March 25, 2025, by a 74-25 vote. He served as U.S. Chief Technology Officer during Trump's first term and later as Under Secretary of Defense for Research and Engineering, and was a managing director at Scale AI. He leads the administration's AI Action Plan and coordinates federal policy on artificial intelligence, quantum computing, and emerging technologies. He remains in office as of July 2026.",
+          "source_url": "https://en.wikipedia.org/wiki/Michael_Kratsios",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Science & technology / AI policy lead (closest cabinet-adjacent official)",
+          "is_primary": true
+        },
+        {
+          "name": "Arielle Roth",
+          "title": "Assistant Secretary of Commerce for Communications and Information and Administrator, National Telecommunications and Information Administration (NTIA)",
+          "ministry": "U.S. Department of Commerce (NTIA)",
+          "assumed_office": "2025-07-30",
+          "bio": "Arielle Roth is Assistant Secretary of Commerce for Communications and Information and NTIA Administrator, the executive branch's principal adviser on telecommunications, broadband, and internet policy. The Senate confirmed her on July 23, 2025, by a 52-41 vote, and she was sworn in July 30, 2025. She previously served as telecommunications policy director for the Senate Commerce Committee's Republican staff under Senator Ted Cruz and worked at the Free State Foundation. She oversees federal spectrum management and broadband programs including BEAD, and remains in office as of July 2026.",
+          "source_url": "https://www.ntia.gov/personnel-profile/arielle-roth",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Telecommunications, spectrum & broadband / digital infrastructure policy lead",
+          "is_primary": false
+        }
+      ],
+      "trade_ministers": [
+        {
+          "name": "Howard Lutnick",
+          "title": "United States Secretary of Commerce",
+          "ministry": "U.S. Department of Commerce",
+          "assumed_office": "2025-02-21",
+          "bio": "Howard William Lutnick (born July 14, 1961) is the 41st U.S. Secretary of Commerce, confirmed by the Senate on February 18, 2025, by a 51-45 vote and sworn in that month. For decades he was chairman and CEO of Cantor Fitzgerald and BGC Group, rebuilding Cantor after it lost 658 employees on 9/11, and he co-chaired President Trump's 2024-25 transition. As Commerce Secretary he oversees trade policy, tariffs, export controls, industry promotion, and the Census, and is a leading architect of the America First trade agenda. He remains in office as of July 2026.",
+          "source_url": "https://en.wikipedia.org/wiki/Howard_Lutnick",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Cabinet secretary responsible for commerce & trade policy",
+          "is_primary": true
+        },
+        {
+          "name": "Jamieson Greer",
+          "title": "United States Trade Representative (USTR), with rank of Ambassador",
+          "ministry": "Office of the United States Trade Representative (Executive Office of the President)",
+          "assumed_office": "2025-02-27",
+          "bio": "Jamieson Lee Greer (born August 16, 1980) is the 20th U.S. Trade Representative, confirmed by the Senate on February 27, 2025. A trade attorney and former Air Force JAG officer, he served as chief of staff to USTR Robert Lighthizer during Trump's first term, working on Section 301 China tariffs and the USMCA, and later practiced trade law at King & Spalding. As USTR he leads U.S. trade negotiations, tariff strategy, and enforcement. He announced the 2026 Trade Policy Agenda in March 2026 and testified before House Ways & Means in May 2026. He remains in office as of July 2026.",
+          "source_url": "https://ustr.gov/about/leadership/us-trade-representative",
+          "as_of": "2026-07-16",
+          "confidence": "Verified",
+          "is_acting": false,
+          "role_label": "Chief trade negotiator / trade representative",
+          "is_primary": false
+        }
+      ],
+      "div_note_digital": "",
+      "div_note_trade": "Howard Lutnick (Secretary of Commerce) leads trade/industrial policy & export controls; Jamieson Greer (U.S. Trade Representative, ambassador rank) is the chief trade negotiator.",
+      "row_confidence": "Verified",
+      "source_notes": "Digital/technology portfolio also held by: Arielle Roth (Assistant Secretary of Commerce for Communications and Information and Administrator, National Telecommunications and Information Administration (NTIA)). Trade/commerce portfolio also held by: Jamieson Greer (United States Trade Representative (USTR), with rank of Ambassador). Balance: Independently confirmed via fresh search of the BEA/Census FT-900 'December and Annual 2025' release text: for 2025 the goods (merchandise) deficit rose $25.5B, or 2.1%, to $1,240.9 billion (nominal/current dollars). The services surplus rose $27.6B, or 8.9%, to $339.5 billion, so the combined goods-and-services deficit was $901.5 billion (decreased $2.1B, or 0.2%, from 2024). Goods-only basis kep",
+      "gaps": []
+    }
+  ]
+}
