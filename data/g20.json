@@ -90,7 +90,7 @@
           "portrait_slug": "argentina-quirno",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-argentina-quirno.png"
+          "portrait_file": "assets/portraits/argentina-quirno.png"
         },
         {
           "name": "Pablo Lavigne",
@@ -177,7 +177,7 @@
           "portrait_slug": "australia-charlton",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-australia-charlton.png"
+          "portrait_file": "assets/portraits/australia-charlton.png"
         },
         {
           "name": "Tim Ayres",
@@ -197,7 +197,7 @@
           "portrait_slug": "australia-ayres",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-australia-ayres.png"
+          "portrait_file": "assets/portraits/australia-ayres.png"
         }
       ],
       "trade_ministers": [
@@ -219,7 +219,7 @@
           "portrait_slug": "australia-farrell",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-australia-farrell.png"
+          "portrait_file": "assets/portraits/australia-farrell.png"
         }
       ],
       "div_note_digital": "Ayres holds the senior cabinet portfolio — industry, innovation, science and AI policy through the Department of Industry, Science and Resources — while Charlton supports him as Assistant Minister focused on technology, AI and the digital economy (alongside his Cabinet Secretary role in PM&C); Communications Minister Anika Wells separately covers telecommunications, media and online safety, including the under-16 social media ban.",
@@ -270,7 +270,7 @@
           "portrait_slug": "brazil-siqueira",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-brazil-siqueira.png"
+          "portrait_file": "assets/portraits/brazil-siqueira.png"
         },
         {
           "name": "Luciana Santos",
@@ -290,7 +290,7 @@
           "portrait_slug": "brazil-santos",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-brazil-santos.png"
+          "portrait_file": "assets/portraits/brazil-santos.png"
         }
       ],
       "trade_ministers": [
@@ -311,7 +311,7 @@
           "portrait_slug": "brazil-rosa",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-brazil-rosa.png"
+          "portrait_file": "assets/portraits/brazil-rosa.png"
         }
       ],
       "div_note_digital": "",
@@ -378,7 +378,7 @@
           "portrait_slug": "canada-sidhu",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-canada-sidhu.png"
+          "portrait_file": "assets/portraits/canada-sidhu.png"
         },
         {
           "name": "Dominic LeBlanc",
@@ -398,7 +398,7 @@
           "portrait_slug": "canada-leblanc",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-canada-leblanc.png"
+          "portrait_file": "assets/portraits/canada-leblanc.png"
         }
       ],
       "div_note_digital": "",
