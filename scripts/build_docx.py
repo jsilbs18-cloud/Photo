@@ -74,10 +74,25 @@ pv = doc.add_paragraph(); pv.paragraph_format.space_after = Pt(12)
 run(pv, 'Data vintage: Trade — U.S. Census goods, 2025 full year (goods basis) · GDP — IMF WEO, 2025 · '
         'Officeholders verified as current on 2026-07-16 · Figures in USD billions unless noted.',
     8.5, MUTED, italic=True)
+ps = doc.add_paragraph(); ps.paragraph_format.space_before = Pt(8)
+run(ps, 'Scope', 12, NAVY, bold=True)
+ps2 = doc.add_paragraph()
+run(ps2, 'This reference profiles the 19 G20 sovereign member countries — with Poland covered in place of '
+         'South Africa, a deliberate substitution — followed by an annex on the two G20 bloc members, the '
+         'European Union and the African Union. Each profile occupies one page: headline economic and U.S. '
+         'trade figures, then the trade and digital/technology officeholders, verified as current on '
+         '2026-07-16. Figures match the companion briefing deck; both are generated from the same dataset.', 10, INK)
+ps3 = doc.add_paragraph()
+run(ps3, 'Contents: one page per country (alphabetical), bloc annex, data caveats.', 8.5, MUTED, italic=True)
 
 # ================= per-entry writers =================
-def country_heading(name, tag=None, flag=None):
-    p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(14)
+def page_break_before(p):
+    pPr = p._p.get_or_add_pPr()
+    pPr.append(OxmlElement('w:pageBreakBefore'))
+
+def country_heading(name, tag=None, flag=None, new_page=True):
+    p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(0)
+    if new_page: page_break_before(p)
     p.paragraph_format.keep_with_next = True
     bottom_border(p, 'B4862D', size=14, space=3)
     if flag:
@@ -185,7 +200,8 @@ for c in CO:
         [o for o in c['digital_ministers'] if o.get('display') in ('full', 'half')]) == 1 else 'Digital Ministers')
 
 # ================= bloc annex =================
-p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(18)
+p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(0)
+page_break_before(p)
 bottom_border(p, '0A314D', size=8, space=2)
 run(p, 'G20 BLOC MEMBERS — ANNEX', 12, NAVY, bold=True, caps_spacing=True)
 pa = doc.add_paragraph()
@@ -193,7 +209,7 @@ run(pa, 'The European Union and African Union hold G20 seats as supranational bl
         'alongside the 19 sovereign members.', 9, GRAY, italic=True)
 for b in BL:
     au = b['country'] == 'African Union'
-    country_heading(b['country'], tag='G20 BLOC MEMBER', flag=b.get('flag_file'))
+    country_heading(b['country'], tag='G20 BLOC MEMBER', flag=b.get('flag_file'), new_page=(b is not BL[0]))
     pf = doc.add_paragraph(); pf.paragraph_format.space_after = Pt(2)
     run(pf, '   ·   '.join(f"{f['label']}: {f['value']}" for f in b.get('facts', [])), 8.5, GRAY)
     figures_block(b, au=au)
@@ -201,7 +217,8 @@ for b in BL:
     section(b['digital_ministers'], b.get('div_note_digital'), 'Digital / Technology Lead')
 
 # ================= caveats =================
-p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(16)
+p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(0)
+page_break_before(p)
 bottom_border(p, 'B4862D', size=14, space=3)
 run(p, 'Data Caveats', 14, NAVY, bold=True)
 for t in ["Basis exceptions: Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.",
