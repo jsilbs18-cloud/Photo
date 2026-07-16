@@ -64,9 +64,9 @@ def tb(s,x,y,w,h,anchor=MSO_ANCHOR.TOP,wrap=True):
 def para(tf,first=False):
     return tf.paragraphs[0] if first and not tf.paragraphs[0].runs else tf.add_paragraph()
 
-def run(p,text,size,color=INK,bold=False,italic=False,spacing=None):
+def run(p,text,size,color=INK,bold=False,italic=False,spacing=None,font=None):
     r=p.add_run(); r.text=text; f=r.font
-    f.size=Pt(size); f.bold=bold; f.italic=italic; f.name=FONT; f.color.rgb=color
+    f.size=Pt(size); f.bold=bold; f.italic=italic; f.name=font or FONT; f.color.rgb=color
     if spacing is not None:
         rPr=r._r.get_or_add_rPr(); rPr.set('spc',str(int(spacing*100)))
     return r
@@ -237,6 +237,10 @@ def full_profile(s,y,h,heading,o,notes_line):
     tf=tb(s,RX,y,RW,0.24)
     p=para(tf,True); run(p,heading,10.5,BLUE,bold=True,spacing=1.2)
     tx=RX; tw=RW
+    if o.get('portrait_file'):
+        pw=pic(s,o['portrait_file'],RX,y+0.28,1.00)
+        rect(s,RX,y+0.28,pw,1.00,line=SLATE,line_w=1.0)
+        tx=RX+pw+0.18; tw=RW-pw-0.18
     tf=tb(s,tx,y+0.28,tw,0.28)
     p=para(tf,True); run(p,o['name'],14,NAVY,bold=True); acting_run(p,o,14)
     tf=tb(s,tx,y+0.58,tw,0.38)
@@ -246,13 +250,17 @@ def full_profile(s,y,h,heading,o,notes_line):
     run(p,o['ministry'],9.5,INK)
     if o.get('assumed_office'): run(p,f"   ·   Assumed office: {o['assumed_office']}",9.5,MUTED)
     tf=tb(s,RX,y+1.34,RW,h-1.34)
-    p=para(tf,True); p.line_spacing=1.03; run(p,o.get('bio_display') or o.get('bio',''),11,INK)
+    p=para(tf,True); p.line_spacing=1.12; run(p,o.get('bio_display') or o.get('bio',''),10.5,INK,font='Merriweather')
     if notes_line:
         pn=tf.add_paragraph(); pn.space_before=Pt(5)
         run(pn,notes_line,9,GRAY,italic=True)
 
 def half_profile(s,x0,y,h,o):
     tx=x0; tw=COL_W
+    if o.get('portrait_file'):
+        pw=pic(s,o['portrait_file'],x0,y+0.26,0.80)
+        rect(s,x0,y+0.26,pw,0.80,line=SLATE,line_w=1.0)
+        tx=x0+pw+0.14; tw=COL_W-pw-0.14
     tf=tb(s,tx,y+0.26,tw,1.00)
     p=para(tf,True)
     if o.get('role_tag'): run(p,o['role_tag'],7.5,TEAL,bold=True,spacing=0.8)
@@ -265,8 +273,8 @@ def half_profile(s,x0,y,h,o):
     run(p,o['ministry'],8.5,INK)
     if o.get('assumed_office'): run(p,f"  ·  {o['assumed_office']}",8.5,MUTED)
     tf=tb(s,x0,y+1.62,COL_W,h-1.62)
-    p=para(tf,True); p.line_spacing=1.04
-    run(p,o.get('bio_display') or o.get('bio',''),10.5,INK)
+    p=para(tf,True); p.line_spacing=1.12
+    run(p,o.get('bio_display') or o.get('bio',''),9.5,INK,font='Merriweather')
 
 def section(s,blk,heading,offs,div_note):
     y,h=blk
@@ -326,8 +334,8 @@ def bloc_slide(c):
 # ============ SOURCES ============
 def sources_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
-    header_bar(s,"Sources","datasets and vintages")
-    L=tb(s,0.6,1.5,11.9,5.2)
+    header_bar(s,"Sources & Data Caveats","datasets, vintages, and measurement caveats")
+    L=tb(s,0.6,1.5,5.9,5.2)
     def head(tf,t,first=False):
         p=para(tf,first); p.space_before=Pt(0 if first else 10); p.space_after=Pt(4)
         run(p,t,11.5,NAVY,bold=True,spacing=0.6)
@@ -340,6 +348,14 @@ def sources_slide():
     li(L,"Overall trade balances: national statistics offices / IMF, latest full year, goods basis unless noted.")
     li(L,"EU & African Union annex: IMF WEO, Eurostat, USTR, and official EU/AU sources, verified 2026-07-16.")
     li(L,"Officeholders: official government sources and 2026-dated press, verified 2026-07-16 with an independent second pass.")
+    R=tb(s,6.9,1.5,5.85,5.2)
+    head(R,"DATA CAVEATS",first=True)
+    li(R,"Basis exceptions: Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.")
+    li(R,"Several overall balances are converted from local currency (EUR/GBP/CAD/AUD/JPY/SAR) at ~2025 average rates; USD values carry exchange-rate uncertainty.")
+    li(R,"census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
+    li(R,"African Union: U.S. trade figures are U.S.–Africa goods totals (proxy); no clean continental goods balance is published (shown N/A).")
+    li(R,"Acting officials: Argentina's domestic commerce portfolio (Lavigne) and Saudi Arabia's GAFT governorship are held on an acting basis.")
+    li(R,"Full uncertainty register (confidence flags, items to re-verify): output/GAPS.md.")
     footer(s)
 
 # ---- assemble ----

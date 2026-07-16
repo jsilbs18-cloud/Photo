@@ -56,7 +56,7 @@
           "ministry": "Jefatura de Gabinete de Ministros (Chief of Cabinet's Office)",
           "assumed_office": "2024-06",
           "bio": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening. His secretariat leads state digitalization, digital public services, connectivity and telecommunications policy under the Chief of Cabinet. In 2026 he opened the Argentina Digital Summit.",
-          "bio_display": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening. His secretariat leads state digitalization, digital public services, connectivity and telecommunications policy under the Chief of Cabinet.",
+          "bio_display": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening.",
           "source_url": "https://www.argentina.gob.ar/noticias/dario-genua-abrio-el-argentina-digital-summit-2026",
           "as_of": "2026-07-16",
           "confidence": "Verified",
@@ -67,7 +67,8 @@
           "is_primary": true,
           "portrait_slug": "argentina-genua",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -88,7 +89,8 @@
           "is_primary": true,
           "portrait_slug": "argentina-quirno",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Pablo Lavigne",
@@ -107,7 +109,8 @@
           "is_primary": false,
           "portrait_slug": "argentina-lavigne",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Fernando Brun",
@@ -123,7 +126,8 @@
           "role_label": "Working-level external trade counterpart",
           "display": "note",
           "role_tag": null,
-          "is_primary": false
+          "is_primary": false,
+          "portrait_file": null
         }
       ],
       "div_note_digital": "Digital and tech policy is led from the Chief of Cabinet's Office via the Secretariat of Innovation, Science and Technology (Darío Genua) — there is no standalone digital ministry.",
@@ -172,7 +176,8 @@
           "is_primary": true,
           "portrait_slug": "australia-charlton",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Tim Ayres",
@@ -191,7 +196,8 @@
           "is_primary": false,
           "portrait_slug": "australia-ayres",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -201,7 +207,7 @@
           "ministry": "Department of Foreign Affairs and Trade",
           "assumed_office": "2022-06-01",
           "bio": "Senator Donald Edward Farrell (born 1954) is a Labor Senator for South Australia and a former trade unionist who was state secretary of the Shop, Distributive and Allied Employees Association (SDA) from 1993 to 2008. A University of Adelaide law graduate, he served in the Senate from 2008-2014 and again from 2016, holding ministries under the Rudd and Gillard governments. He was sworn in as Minister for Trade and Tourism on 1 June 2022 and retained the portfolio after the May 2025 federal election, remaining in the role as of July 2026.",
-          "bio_display": "Senator Donald Edward Farrell (born 1954) is a Labor Senator for South Australia and a former trade unionist who was state secretary of the Shop, Distributive and Allied Employees Association (SDA) from 1993 to 2008. A University of Adelaide law graduate, he served in the Senate from 2008-2014 and again from 2016, holding ministries under the Rudd and Gillard governments.",
+          "bio_display": "Senator Donald Edward Farrell (born 1954) is a Labor Senator for South Australia and a former trade unionist who was state secretary of the Shop, Distributive and Allied Employees Association (SDA) from 1993 to 2008.",
           "source_url": "https://www.trademinister.gov.au/minister/don-farrell",
           "as_of": "2026-07-16",
           "confidence": "Verified",
@@ -212,7 +218,8 @@
           "is_primary": true,
           "portrait_slug": "australia-farrell",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "Ayres holds the senior cabinet portfolio — industry, innovation, science and AI policy through the Department of Industry, Science and Resources — while Charlton supports him as Assistant Minister focused on technology, AI and the digital economy (alongside his Cabinet Secretary role in PM&C); Communications Minister Anika Wells separately covers telecommunications, media and online safety, including the under-16 social media ban.",
@@ -262,7 +269,8 @@
           "bio_display": "Frederico de Siqueira Filho, a Brazilian engineer with over 26 years in telecommunications, including some 21 years at operator Oi, led state-owned Telebras from 2023 to 2025. President Lula appointed him Minister of Communications in April 2025, succeeding Juscelino Filho.",
           "portrait_slug": "brazil-siqueira",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Luciana Santos",
@@ -281,7 +289,8 @@
           "bio_display": "Luciana Santos, an electrical engineer and national president of the Communist Party of Brazil, has been Minister of Science, Technology and Innovation since 1 January 2023. She previously served as mayor of Olinda, federal deputy and vice-governor of Pernambuco.",
           "portrait_slug": "brazil-santos",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -298,10 +307,11 @@
           "role_label": "Cabinet minister responsible for trade, industry and commerce (MDIC)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Retired public prosecutor, lawyer and law professor, born in Ibiúna, São Paulo, in 1962. He spent his career in the São Paulo Public Prosecutor's Office, serving twice as Attorney General of Justice (2012-2016) and as São Paulo State Secretary of Justice. He joined MDIC as Executive Secretary in January 2023, and was sworn in as Minister on 6 April 2026, succeeding Vice President Geraldo Alckmin, who left the post to run for re-election as Lula's running mate. His agenda centers on the Nova Indústria Brasil program, expanding investment and foreign trade.",
+          "bio_display": "Retired public prosecutor, lawyer and law professor, born in Ibiúna, São Paulo, in 1962. He spent his career in the São Paulo Public Prosecutor's Office, serving twice as Attorney General of Justice (2012-2016) and as São Paulo State Secretary of Justice. He joined MDIC as Executive Secretary in January 2023, and was sworn in as Minister on 6 April 2026, succeeding Vice President Geraldo Alckmin, who left the post to run for re-election as Lula's running mate.",
           "portrait_slug": "brazil-rosa",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -345,7 +355,8 @@
           "bio_display": "Solomon, a longtime Canadian broadcaster and author, was elected Liberal MP for Toronto Centre in April 2025 and sworn in May 13, 2025 as Canada's first Minister of Artificial Intelligence and Digital Innovation, a portfolio created by PM Mark Carney. Before politics he hosted CTV's Power Play and Question Period and a CFRB talk-radio show, wrote for Maclean's, and co-founded Shift magazine. He studied at McGill University and now leads federal AI, quantum and digital policy within ISED.",
           "portrait_slug": "canada-solomon",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -366,7 +377,8 @@
           "bio_display": "Maninder Sidhu, a businessman and Liberal MP for Brampton East since 2019, was sworn into Mark Carney's cabinet on May 13, 2025, as Minister of International Trade. He was previously Parliamentary Secretary to the Ministers of Foreign Affairs and International Development.",
           "portrait_slug": "canada-sidhu",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Dominic LeBlanc",
@@ -385,7 +397,8 @@
           "bio_display": "Dominic LeBlanc, a lawyer and Liberal MP for Beausejour since 2000, is a veteran minister who has held Fisheries, Intergovernmental Affairs, Public Safety and Finance. Since May 13, 2025 he has led the Canada-U.S. trade file as Privy Council President.",
           "portrait_slug": "canada-leblanc",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -428,7 +441,8 @@
           "is_primary": true,
           "portrait_slug": "china-lilecheng",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Yin Hejun",
@@ -447,7 +461,8 @@
           "is_primary": false,
           "portrait_slug": "china-hejun",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -468,7 +483,8 @@
           "is_primary": true,
           "portrait_slug": "china-wangwentao",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Li Chenggang",
@@ -487,7 +503,8 @@
           "is_primary": false,
           "portrait_slug": "china-lichenggang",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "MIIT (Li Lecheng) regulates industry, telecommunications and the digital economy, while MOST (Yin Hejun) sets national science, technology and innovation policy, including basic research and the 2026-2030 sci-tech plan.",
@@ -529,10 +546,11 @@
           "role_label": "Digital economy / AI / technology portfolio",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Anne Le Hénanff (born 22 July 1969 in Vannes) is a Horizons-party politician and, since the Lecornu II government, France's Minister Delegate for Artificial Intelligence and Digital Affairs, attached to the Economy ministry. With a background in cybersecurity (she held a cyber chair at Université Bretagne-Sud), she was a deputy mayor of Vannes for digital affairs and was elected deputy for Morbihan's 1st constituency in 2022, re-elected in 2024, sitting on the Defence Committee. She succeeded Clara Chappaz in the digital portfolio.",
+          "bio_display": "Anne Le Hénanff (born 22 July 1969 in Vannes) is a Horizons-party politician and, since the Lecornu II government, France's Minister Delegate for Artificial Intelligence and Digital Affairs, attached to the Economy ministry. With a background in cybersecurity (she held a cyber chair at Université Bretagne-Sud), she was a deputy mayor of Vannes for digital affairs and was elected deputy for Morbihan's 1st constituency in 2022, re-elected in 2024, sitting on the Defence Committee.",
           "portrait_slug": "france-lehenanff",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -552,7 +570,8 @@
           "bio_display": "Nicolas Forissier (born 17 February 1961) is a Les Républicains politician and, since October 2025 (retained in the Lecornu II government), France's Minister Delegate for Foreign Trade and Attractiveness, attached to the Minister for Europe and Foreign Affairs. A Sciences Po Paris graduate with a Sorbonne history degree, he was mayor of La Châtre (1995-2017) and has represented Indre's 2nd constituency in the National Assembly across several terms since 1993. He earlier served as Secretary of State for Agriculture (2004-2005).",
           "portrait_slug": "france-forissier",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -596,7 +615,8 @@
           "bio_display": "Karsten Wildberger (born 5 September 1969, Gießen) holds a doctorate in solid-state physics from RWTH Aachen and an INSEAD MBA. After Boston Consulting Group he held senior roles at T-Mobile, Vodafone and Telstra, sat on E.ON's management board (2016-2021), then led Ceconomy AG (parent of MediaMarktSaturn) from 2021 to 2025. On 6 May 2025 he became Germany's first federal digital minister under Chancellor Friedrich Merz, heading a new ministry consolidating digital responsibilities previously spread across several ministries.",
           "portrait_slug": "germany-wildberger",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -616,7 +636,8 @@
           "bio_display": "Katherina Reiche (born 16 July 1973, Luckenwalde) is a CDU politician and former energy executive, a trained chemist. She was a Bundestag member 1998-2015, including deputy chair of the CDU/CSU parliamentary group and parliamentary state secretary roles. She then led the municipal-utilities association VKU (2015-2019) and chaired the board of E.ON subsidiary Westenergie AG (2020-2025).",
           "portrait_slug": "germany-reiche",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Maroš Šefčovič",
@@ -630,7 +651,8 @@
           "is_acting": false,
           "role_label": "EU-level trade negotiator (Germany's trade competence exercised at EU level)",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -674,7 +696,8 @@
           "bio_display": "Ashwini Vaishnaw (born 18 July 1970), a 1994-batch former IAS officer of the Odisha cadre, holds engineering degrees from MBM Jodhpur and IIT Kanpur and an MBA from Wharton. After district-collector postings and corporate roles at GE Transportation and Siemens, he entered the Rajya Sabha from Odisha in 2019.",
           "portrait_slug": "india-vaishnaw",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Jitin Prasada",
@@ -688,7 +711,8 @@
           "is_acting": false,
           "role_label": "Minister of State for digital / IT / electronics portfolio",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -709,7 +733,8 @@
           "bio_display": "Piyush Goyal, a chartered accountant, lawyer and BJP parliamentarian, has served as India's Union Minister of Commerce and Industry since 2019, leading trade policy and free-trade-agreement strategy including India-US talks. He previously held the Railways, Power and Textiles portfolios.",
           "portrait_slug": "india-goyal",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Rajesh Agrawal",
@@ -728,7 +753,8 @@
           "bio_display": "Rajesh Agrawal, a senior IAS officer, became India's Commerce Secretary on 1 October 2025 after serving as Special Secretary and Additional Secretary in the Department of Commerce. He is chief negotiator for major trade deals, including the India-US Bilateral Trade Agreement.",
           "portrait_slug": "india-agrawal",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -769,10 +795,11 @@
           "role_label": "Digital economy / telecommunications / digitalization portfolio (lead)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Meutya Viada Hafid (born 3 May 1978, Bandung) is an Indonesian former television journalist and Golkar politician who became Minister of Communication and Digital Affairs on 21 October 2024 in President Prabowo Subianto's Red and White Cabinet, the first woman to lead the ministry. A former Metro TV newscaster, she previously served multiple terms in the House of Representatives (DPR), chairing Commission I on defense, foreign affairs and information. As minister she has prioritized child protection online, combating online gambling and illegal lending, and digital-economy value retention.",
+          "bio_display": "Meutya Viada Hafid (born 3 May 1978, Bandung) is an Indonesian former television journalist and Golkar politician who became Minister of Communication and Digital Affairs on 21 October 2024 in President Prabowo Subianto's Red and White Cabinet, the first woman to lead the ministry. A former Metro TV newscaster, she previously served multiple terms in the House of Representatives (DPR), chairing Commission I on defense, foreign affairs and information.",
           "portrait_slug": "indonesia-hafid",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -793,7 +820,8 @@
           "bio_display": "Budi Santoso, a career Ministry of Trade civil servant, has served as Indonesia's Minister of Trade since October 2024 in President Prabowo Subianto's cabinet. He was Director General of Foreign Trade (2022-2024) and emphasizes expanding exports through trade agreements.",
           "portrait_slug": "indonesia-santoso",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Airlangga Hartarto",
@@ -812,7 +840,8 @@
           "bio_display": "Airlangga Hartarto has served as Indonesia's Coordinating Minister for Economic Affairs since 2019, retained under President Prabowo Subianto, and acts as chief negotiator in trade talks with the United States. He was Minister of Industry (2016-2019) and Golkar Party chairman (2017-2024).",
           "portrait_slug": "indonesia-airlangga",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -851,10 +880,11 @@
           "role_label": "Government official responsible for digital economy / technological innovation / digitalization",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Alessio Butti (born 1959) is an Italian politician of Fratelli d'Italia and a longtime senator and deputy who served as the party's head of media and telecommunications. In the Meloni government he holds the digital portfolio as Undersecretary of State to the Presidency of the Council with responsibility for Technological Innovation, inheriting functions of the former standalone Ministry for Technological Innovation and Digital Transition (held under Draghi by Vittorio Colao) that Meloni abolished. He oversees the Department for Digital Transformation, PNRR digital targets, digital identity (IT Wallet), cloud, AI and broadband.",
+          "bio_display": "Alessio Butti (born 1959) is an Italian politician of Fratelli d'Italia and a longtime senator and deputy who served as the party's head of media and telecommunications. In the Meloni government he holds the digital portfolio as Undersecretary of State to the Presidency of the Council with responsibility for Technological Innovation, inheriting functions of the former standalone Ministry for Technological Innovation and Digital Transition (held under Draghi by Vittorio Colao) that Meloni abolished.",
           "portrait_slug": "italy-butti",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -875,7 +905,8 @@
           "bio_display": "Antonio Tajani, a Forza Italia founder, former European Commissioner and President of the European Parliament (2017-2019), has been Italy's Deputy Prime Minister and Foreign Minister since October 2022. His ministry holds Italy's foreign-trade and export-promotion competency, coordinating ITA/ICE, SACE and SIMEST.",
           "portrait_slug": "italy-tajani",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Adolfo Urso",
@@ -894,7 +925,8 @@
           "bio_display": "Adolfo Urso, a politician and journalist of the Italian right and former Deputy Minister of Economic Development responsible for Foreign Trade under Berlusconi, has led the Ministry of Enterprises and Made in Italy since 22 October 2022, covering industrial policy.",
           "portrait_slug": "italy-urso",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -935,10 +967,11 @@
           "role_label": "Digital economy / digitalization portfolio (cabinet minister heading the Digital Agency)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Matsumoto Hisashi (born June 13, 1962) is a Liberal Democratic Party member of the House of Representatives for Chiba's 13th district, elected in 2021. A former emergency and trauma surgeon and specially appointed professor at Nippon Medical School, he was named Minister for Digital Transformation by Prime Minister Takaichi Sanae on October 21, 2025, and reappointed in the Second Takaichi cabinet on February 18, 2026. He concurrently serves as Minister in charge of Cybersecurity and holds administrative, fiscal and regulatory reform portfolios.",
+          "bio_display": "Matsumoto Hisashi (born June 13, 1962) is a Liberal Democratic Party member of the House of Representatives for Chiba's 13th district, elected in 2021. A former emergency and trauma surgeon and specially appointed professor at Nippon Medical School, he was named Minister for Digital Transformation by Prime Minister Takaichi Sanae on October 21, 2025, and reappointed in the Second Takaichi cabinet on February 18, 2026.",
           "portrait_slug": "japan-matsumoto",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -955,10 +988,11 @@
           "role_label": "Primary trade/commerce authority + chief US tariff negotiator",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Akazawa Ryosei is a Liberal Democratic Party member of the House of Representatives for Tottori's 2nd district, first elected in 2005. A University of Tokyo Law graduate with a Cornell MBA, he spent about two decades as an MLIT-lineage bureaucrat. Under PM Ishiba he was Minister for Economic Revitalization and Japan's chief negotiator in the 2025 US tariff talks. PM Takaichi appointed him METI Minister on October 21, 2025, reappointed February 18, 2026.",
+          "bio_display": "Akazawa Ryosei is a Liberal Democratic Party member of the House of Representatives for Tottori's 2nd district, first elected in 2005. A University of Tokyo Law graduate with a Cornell MBA, he spent about two decades as an MLIT-lineage bureaucrat.",
           "portrait_slug": "japan-akazawa",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Motegi Toshimitsu",
@@ -972,7 +1006,8 @@
           "is_acting": false,
           "role_label": "Overseer of external economic/US trade negotiations (foreign-affairs side)",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1011,10 +1046,11 @@
           "role_label": "Head of digital transformation / telecommunications (cabinet-rank digital lead)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "José Antonio 'Pepe' Peña Merino is a political scientist and data specialist. He studied Political Science and International Relations at CIDE and earned a PhD in Political Science from New York University, specializing in political economy and quantitative methods. He co-founded Data Cívica and led Mexico City's Agencia Digital de Innovación Pública (ADIP) under then-Mayor Claudia Sheinbaum. Named by Sheinbaum to head the newly created cabinet-rank ATDT, which unifies federal digital, technology and telecommunications policy, he took office with her administration in October 2024 and remains in post.",
+          "bio_display": "José Antonio 'Pepe' Peña Merino is a political scientist and data specialist. He studied Political Science and International Relations at CIDE and earned a PhD in Political Science from New York University, specializing in political economy and quantitative methods. He co-founded Data Cívica and led Mexico City's Agencia Digital de Innovación Pública (ADIP) under then-Mayor Claudia Sheinbaum.",
           "portrait_slug": "mexico-pena",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1035,7 +1071,8 @@
           "bio_display": "Marcelo Ebrard Casaubón, former Head of Government of Mexico City (2006-2012) and Secretary of Foreign Affairs (2018-2023), took office as Mexico's Secretary of Economy on 1 October 2024. He leads trade policy, including the 2026 USMCA review and US tariff negotiations.",
           "portrait_slug": "mexico-ebrard",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Luis Rosendo Gutiérrez Romano",
@@ -1054,7 +1091,8 @@
           "bio_display": "Luis Rosendo Gutiérrez Romano is Mexico's Undersecretary for Foreign Trade and lead trade negotiator, appointed to the Secretaría de Economía in October 2024. Holding a PhD from the University of Essex, he leads tariff and trade-treaty negotiations, including the USMCA review.",
           "portrait_slug": "mexico-gutierrez",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1088,7 +1126,7 @@
           "ministry": "Ministry of Digital Affairs (Ministerstwo Cyfryzacji)",
           "assumed_office": "2023-12-13",
           "bio": "Krzysztof Gawkowski (b. 1980) is a Polish political scientist and New Left (Nowa Lewica) politician, serving as the party's deputy chairman. A member of the Sejm since 2019 and former leader of the Left parliamentary caucus, he became Deputy Prime Minister and Minister of Digital Affairs in Donald Tusk's cabinet on 13 December 2023 and remains in the role in 2026. He oversees digitalization, cybersecurity, telecommunications and AI policy, chairing telecom sessions during Poland's 2025 EU Council presidency, and has authored works on cybersecurity and public administration.",
-          "bio_display": "Krzysztof Gawkowski (b. 1980) is a Polish political scientist and New Left (Nowa Lewica) politician, serving as the party's deputy chairman. A member of the Sejm since 2019 and former leader of the Left parliamentary caucus, he became Deputy Prime Minister and Minister of Digital Affairs in Donald Tusk's cabinet on 13 December 2023 and remains in the role in 2026.",
+          "bio_display": "Krzysztof Gawkowski (b. 1980) is a Polish political scientist and New Left (Nowa Lewica) politician, serving as the party's deputy chairman.",
           "source_url": "https://www.gov.pl/web/primeminister/krzysztof-gawkowski",
           "as_of": "2026-07-16",
           "confidence": "Verified",
@@ -1099,7 +1137,8 @@
           "is_primary": true,
           "portrait_slug": "poland-gawkowski",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1120,7 +1159,8 @@
           "is_primary": true,
           "portrait_slug": "poland-domanski",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Michał Baranowski",
@@ -1139,7 +1179,8 @@
           "is_primary": false,
           "portrait_slug": "poland-baranowski",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "Digital portfolio unchanged by the July 2025 reshuffle: the Ministry of Digital Affairs (Ministerstwo Cyfryzacji) is led by Krzysztof Gawkowski (Nowa Lewica), who is simultaneously Deputy Prime Minister and Government Plenipotentiary for Cybersecurity — Poland's counterpart for digital economy, AI, and cyber issues.",
@@ -1189,7 +1230,8 @@
           "is_primary": true,
           "portrait_slug": "russia-shadayev",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1210,7 +1252,8 @@
           "is_primary": true,
           "portrait_slug": "russia-alikhanov",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Maxim Reshetnikov",
@@ -1229,7 +1272,8 @@
           "is_primary": false,
           "portrait_slug": "russia-reshetnikov",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "Digital government, telecommunications, IT-sector policy, and internet/media regulation are consolidated under the Ministry of Digital Development, Communications and Mass Media (Shadayev).",
@@ -1268,10 +1312,11 @@
           "role_label": "Digital economy / ICT / telecommunications portfolio (lead cabinet minister)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Abdullah bin Amer Alswaha, a Saudi engineer, has been Minister of Communications and Information Technology since 24 April 2017 and remains in office in 2026 (the ministry publicly welcomed the 2026 budget under his name). He holds electrical-engineering and computer-science degrees from KFUPM and the University of Washington plus Harvard executive education. Before government he led Cisco Saudi Arabia as managing director, then served as the Kingdom's Chief Digital Officer. As minister he drives Saudi Arabia's digital transformation and AI agenda under Vision 2030 and chairs related technology and space bodies.",
+          "bio_display": "Abdullah bin Amer Alswaha, a Saudi engineer, has been Minister of Communications and Information Technology since 24 April 2017 and remains in office in 2026 (the ministry publicly welcomed the 2026 budget under his name). He holds electrical-engineering and computer-science degrees from KFUPM and the University of Washington plus Harvard executive education. Before government he led Cisco Saudi Arabia as managing director, then served as the Kingdom's Chief Digital Officer.",
           "portrait_slug": "saudi-alswaha",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1292,7 +1337,8 @@
           "bio_display": "Majid bin Abdullah Al-Qasabi has been Saudi Arabia's Minister of Commerce since May 2016 and chairs the board of the General Authority for Foreign Trade, which handles WTO representation and trade negotiations. He previously served as acting Minister of Media (2020-2023).",
           "portrait_slug": "saudi-alqasabi",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Mohammed bin Abdulaziz Al-Abduljabbar",
@@ -1311,7 +1357,8 @@
           "bio_display": "Mohammed bin Abdulaziz Al-Abduljabbar serves as Acting Governor of Saudi Arabia's General Authority for Foreign Trade (GAFT), which represents the Kingdom at the WTO, supervises the negotiating team and leads free-trade-agreement negotiations. GAFT's 2025-2026 communications list him in an acting capacity.",
           "portrait_slug": "saudi-abduljabbar",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1354,10 +1401,11 @@
           "role_label": "Digital economy / AI / science & ICT lead (cabinet)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Bae Kyung-hoon is an AI specialist who holds a PhD in computer vision (Kwangwoon University, 2006) and led LG AI Research, where he developed the Exaone large language model. President Lee Jae-myung appointed him Minister of Science and ICT on 16 July 2025; the post was later elevated to Deputy Prime Minister rank. He also serves as standing vice chairman of the National AI Strategy Committee and pursues Lee's goal of making Korea a top-three global AI power with record R&D budgets and a large GPU buildout.",
+          "bio_display": "Bae Kyung-hoon is an AI specialist who holds a PhD in computer vision (Kwangwoon University, 2006) and led LG AI Research, where he developed the Exaone large language model. President Lee Jae-myung appointed him Minister of Science and ICT on 16 July 2025; the post was later elevated to Deputy Prime Minister rank.",
           "portrait_slug": "korea-bae",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1378,7 +1426,8 @@
           "bio_display": "Kim Jung-kwan, a finance technocrat who served at Korea's Ministry of Economy and Finance, the Bank of Korea and the World Bank and led Doosan Enerbility, was nominated by President Lee and took office in July 2025 heading the renamed MOTIR.",
           "portrait_slug": "korea-kim",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Yeo Han-koo",
@@ -1397,7 +1446,8 @@
           "bio_display": "Yeo Han-koo, with nearly three decades of public service, was appointed South Korea's Minister for Trade in mid-2025 under President Lee. Previously chief trade negotiator in 2021-2022 and a Peterson Institute senior fellow, he leads tariff talks with the United States.",
           "portrait_slug": "korea-yeo",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1439,7 +1489,8 @@
           "bio_display": "Mehmet Fatih Kacır (born 16 October 1984) became Minister of Industry and Technology on 3 June 2023, having previously served as a deputy minister in the same ministry. An industrial engineering graduate of Boğaziçi University (2008), he co-founded and chaired the T3 Foundation until 2018 and helped launch TEKNOFEST and the DENEYAP technology workshops.",
           "portrait_slug": "turkiye-kacir",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Ümit Önal",
@@ -1453,7 +1504,8 @@
           "is_acting": false,
           "role_label": "Central cybersecurity / digital-state / public-AI coordinator",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         },
         {
           "name": "Abdulkadir Uraloğlu",
@@ -1467,7 +1519,8 @@
           "is_acting": false,
           "role_label": "Telecommunications / digital-infrastructure minister",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1484,10 +1537,11 @@
           "role_label": "Cabinet minister responsible for foreign and domestic trade (sole top trade official; no separate USTR-equivalent)",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Prof. Dr. Ömer Bolat (born 30 August 1963, Istanbul) has been Minister of Trade since the cabinet formed after Türkiye's May 2023 elections. He graduated from Marmara University's Faculty of Economics and Administrative Sciences in international economic relations, becoming associate professor in 2014 and professor in 2019. Before politics he was General Coordinator/CEO of the Albayrak Group for about 23 years and chaired the MÜSİAD business association. As minister he directs export strategy, customs, FTA negotiations and WTO representation, and has led trade talks with the United States.",
+          "bio_display": "Prof. Dr. Ömer Bolat (born 30 August 1963, Istanbul) has been Minister of Trade since the cabinet formed after Türkiye's May 2023 elections. He graduated from Marmara University's Faculty of Economics and Administrative Sciences in international economic relations, becoming associate professor in 2014 and professor in 2019. Before politics he was General Coordinator/CEO of the Albayrak Group for about 23 years and chaired the MÜSİAD business association.",
           "portrait_slug": "turkiye-bolat",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "No standalone digital ministry: cybersecurity (Önal, Cybersecurity Presidency) and telecom/digital infrastructure (Uraloğlu, Transport & Infrastructure) sit outside the Industry & Technology Ministry.",
@@ -1529,7 +1583,8 @@
           "bio_display": "Liz Kendall is the Labour MP for Leicester West, first elected in 2010. She contested the 2015 Labour leadership election and held several shadow ministerial roles. After Labour's 2024 general election win she served as Secretary of State for Work and Pensions (July 2024 to September 2025).",
           "portrait_slug": "uk-kendall",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Ian Murray",
@@ -1543,7 +1598,8 @@
           "is_acting": false,
           "role_label": "Junior minister for digital government and data",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         },
         {
           "name": "Kanishka Narayan",
@@ -1557,7 +1613,8 @@
           "is_acting": false,
           "role_label": "Junior minister for AI, online safety and digital economy",
           "is_primary": false,
-          "display": "note"
+          "display": "note",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1578,7 +1635,8 @@
           "bio_display": "Peter Kyle, Labour MP for Hove and Portslade since 2015, became Secretary of State for Business and Trade and President of the Board of Trade in the September 2025 reshuffle. He was previously Science, Innovation and Technology Secretary (2024-2025).",
           "portrait_slug": "uk-kyle",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Chris Bryant",
@@ -1597,7 +1655,8 @@
           "bio_display": "Sir Chris Bryant, a former Anglican priest and Labour MP since 2001, now for Rhondda and Ogmore, was appointed Minister of State for Trade Policy and Economic Security at DBT on 6 September 2025, succeeding Douglas Alexander.",
           "portrait_slug": "uk-bryant",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1640,7 +1699,8 @@
           "bio_display": "Michael Kratsios, confirmed March 25, 2025, is the 13th Director of the White House Office of Science and Technology Policy. Previously U.S. Chief Technology Officer and Under Secretary of Defense for Research and Engineering, he leads the administration's AI Action Plan.",
           "portrait_slug": "us-kratsios",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Arielle Roth",
@@ -1659,7 +1719,8 @@
           "bio_display": "Arielle Roth is Assistant Secretary of Commerce for Communications and Information and NTIA Administrator, confirmed July 23, 2025. Formerly telecommunications policy director for the Senate Commerce Committee's Republican staff, she oversees federal spectrum management and broadband programs including BEAD.",
           "portrait_slug": "us-roth",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1680,7 +1741,8 @@
           "bio_display": "Howard Lutnick, the 41st U.S. Secretary of Commerce, was confirmed February 18, 2025. Longtime chairman and CEO of Cantor Fitzgerald, which he rebuilt after 9/11, he oversees trade policy, tariffs and export controls, and co-chaired Trump's 2024-25 transition.",
           "portrait_slug": "us-lutnick",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         },
         {
           "name": "Jamieson Greer",
@@ -1699,7 +1761,8 @@
           "bio_display": "Jamieson Greer is the 20th U.S. Trade Representative, confirmed February 27, 2025. A trade attorney and former Air Force JAG officer, he was chief of staff to USTR Robert Lighthizer and leads U.S. trade negotiations, tariff strategy and enforcement.",
           "portrait_slug": "us-greer",
           "portrait_raw": null,
-          "portrait_status": "missing"
+          "portrait_status": "missing",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1760,7 +1823,9 @@
           "is_acting": false,
           "display": "full",
           "role_tag": null,
-          "is_primary": true
+          "is_primary": true,
+          "portrait_slug": "bloc-virkkunen",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1777,7 +1842,9 @@
           "is_acting": false,
           "display": "full",
           "role_tag": null,
-          "is_primary": true
+          "is_primary": true,
+          "portrait_slug": "bloc-efovi",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",
@@ -1843,7 +1910,9 @@
           "is_acting": false,
           "display": "full",
           "role_tag": null,
-          "is_primary": true
+          "is_primary": true,
+          "portrait_slug": "bloc-mataboge",
+          "portrait_file": null
         }
       ],
       "trade_ministers": [
@@ -1860,7 +1929,9 @@
           "is_acting": false,
           "display": "full",
           "role_tag": null,
-          "is_primary": true
+          "is_primary": true,
+          "portrait_slug": "bloc-belobe",
+          "portrait_file": null
         },
         {
           "name": "Wamkele Mene",
@@ -1875,7 +1946,9 @@
           "is_acting": false,
           "display": "note",
           "role_tag": null,
-          "is_primary": false
+          "is_primary": false,
+          "portrait_slug": "bloc-mene",
+          "portrait_file": null
         }
       ],
       "div_note_digital": "",

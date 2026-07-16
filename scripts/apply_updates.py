@@ -212,9 +212,9 @@ for c in D['countries']:
         has_note = bool(c.get(div)) or any(o.get('display') == 'note' for o in offs)
         for o in offs:
             if o.get('display') == 'half':
-                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 48)
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 44)
             elif o.get('display') == 'full':
-                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 75 if has_note else 92)
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 58 if has_note else 80)
 
 # ---------- 4. portraits ----------
 port_by_name = {}

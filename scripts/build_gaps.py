@@ -72,6 +72,20 @@ for b in D.get('blocs', []):
     for inc in b.get('inconsistencies', [])[:4]:
         w(f"  - note: {inc[:220]}")
 w("")
+w("## Portrait drop-in manifest")
+w("")
+w("Portraits cannot be fetched from the build environment (all government hosts and Wikimedia are "
+  "egress-blocked). To add them: from the DOC network, save each official's photo to the path below "
+  "(png/jpg), then run `bash scripts/build.sh` — slides embed them automatically.")
+w("")
+w("| Official | Save to | Official page (portrait source) |")
+w("|---|---|---|")
+for _c in CO + D.get('blocs', []):
+    for _g in ('digital_ministers','trade_ministers'):
+        for _o in _c[_g]:
+            if _o.get('display') in ('full','half') and _o.get('portrait_slug'):
+                w(f"| {_c['country']} — {_o['name']} | `assets/portraits/{_o['portrait_slug']}.png` | {_o.get('source_url','')} |")
+w("")
 w("## Name spellings to preserve exactly (incl. diacritics)")
 w("")
 w("- Türkiye, Darío Leandro Genua, José Antonio Peña Merino, Katherina Reiche, Maroš Šefčovič, Mehmet Fatih Kacır, "

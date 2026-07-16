@@ -53,6 +53,72 @@ Compiled 2026-07-16. Every item a reviewer should chase down before external use
   - note: The Feb 2025 AUC elections filled only four of six commissioner posts; ETTIM was held in an acting capacity (Moses Vilakati) until Francisca Tatchouop Belobe was elected in July 2025 and sworn in September 2025 — stale s
   - note: U.S. trade figures are a U.S.-Africa (whole continent) proxy for the AU; USTR/Census pages could not be fetched directly (egress-blocked) and were verified via search excerpts of the USTR Africa page.
 
+## Portrait drop-in manifest
+
+Portraits cannot be fetched from the build environment (all government hosts and Wikimedia are egress-blocked). To add them: from the DOC network, save each official's photo to the path below (png/jpg), then run `bash scripts/build.sh` — slides embed them automatically.
+
+| Official | Save to | Official page (portrait source) |
+|---|---|---|
+| Argentina — Darío Leandro Genua | `assets/portraits/argentina-genua.png` | https://www.argentina.gob.ar/noticias/dario-genua-abrio-el-argentina-digital-summit-2026 |
+| Argentina — Pablo Quirno | `assets/portraits/argentina-quirno.png` | https://en.wikipedia.org/wiki/Pablo_Quirno |
+| Argentina — Pablo Lavigne | `assets/portraits/argentina-lavigne.png` | https://www.ambito.com/economia/unifican-forma-transitoria-dos-areas-clave-y-le-asignan-mas-funciones-pablo-lavigne-n6261559 |
+| Australia — Andrew Charlton | `assets/portraits/australia-charlton.png` | https://ministers.pmc.gov.au/hon-dr-andrew-charlton-mp |
+| Australia — Tim Ayres | `assets/portraits/australia-ayres.png` | https://www.minister.industry.gov.au/ministers/timayres |
+| Australia — Don Farrell | `assets/portraits/australia-farrell.png` | https://www.trademinister.gov.au/minister/don-farrell |
+| Brazil — Frederico de Siqueira Filho | `assets/portraits/brazil-siqueira.png` | https://telesintese.com.br/frederico-siqueira-diz-que-pretende-seguir-no-ministerio-ate-o-fim-de-2026/ |
+| Brazil — Luciana Santos | `assets/portraits/brazil-santos.png` | https://www.gov.br/mcti/pt-br/acesso-a-informacao/institucional/quem-e-quem |
+| Brazil — Márcio Fernando Elias Rosa | `assets/portraits/brazil-rosa.png` | https://agenciagov.ebc.com.br/noticias/202604/marcio-elias-rosa-e-o-novo-ministro-do-desenvolvimento-industria-comercio-e-servicos |
+| Canada — Evan Solomon | `assets/portraits/canada-solomon.png` | https://www.canada.ca/en/government/ministers/evan-solomon.html |
+| Canada — Maninder Sidhu | `assets/portraits/canada-sidhu.png` | https://www.canada.ca/en/government/ministers/maninder-sidhu.html |
+| Canada — Dominic LeBlanc | `assets/portraits/canada-leblanc.png` | https://www.canada.ca/en/government/ministers/dominic-leblanc.html |
+| China — Li Lecheng | `assets/portraits/china-lilecheng.png` | https://www.chinadaily.com.cn/a/202504/30/WS68120fb7a310a04af22bd237.html |
+| China — Yin Hejun | `assets/portraits/china-hejun.png` | https://en.most.gov.cn/organization/leadership/202404/t20240411_190178.htm |
+| China — Wang Wentao | `assets/portraits/china-wangwentao.png` | https://english.mofcom.gov.cn/News/PressConference/art/2026/art_af9691957bef4456be63899a4966e416.html |
+| China — Li Chenggang | `assets/portraits/china-lichenggang.png` | https://www.cnbc.com/2026/05/22/china-apec-trade-meeting-li-chenggang-cooperation-us-china-deals.html |
+| France — Anne Le Hénanff | `assets/portraits/france-lehenanff.png` | https://www.info.gouv.fr/personnalite/anne-le-henanff |
+| France — Nicolas Forissier | `assets/portraits/france-forissier.png` | https://www.info.gouv.fr/personnalite/nicolas-forissier |
+| Germany — Karsten Wildberger | `assets/portraits/germany-wildberger.png` | https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett/2342876-2342876 |
+| Germany — Katherina Reiche | `assets/portraits/germany-reiche.png` | https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett/katherina-reiche-2342740 |
+| India — Ashwini Vaishnaw | `assets/portraits/india-vaishnaw.png` | https://en.wikipedia.org/wiki/Ashwini_Vaishnaw |
+| India — Piyush Goyal | `assets/portraits/india-goyal.png` | https://en.wikipedia.org/wiki/Piyush_Goyal |
+| India — Rajesh Agrawal | `assets/portraits/india-agrawal.png` | https://theprint.in/diplomacy/india-us-framework-trade-deal-ready-will-be-signed-at-right-time-says-commerce-secretary/2985216/ |
+| Indonesia — Meutya Viada Hafid | `assets/portraits/indonesia-hafid.png` | https://en.wikipedia.org/wiki/Meutya_Hafid |
+| Indonesia — Budi Santoso | `assets/portraits/indonesia-santoso.png` | https://en.wikipedia.org/wiki/Budi_Santoso_(politician) |
+| Indonesia — Airlangga Hartarto | `assets/portraits/indonesia-airlangga.png` | https://en.wikipedia.org/wiki/Airlangga_Hartarto |
+| Italy — Alessio Butti | `assets/portraits/italy-butti.png` | https://www.governo.it/en/governo/meloni/undersecretary-presidency-council-ministers/alessio-butti |
+| Italy — Antonio Tajani | `assets/portraits/italy-tajani.png` | https://www.governo.it/en/governo/meloni/minister/antonio-tajani |
+| Italy — Adolfo Urso | `assets/portraits/italy-urso.png` | https://www.governo.it/en/governo/meloni/minister/adolfo-urso |
+| Japan — Matsumoto Hisashi | `assets/portraits/japan-matsumoto.png` | https://www.digital.go.jp/en/about/member/matsumotohisashi |
+| Japan — Akazawa Ryosei | `assets/portraits/japan-akazawa.png` | https://www.meti.go.jp/english/aboutmeti/profiles/individual/aMinister.html |
+| Mexico — José Antonio Peña Merino | `assets/portraits/mexico-pena.png` | https://es.wikipedia.org/wiki/Agencia_de_Transformaci%C3%B3n_Digital_y_Telecomunicaciones |
+| Mexico — Marcelo Luis Ebrard Casaubón | `assets/portraits/mexico-ebrard.png` | https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/joint-statement-ambassador-jamieson-greer-and-mexican-secretary-economy-marcelo-ebrard |
+| Mexico — Luis Rosendo Gutiérrez Romano | `assets/portraits/mexico-gutierrez.png` | https://www.gob.mx/se/estructuras/luis-rosendo-gutierrez-romano |
+| Poland — Krzysztof Gawkowski | `assets/portraits/poland-gawkowski.png` | https://www.gov.pl/web/primeminister/krzysztof-gawkowski |
+| Poland — Andrzej Domański | `assets/portraits/poland-domanski.png` | https://www.bloomberg.com/news/articles/2025-07-23/poland-reshuffles-cabinet-to-create-economy-superministry |
+| Poland — Michał Baranowski | `assets/portraits/poland-baranowski.png` | https://aninews.in/news/world/asia/eu-india-fta-huge-deal-for-europe-including-polish-businesses-polands-undersecretary-of-state-michal-baranowski20260714221423/ |
+| Russia — Maksut Shadayev | `assets/portraits/russia-shadayev.png` | https://www.themoscowtimes.com/2026/03/31/russias-digital-ministry-declares-war-on-vpns-a92384 |
+| Russia — Anton Alikhanov | `assets/portraits/russia-alikhanov.png` | https://armenia.news-pravda.com/en/russia/2026/07/06/36732.html |
+| Russia — Maxim Reshetnikov | `assets/portraits/russia-reshetnikov.png` | https://www.thenationalnews.com/news/europe/2026/06/08/russias-economy-is-sustainable-and-balanced-despite-global-uncertainty-minister-says/ |
+| Saudi Arabia — Abdullah bin Amer Alswaha | `assets/portraits/saudi-alswaha.png` | https://mcit.gov.sa/en/minister-mcit |
+| Saudi Arabia — Majid bin Abdullah Al-Qasabi | `assets/portraits/saudi-alqasabi.png` | https://mc.gov.sa/en/About/CVs-Ministry-officials/Pages/Minister.aspx |
+| Saudi Arabia — Mohammed bin Abdulaziz Al-Abduljabbar | `assets/portraits/saudi-abduljabbar.png` | https://x.com/gaft_sa/status/1975121378769871186 |
+| South Korea — Bae Kyung-hoon | `assets/portraits/korea-bae.png` | https://en.wikipedia.org/wiki/Bae_Kyung-hoon |
+| South Korea — Kim Jung-kwan | `assets/portraits/korea-kim.png` | https://en.wikipedia.org/wiki/Kim_Jung-kwan_(politician) |
+| South Korea — Yeo Han-koo | `assets/portraits/korea-yeo.png` | https://en.wikipedia.org/wiki/Yeo_Han-koo |
+| Türkiye — Mehmet Fatih Kacır | `assets/portraits/turkiye-kacir.png` | https://en.wikipedia.org/wiki/Mehmet_Fatih_Kac%C4%B1r |
+| Türkiye — Ömer Bolat | `assets/portraits/turkiye-bolat.png` | https://www.tccb.gov.tr/en/cabinet/minister-of-trade |
+| United Kingdom — Liz Kendall | `assets/portraits/uk-kendall.png` | https://www.gov.uk/government/ministers/secretary-of-state-for-science-innovation-and-technology |
+| United Kingdom — Peter Kyle | `assets/portraits/uk-kyle.png` | https://www.gov.uk/government/ministers/secretary-of-state--2 |
+| United Kingdom — Chris Bryant | `assets/portraits/uk-bryant.png` | https://www.gov.uk/government/people/chris-bryant |
+| United States — Michael Kratsios | `assets/portraits/us-kratsios.png` | https://en.wikipedia.org/wiki/Michael_Kratsios |
+| United States — Arielle Roth | `assets/portraits/us-roth.png` | https://www.ntia.gov/personnel-profile/arielle-roth |
+| United States — Howard Lutnick | `assets/portraits/us-lutnick.png` | https://en.wikipedia.org/wiki/Howard_Lutnick |
+| United States — Jamieson Greer | `assets/portraits/us-greer.png` | https://ustr.gov/about/leadership/us-trade-representative |
+| European Union — Henna Virkkunen | `assets/portraits/bloc-virkkunen.png` | https://commission.europa.eu/about/organisation/college-commissioners/henna-virkkunen_en |
+| European Union — Maroš Šefčovič | `assets/portraits/bloc-efovi.png` | https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en |
+| African Union — Lerato Dorothy Mataboge | `assets/portraits/bloc-mataboge.png` | https://au.int/en/commissioners/he-ms-lerato-mataboge |
+| African Union — Francisca Tatchouop Belobe | `assets/portraits/bloc-belobe.png` | https://au.int/en/commissioners/he-francisca-tatchouop-belobe |
+
 ## Name spellings to preserve exactly (incl. diacritics)
 
 - Türkiye, Darío Leandro Genua, José Antonio Peña Merino, Katherina Reiche, Maroš Šefčovič, Mehmet Fatih Kacır, Abdulkadir Uraloğlu, Andrzej Domański, Michał Baranowski, Krzysztof Gawkowski, Márcio Fernando Elias Rosa.

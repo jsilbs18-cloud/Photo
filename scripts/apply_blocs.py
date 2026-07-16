@@ -67,6 +67,8 @@ def norm_official(o):
         'confidence': o.get('confidence', 'Needs check'),
         'is_acting': bool(o.get('is_acting')), 'display': o.get('display', 'full'),
         'role_tag': None, 'is_primary': True,
+        'portrait_slug': re.sub(r'[^a-z]', '', (o.get('name','x').split()[-1]).lower()) and
+                         ('bloc-' + re.sub(r'[^a-z]', '', o.get('name','x').split()[-1].lower())),
     }
 
 blocs = []
@@ -121,7 +123,7 @@ for fn, abbrev in (('data/_bloc_eu.json', 'EU'), ('data/_bloc_au.json', 'AU')):
         for j, o in enumerate(offs):
             o['is_primary'] = (j == 0)
             if o.get('display') == 'full':
-                o['bio_display'] = sentence_trim(o['bio_display'], 74 if has_note else 90)
+                o['bio_display'] = sentence_trim(o['bio_display'], 58 if has_note else 80)
 
 D['blocs'] = blocs
 json.dump(D, open(ROOT + 'data/g20.json', 'w'), indent=2, ensure_ascii=False)

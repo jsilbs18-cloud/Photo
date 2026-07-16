@@ -11,6 +11,7 @@ echo "1/7 flags";      python3 scripts/fetch_flags.py      # -> assets/flags/*.p
 echo "2/7 json";       python3 scripts/build_json.py       # data/_research.json -> data/g20.json
 echo "     updates";    python3 scripts/apply_updates.py     # merge data/_updates.json (rosters, portraits, seal, US totals)
 echo "     blocs";      python3 scripts/apply_blocs.py       # EU & AU annex from data/_bloc_*.json
+echo "     portraits";  python3 scripts/normalize_portraits.py  # embeds any photos dropped into assets/portraits/
 echo "3/7 workbook";   python3 scripts/build_xlsx.py       # -> output/g20-ministers-trade-reference.xlsx
 echo "4/7 pptx";       python3 scripts/build_pptx.py       # -> output/g20-ministers-trade-deck.pptx
 echo "5/7 html";       python3 scripts/build_html.py       # -> output/_deck.html (intermediate)

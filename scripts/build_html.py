@@ -169,18 +169,26 @@ def portrait_html(o,l,t,h):
 def full_profile(y,h,heading,o,notes_line):
     parts=[box(RX,y,RW,"",f'<div style="font-size:10.5pt;font-weight:700;color:{BLUE};letter-spacing:1.2px">{esc(heading)}</div>')]
     tx=RX; tw=RW
+    if o.get('portrait_file'):
+        pw=1.00*img_ar(o['portrait_file'])
+        parts.append(f'<img src="{data_uri(o["portrait_file"])}" style="position:absolute;left:{RX}in;top:{y+0.28}in;height:1.00in;border:1pt solid {SLATE}">')
+        tx=RX+pw+0.18; tw=RW-pw-0.18
     parts.append(box(tx,y+0.28,tw,"",f'<div style="font-size:14pt;font-weight:700;color:{NAVY}">{esc(o["name"])}{acting_html(o,14)}</div>'))
     parts.append(box(tx,y+0.58,tw,"",f'<div style="font-size:11pt;font-style:italic;color:{GRAY};line-height:1.15">{esc(o["title"])}</div>'))
     ao=f'&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:{MUTED}">Assumed office: {esc(o["assumed_office"])}</span>' if o.get('assumed_office') else ''
     parts.append(box(tx,y+0.98,tw,"",f'<div style="font-size:9.5pt;color:{INK};line-height:1.15">{esc(o["ministry"])}{ao}</div>'))
     note=(f'<div style="margin-top:5pt;font-size:9pt;font-style:italic;color:{GRAY};line-height:1.2">{esc(notes_line)}</div>') if notes_line else ''
     parts.append(box(RX,y+1.34,RW,f"height:{h-1.34}in;overflow:hidden",
-        f'<div style="font-size:11pt;color:{INK};line-height:1.28">{esc(o.get("bio_display") or o.get("bio",""))}</div>{note}'))
+        f'<div style="font-family:\'Merriweather\',Cambria,Georgia,serif;font-size:10.5pt;color:{INK};line-height:1.35">{esc(o.get("bio_display") or o.get("bio",""))}</div>{note}'))
     return ''.join(parts)
 
 def half_profile(x0,y,h,o):
     parts=[]
     tx=x0; tw=COL_W
+    if o.get('portrait_file'):
+        pw=0.80*img_ar(o['portrait_file'])
+        parts.append(f'<img src="{data_uri(o["portrait_file"])}" style="position:absolute;left:{x0}in;top:{y+0.26}in;height:0.80in;border:1pt solid {SLATE}">')
+        tx=x0+pw+0.14; tw=COL_W-pw-0.14
     tag=f'<div style="font-size:7.5pt;font-weight:700;color:{TEAL};letter-spacing:.8px">{esc(o["role_tag"])}</div>' if o.get('role_tag') else ''
     parts.append(box(tx,y+0.26,tw,f"height:1.00in;overflow:hidden",
         f'{tag}<div style="font-size:12pt;font-weight:700;color:{NAVY};margin-top:2pt">{esc(o["name"])}{acting_html(o,12)}</div>'
@@ -189,7 +197,7 @@ def half_profile(x0,y,h,o):
     parts.append(box(x0,y+1.28,COL_W,"height:0.32in;overflow:hidden",
         f'<div style="font-size:8.5pt;color:{INK};line-height:1.18">{esc(o["ministry"])}{ao}</div>'))
     parts.append(box(x0,y+1.62,COL_W,f"height:{h-1.62}in;overflow:hidden",
-        f'<div style="font-size:10.5pt;color:{INK};line-height:1.24">{esc(o.get("bio_display") or o.get("bio",""))}</div>'))
+        f'<div style="font-family:\'Merriweather\',Cambria,Georgia,serif;font-size:9.5pt;color:{INK};line-height:1.35">{esc(o.get("bio_display") or o.get("bio",""))}</div>'))
     return ''.join(parts)
 
 def section(blk,heading,offs,div_note):
@@ -251,8 +259,15 @@ def sources_slide():
         +li("Overall trade balances: national statistics offices / IMF, latest full year, goods basis unless noted.")
         +li("EU & African Union annex: IMF WEO, Eurostat, USTR, and official EU/AU sources, verified 2026-07-16.")
         +li("Officeholders: official government sources and 2026-dated press, verified 2026-07-16 with an independent second pass."))
-    S.append(f'<div class="slide">{header_bar("Sources","datasets and vintages")}'
-             f'{box(0.6,1.5,11.9,"",left)}{footer()}</div>')
+    right=(head("DATA CAVEATS",True)
+        +li("Basis exceptions: Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.")
+        +li("Several overall balances are converted from local currency (EUR/GBP/CAD/AUD/JPY/SAR) at ~2025 average rates; USD values carry exchange-rate uncertainty.")
+        +li("census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
+        +li("African Union: U.S. trade figures are U.S.–Africa goods totals (proxy); no clean continental goods balance is published (shown N/A).")
+        +li("Acting officials: Argentina's domestic commerce portfolio (Lavigne) and Saudi Arabia's GAFT governorship are held on an acting basis.")
+        +li("Full uncertainty register (confidence flags, items to re-verify): output/GAPS.md."))
+    S.append(f'<div class="slide">{header_bar("Sources & Data Caveats","datasets, vintages, and measurement caveats")}'
+             f'{box(0.6,1.5,5.9,"",left)}{box(6.9,1.5,5.85,"",right)}{footer()}</div>')
 
 # ---- assemble ----
 title_slide(); methodology_slide(); summary_slide(CO[:10],1,2); summary_slide(CO[10:],2,2)

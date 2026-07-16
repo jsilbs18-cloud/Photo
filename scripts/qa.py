@@ -152,7 +152,8 @@ for sp in ('assets/seal/doc-seal.png', 'assets/seal/doc-seal-white.png'):
 # ---------- 11. text-fit (font metrics, v2 geometry) ----------
 FP = {'reg': '/usr/local/share/fonts/ita/OpenSans-Regular.ttf',
       'bold': '/usr/local/share/fonts/ita/OpenSans-Bold.ttf',
-      'ital': '/usr/local/share/fonts/ita/OpenSans-Italic.ttf'}
+      'ital': '/usr/local/share/fonts/ita/OpenSans-Italic.ttf',
+      'serif': '/usr/local/share/fonts/ita/Merriweather-Regular.ttf'}
 _fc = {}
 def font(style, pt):
     k = (style, round(pt * 96 / 72))
@@ -177,10 +178,11 @@ for c in CO + BL:
         notes = [o for o in c[g] if o.get('display') == 'note']
         if len(shown) == 1:
             o = shown[0]
-            tl = nlines(o['title'], 11, RW, 'ital')
-            ml = nlines(o['ministry'] + ('    Assumed office: ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 9.5, RW)
+            tw_full = RW - (1.0 if o.get('portrait_file') else 0)
+            tl = nlines(o['title'], 11, tw_full, 'ital')
+            ml = nlines(o['ministry'] + ('    Assumed office: ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 9.5, tw_full)
             bio = o.get('bio_display') or o.get('bio', '')
-            bh = nlines(bio, 11, RW) * 11 * 1.03 / 72
+            bh = nlines(bio, 10.5, RW, 'serif') * 10.5 * 1.35 / 72
             note_line = '; '.join(f"{n['name']} ({n['title']})" for n in notes)
             dn = c.get(div) or ''
             full_note = dn if dn else ('Also: ' + note_line if note_line else '')
@@ -190,12 +192,13 @@ for c in CO + BL:
             check(fits, f"fit full {c['country']}/{g[:3]} bio+note {bh+nh:.2f}<={H-1.34:.2f} title {tl}L min {ml}L")
         elif len(shown) == 2:
             for o in shown:
+                tw_half = COL_W - (0.78 if o.get('portrait_file') else 0)
                 head_h = (0.11 if o.get('role_tag') else 0) + \
-                         nlines(o['name'] + ('  · acting' if o.get('is_acting') else ''), 12, COL_W, 'bold') * 12 * 1.1 / 72 + \
-                         nlines(o['title'], 9, COL_W, 'ital') * 9 * 1.18 / 72 + 4/72
+                         nlines(o['name'] + ('  · acting' if o.get('is_acting') else ''), 12, tw_half, 'bold') * 12 * 1.1 / 72 + \
+                         nlines(o['title'], 9, tw_half, 'ital') * 9 * 1.18 / 72 + 4/72
                 ml = nlines(o['ministry'] + ('  ·  ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 8.5, COL_W)
                 bio = o.get('bio_display') or o.get('bio', '')
-                bh = nlines(bio, 10.5, COL_W) * 10.5 * 1.24 / 72
+                bh = nlines(bio, 9.5, COL_W, 'serif') * 9.5 * 1.35 / 72
                 fits = head_h <= 1.00 and ml <= 2 and bh <= (H - 1.62) + 0.02
                 tight.append((max(head_h / 1.00, bh / (H - 1.62)), c['country'], g[:3], o['name'][:14]))
                 check(fits, f"fit half {c['country']}/{g[:3]}/{o['name'][:16]} head {head_h:.2f}<=1.00 min {ml}L bio {bh:.2f}<={H-1.62:.2f}")
