@@ -96,17 +96,8 @@ def methodology_slide():
           +b("GDP:","Nominal (current USD), IMF World Economic Outlook 2025, single vintage across all 19.")
           +b("U.S. bilateral trade:","U.S. Census Bureau goods trade, 2025 full year (goods basis), via Census-derived channels (see Sources).")
           +b("Ministers:","Each officeholder confirmed current on 2026-07-16 by live search plus an independent verification pass. Where a portfolio is split, both responsible officials are profiled."))
-    about=""
-    for t in ["Prepared within the International Trade Administration, U.S. Department of Commerce, as an internal reference.",
-              "Formatted to the ITA Visual Style Guide (January 2026 edition): Trade Navy/Trade Blue palette, Open Sans typography, official document signatures.",
-              "One structured dataset generates this deck, the companion workbook, and the PDF, so figures cannot drift between formats.",
-              "Data caveats, acting officials, and items pending confirmation are tracked in a separate gaps register (GAPS.md) rather than flagged on slides."]:
-        about+=f'<div style="margin-top:9pt;font-size:10.5pt;color:{GRAY}">{esc(t)}</div>'
-    panel=(f'<div style="position:absolute;left:8.5in;top:1.42in;width:4.23in;height:5.1in;background:{MOCHA}"></div>'
-           f'<div style="position:absolute;left:8.5in;top:1.42in;width:4.23in;height:0.045in;background:{GOLD}"></div>'
-           +box(8.8,1.66,3.7,"",f'<div style="font-size:11pt;font-weight:700;color:{NAVY};letter-spacing:1px">ABOUT THIS DOCUMENT</div>{about}'))
     S.append(f'<div class="slide">{header_bar("Methodology & Scope","19 sovereign members · EU & African Union annex · compiled 2026-07-16")}'
-             f'{box(0.6,1.42,7.5,"",left)}{panel}{footer()}</div>')
+             f'{box(0.6,1.42,11.3,"",left)}{footer()}</div>')
 
 # ---------- SUMMARY ----------
 def summary_slide(rows,part,total):
@@ -178,12 +169,12 @@ def portrait_html(o,l,t,h):
 def full_profile(y,h,heading,o,notes_line):
     parts=[box(RX,y,RW,"",f'<div style="font-size:10.5pt;font-weight:700;color:{BLUE};letter-spacing:1.2px">{esc(heading)}</div>')]
     tx=RX; tw=RW
-    parts.append(box(tx,y+0.30,tw,"",f'<div style="font-size:14pt;font-weight:700;color:{NAVY}">{esc(o["name"])}{acting_html(o,14)}</div>'))
-    parts.append(box(tx,y+0.62,tw,"",f'<div style="font-size:11pt;font-style:italic;color:{GRAY};line-height:1.15">{esc(o["title"])}</div>'))
+    parts.append(box(tx,y+0.28,tw,"",f'<div style="font-size:14pt;font-weight:700;color:{NAVY}">{esc(o["name"])}{acting_html(o,14)}</div>'))
+    parts.append(box(tx,y+0.58,tw,"",f'<div style="font-size:11pt;font-style:italic;color:{GRAY};line-height:1.15">{esc(o["title"])}</div>'))
     ao=f'&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:{MUTED}">Assumed office: {esc(o["assumed_office"])}</span>' if o.get('assumed_office') else ''
-    parts.append(box(tx,y+1.10,tw,"",f'<div style="font-size:9.5pt;color:{INK};line-height:1.15">{esc(o["ministry"])}{ao}</div>'))
+    parts.append(box(tx,y+0.98,tw,"",f'<div style="font-size:9.5pt;color:{INK};line-height:1.15">{esc(o["ministry"])}{ao}</div>'))
     note=(f'<div style="margin-top:5pt;font-size:9pt;font-style:italic;color:{GRAY};line-height:1.2">{esc(notes_line)}</div>') if notes_line else ''
-    parts.append(box(RX,y+1.56,RW,f"height:{h-1.56}in;overflow:hidden",
+    parts.append(box(RX,y+1.34,RW,f"height:{h-1.34}in;overflow:hidden",
         f'<div style="font-size:11pt;color:{INK};line-height:1.28">{esc(o.get("bio_display") or o.get("bio",""))}</div>{note}'))
     return ''.join(parts)
 
@@ -191,13 +182,13 @@ def half_profile(x0,y,h,o):
     parts=[]
     tx=x0; tw=COL_W
     tag=f'<div style="font-size:7.5pt;font-weight:700;color:{TEAL};letter-spacing:.8px">{esc(o["role_tag"])}</div>' if o.get('role_tag') else ''
-    parts.append(box(tx,y+0.28,tw,f"height:1.26in;overflow:hidden",
+    parts.append(box(tx,y+0.26,tw,f"height:1.00in;overflow:hidden",
         f'{tag}<div style="font-size:12pt;font-weight:700;color:{NAVY};margin-top:2pt">{esc(o["name"])}{acting_html(o,12)}</div>'
         f'<div style="font-size:9pt;font-style:italic;color:{GRAY};line-height:1.18;margin-top:2pt">{esc(o["title"])}</div>'))
     ao=f'&nbsp;·&nbsp;<span style="color:{MUTED}">{esc(o["assumed_office"])}</span>' if o.get('assumed_office') else ''
-    parts.append(box(x0,y+1.38,COL_W,"height:0.34in;overflow:hidden",
+    parts.append(box(x0,y+1.28,COL_W,"height:0.32in;overflow:hidden",
         f'<div style="font-size:8.5pt;color:{INK};line-height:1.18">{esc(o["ministry"])}{ao}</div>'))
-    parts.append(box(x0,y+1.74,COL_W,f"height:{h-1.74}in;overflow:hidden",
+    parts.append(box(x0,y+1.62,COL_W,f"height:{h-1.62}in;overflow:hidden",
         f'<div style="font-size:10.5pt;color:{INK};line-height:1.24">{esc(o.get("bio_display") or o.get("bio",""))}</div>'))
     return ''.join(parts)
 
@@ -251,26 +242,17 @@ def bloc_slide(c):
 
 # ---------- SOURCES ----------
 def sources_slide():
-    def head(t,first=False): return f'<div style="font-size:11.5pt;font-weight:700;color:{NAVY};letter-spacing:.5px;margin:{0 if first else 10}pt 0 3pt 0">{esc(t)}</div>'
-    def li(t): return f'<div style="font-size:10.5pt;color:{INK};margin-bottom:2pt;line-height:1.2"><span style="color:{GOLD};font-weight:700">•</span>&nbsp;&nbsp;{esc(t)}</div>'
+    def head(t,first=False): return f'<div style="font-size:11.5pt;font-weight:700;color:{NAVY};letter-spacing:.5px;margin:{0 if first else 10}pt 0 4pt 0">{esc(t)}</div>'
+    def li(t): return f'<div style="font-size:11pt;color:{INK};margin-bottom:4pt;line-height:1.25"><span style="color:{GOLD};font-weight:700">•</span>&nbsp;&nbsp;{esc(t)}</div>'
     left=(head("DATASETS & VINTAGES",True)
         +li("GDP (nominal, current USD): IMF World Economic Outlook, Oct 2025 (2025 estimates), via StatisticsTimes tabulation.")
         +li("U.S. bilateral goods trade: U.S. Census Bureau, full-year 2025, via USTR country fact sheets and the Census/UN-COMTRADE series (Trading Economics mirror).")
         +li("U.S. world totals: Census/BEA FT-900, December & Annual 2025 release.")
         +li("Overall trade balances: national statistics offices / IMF, latest full year, goods basis unless noted.")
+        +li("EU & African Union annex: IMF WEO, Eurostat, USTR, and official EU/AU sources, verified 2026-07-16.")
         +li("Officeholders: official government sources and 2026-dated press, verified 2026-07-16 with an independent second pass."))
-    right=(head("MEASUREMENT NOTES",True)
-        +li("Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.")
-        +li("Several overall balances are converted from local currency (EUR/GBP/CAD/AUD/JPY/SAR) at ~2025 average rates; USD values carry exchange-rate uncertainty.")
-        +li("census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
-        +head("IMAGERY & FORMAT")
-        +li("Flags: public-domain renderings, uniform height, true aspect ratios.")
-        +li("Design per the ITA Visual Style Guide (Jan 2026): Trade Navy/Blue palette, Open Sans, official signatures.")
-        +head("SCOPE")
-        +li("Poland substituted for South Africa. The EU and African Union hold G20 bloc seats and are profiled in the bloc annex.")
-        +li("A detailed uncertainty register (acting officials, figures pending confirmation) accompanies this deck: output/GAPS.md."))
-    S.append(f'<div class="slide">{header_bar("Sources & Notes","datasets, vintages, and measurement notes")}'
-             f'{box(0.6,1.42,6.05,"",left)}{box(6.95,1.42,5.8,"",right)}{footer()}</div>')
+    S.append(f'<div class="slide">{header_bar("Sources","datasets and vintages")}'
+             f'{box(0.6,1.5,11.9,"",left)}{footer()}</div>')
 
 # ---- assemble ----
 title_slide(); methodology_slide(); summary_slide(CO[:10],1,2); summary_slide(CO[10:],2,2)

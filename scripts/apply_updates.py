@@ -22,7 +22,7 @@ def norm_name(s):
 # (country, portfolio) -> list of (name-substring, display)
 PLAN = {
     ('Brazil','digital'): [('Siqueira','half'), ('Luciana Santos','half')],
-    ('Brazil','trade'): [('Elias Rosa','half'), ('Ferraz','half')],
+    ('Brazil','trade'): [('Elias Rosa','full'), ('Ferraz','omit')],
     ('Canada','digital'): [('Solomon','full')],
     ('Canada','trade'): [('Sidhu','half'), ('LeBlanc','half')],
     ('France','digital'): [('Le Hénanff','full')],
@@ -89,6 +89,9 @@ for (country, portfolio), plan in PLAN.items():
         hit = next((o for o in offs if sub in o['name']), None)
         if hit is None:
             raise SystemExit(f'plan miss: {country}/{portfolio}/{sub}')
+        if disp == 'omit':
+            offs.remove(hit)
+            continue
         hit['display'] = disp
         if disp == 'half':
             hit['role_tag'] = role_tag(country, hit['name'], hit.get('role_label',''))
@@ -176,8 +179,10 @@ for c in D['countries']:
     for key in ('digital_ministers','trade_ministers'):
         for o in c[key]:
             k = f"{c['country']}|{o['name']}"
-            if k in trims:
+            if k in trims and o.get('display') != 'full':
                 o['bio_display'] = trims[k].strip(); matched += 1
+            elif o.get('display') == 'full' and o.get('bio'):
+                o['bio_display'] = o['bio']   # full-width profiles carry the richer bio (budget pass below)
             elif o.get('display') == 'half' and len((o.get('bio_display') or '').split()) < 26 and len((o.get('bio') or '').split()) > len((o.get('bio_display') or '').split()):
                 o['bio_display'] = sentence_trim(o['bio']); fallback += 1
             elif o.get('display') == 'half' and not o.get('bio_display'):
@@ -207,9 +212,9 @@ for c in D['countries']:
         has_note = bool(c.get(div)) or any(o.get('display') == 'note' for o in offs)
         for o in offs:
             if o.get('display') == 'half':
-                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 44)
-            elif o.get('display') == 'full' and has_note:
-                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 62)
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 48)
+            elif o.get('display') == 'full':
+                o['bio_display'] = sentence_trim(o.get('bio_display') or o.get('bio',''), 75 if has_note else 92)
 
 # ---------- 4. portraits ----------
 port_by_name = {}
@@ -244,6 +249,11 @@ for c in D['countries']:
                 o['portrait_raw'] = None
                 o['portrait_status'] = 'missing'; miss_p += 1
 print(f'portraits mapped: {ok_p} ok, {miss_p} missing (placeholders will be generated)')
+
+# Brazil: Ferraz removed per preparer direction — scrub from workbook source notes
+br = CO['Brazil']
+br['source_notes'] = re.sub(r'[^.]*Lucas Pedreira[^.]*\.\s*', '', br.get('source_notes',''))
+br.setdefault('gaps', [])
 
 # ---------- 5. US world totals ----------
 ut = U.get('usTotals') or {}

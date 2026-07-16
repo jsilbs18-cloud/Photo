@@ -56,7 +56,7 @@
           "ministry": "Jefatura de Gabinete de Ministros (Chief of Cabinet's Office)",
           "assumed_office": "2024-06",
           "bio": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening. His secretariat leads state digitalization, digital public services, connectivity and telecommunications policy under the Chief of Cabinet. In 2026 he opened the Argentina Digital Summit.",
-          "bio_display": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening.",
+          "bio_display": "Darío Leandro Genua, a business-administration graduate of the Universidad Catolica Argentina with a postgraduate degree in information systems and administrative processes, became Secretary of Innovation, Science and Technology in June 2024, succeeding Alejandro Cosentino. He previously served as executive coordinator of the intervention of ENACOM, Argentina's telecommunications regulator, working on the repeal of DNU 690 and satellite-internet opening. His secretariat leads state digitalization, digital public services, connectivity and telecommunications policy under the Chief of Cabinet.",
           "source_url": "https://www.argentina.gob.ar/noticias/dario-genua-abrio-el-argentina-digital-summit-2026",
           "as_of": "2026-07-16",
           "confidence": "Verified",
@@ -297,29 +297,9 @@
           "is_acting": false,
           "role_label": "Cabinet minister responsible for trade, industry and commerce (MDIC)",
           "is_primary": true,
-          "display": "half",
-          "role_tag": "MDIC MINISTER",
-          "bio_display": "Márcio Fernando Elias Rosa, a retired public prosecutor who twice served as São Paulo Attorney General of Justice (2012-2016), joined MDIC as Executive Secretary in January 2023 and was sworn in as Minister on 6 April 2026, succeeding Geraldo Alckmin.",
+          "display": "full",
+          "bio_display": "Retired public prosecutor, lawyer and law professor, born in Ibiúna, São Paulo, in 1962. He spent his career in the São Paulo Public Prosecutor's Office, serving twice as Attorney General of Justice (2012-2016) and as São Paulo State Secretary of Justice. He joined MDIC as Executive Secretary in January 2023, and was sworn in as Minister on 6 April 2026, succeeding Vice President Geraldo Alckmin, who left the post to run for re-election as Lula's running mate. His agenda centers on the Nova Indústria Brasil program, expanding investment and foreign trade.",
           "portrait_slug": "brazil-rosa",
-          "portrait_raw": null,
-          "portrait_status": "missing"
-        },
-        {
-          "name": "Lucas Pedreira do Couto Ferraz",
-          "title": "Secretary of Foreign Trade (SECEX)",
-          "ministry": "Ministry of Development, Industry, Trade and Services (MDIC) - Secretariat of Foreign Trade (SECEX)",
-          "assumed_office": "2023-01-01",
-          "bio": "Economist and academic. He holds chemical-engineering degrees from the University of São Paulo's Polytechnic School and a PhD in Economics from FGV's EPGE, where he is a professor and has coordinated WTO-chair and trade-modeling work. He has served as MDIC Secretary of Foreign Trade (SECEX) since January 2023, leading trade negotiations, the Mercosur-EU and OECD agendas, trade facilitation and export promotion, and fronting SECEX's monthly trade-balance releases and 2026 outlook statements.",
-          "source_url": "https://www.gov.br/mdic/pt-br/composicao/secretaria-de-comercio-exterior-secex",
-          "as_of": "2026-07-16",
-          "confidence": "Verified",
-          "is_acting": false,
-          "role_label": "Chief foreign-trade official / trade negotiator (SECEX)",
-          "is_primary": false,
-          "display": "half",
-          "role_tag": "FOREIGN TRADE (SECEX)",
-          "bio_display": "Lucas Pedreira do Couto Ferraz, an economist with a PhD from FGV's EPGE, where he is a professor, has served as MDIC Secretary of Foreign Trade (SECEX) since January 2023, leading trade negotiations including the Mercosur-EU and OECD agendas.",
-          "portrait_slug": "brazil-ferraz",
           "portrait_raw": null,
           "portrait_status": "missing"
         }
@@ -327,7 +307,7 @@
       "div_note_digital": "",
       "div_note_trade": "",
       "row_confidence": "Needs check",
-      "source_notes": "Digital/technology portfolio also held by: Luciana Santos (Minister of Science, Technology and Innovation). Trade/commerce portfolio also held by: Lucas Pedreira do Couto Ferraz (Secretary of Foreign Trade (SECEX)). Balance: INDEPENDENTLY CONFIRMED. Brazil's full-year 2025 merchandise (goods) trade balance was a SURPLUS of +US$68.3 billion (customs/merchandise basis), per MDIC/SECEX official data. Multiple 2026-dated Brazilian sources corroborate the US$68.3bn figure, including LegisMap and Times Brasil/CNBC, and SECEX's own 2026 outlook statements reference '2025, when the balance closed at +US$68.3 billion.' The 202",
+      "source_notes": "Digital/technology portfolio also held by: Luciana Santos (Minister of Science, Technology and Innovation).Balance: INDEPENDENTLY CONFIRMED. Brazil's full-year 2025 merchandise (goods) trade balance was a SURPLUS of +US$68.3 billion (customs/merchandise basis), per MDIC/SECEX official data. Multiple 2026-dated Brazilian sources corroborate the US$68.3bn figure, including LegisMap and Times Brasil/CNBC, and SECEX's own 2026 outlook statements reference '2025, when the balance closed at +US$68.3 billion.' The 202",
       "gaps": [
         "GDP value low-confidence (secondary IMF-based aggregator; may reflect Apr-2026 WEO revision)."
       ]
@@ -975,7 +955,7 @@
           "role_label": "Primary trade/commerce authority + chief US tariff negotiator",
           "is_primary": true,
           "display": "full",
-          "bio_display": "Akazawa Ryosei is a Liberal Democratic Party member of the House of Representatives for Tottori's 2nd district, first elected in 2005. A University of Tokyo Law graduate with a Cornell MBA, he spent about two decades as an MLIT-lineage bureaucrat. Under PM Ishiba he was Minister for Economic Revitalization and Japan's chief negotiator in the 2025 US tariff talks.",
+          "bio_display": "Akazawa Ryosei is a Liberal Democratic Party member of the House of Representatives for Tottori's 2nd district, first elected in 2005. A University of Tokyo Law graduate with a Cornell MBA, he spent about two decades as an MLIT-lineage bureaucrat. Under PM Ishiba he was Minister for Economic Revitalization and Japan's chief negotiator in the 2025 US tariff talks. PM Takaichi appointed him METI Minister on October 21, 2025, reappointed February 18, 2026.",
           "portrait_slug": "japan-akazawa",
           "portrait_raw": null,
           "portrait_status": "missing"

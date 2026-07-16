@@ -185,9 +185,9 @@ for c in CO + BL:
             dn = c.get(div) or ''
             full_note = dn if dn else ('Also: ' + note_line if note_line else '')
             nh = (5/72 + nlines('Also: ' + full_note, 9, RW, 'ital') * 9 * 1.2 / 72) if full_note else 0
-            fits = tl <= 3 and ml <= 2 and (bh + nh) <= (H - 1.56) + 0.02
-            tight.append(((bh + nh) / (H - 1.56), c['country'], g[:3], 'full'))
-            check(fits, f"fit full {c['country']}/{g[:3]} bio+note {bh+nh:.2f}<={H-1.56:.2f} title {tl}L min {ml}L")
+            fits = tl <= 3 and ml <= 2 and (bh + nh) <= (H - 1.34) + 0.02
+            tight.append(((bh + nh) / (H - 1.34), c['country'], g[:3], 'full'))
+            check(fits, f"fit full {c['country']}/{g[:3]} bio+note {bh+nh:.2f}<={H-1.34:.2f} title {tl}L min {ml}L")
         elif len(shown) == 2:
             for o in shown:
                 head_h = (0.11 if o.get('role_tag') else 0) + \
@@ -196,9 +196,9 @@ for c in CO + BL:
                 ml = nlines(o['ministry'] + ('  ·  ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 8.5, COL_W)
                 bio = o.get('bio_display') or o.get('bio', '')
                 bh = nlines(bio, 10.5, COL_W) * 10.5 * 1.24 / 72
-                fits = head_h <= 1.26 and ml <= 2 and bh <= (H - 1.74) + 0.02
-                tight.append((max(head_h / 1.26, bh / (H - 1.74)), c['country'], g[:3], o['name'][:14]))
-                check(fits, f"fit half {c['country']}/{g[:3]}/{o['name'][:16]} head {head_h:.2f}<=1.26 min {ml}L bio {bh:.2f}<={H-1.74:.2f}")
+                fits = head_h <= 1.00 and ml <= 2 and bh <= (H - 1.62) + 0.02
+                tight.append((max(head_h / 1.00, bh / (H - 1.62)), c['country'], g[:3], o['name'][:14]))
+                check(fits, f"fit half {c['country']}/{g[:3]}/{o['name'][:16]} head {head_h:.2f}<=1.00 min {ml}L bio {bh:.2f}<={H-1.62:.2f}")
 
 # ---------- 11b. bloc annex slides ----------
 if BL:

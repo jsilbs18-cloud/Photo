@@ -1035,3 +1035,12 @@ Per the preparer's direction, the portrait slots were removed from all profile s
 - FLAG: Overall balance flagged Needs check: No clean, verifiable continental goods trade BALANCE aggregate was accessible (WTO/UNCTAD primary tables egress-blocked). Best clean aggrega
 
 Notes: the AU's U.S. trade figures are U.S.–Africa goods totals (proxy — Census publishes no AU aggregate); the AU continental goods balance is not published as a clean aggregate and is shown N/A (flagged in GAPS.md). The EU profile is fully verified, including the 2025 U.S.–EU tariff framework context in the Šefčovič bio.
+
+### 7.5 Presentation revisions (2026-07-16, user-directed)
+
+- Brazil: Lucas Pedreira do Couto Ferraz (Secretary of Foreign Trade, SECEX) removed from the deck and
+  workbook notes per preparer direction; Márcio Fernando Elias Rosa is shown as the single trade official.
+- Methodology slide: "About this document" panel removed. Sources slide reduced to Datasets & Vintages only
+  (measurement notes, imagery/format, and scope sections removed; those caveats remain in GAPS.md).
+- Profile blocks re-spaced after portrait removal: compact vertical rhythm, full-width profiles restored to
+  their richer bios (up to ~90 words), split columns keep the compressed bios.

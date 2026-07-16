@@ -151,7 +151,7 @@ def bullet(tf,label,text,first=False):
 def methodology_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
     header_bar(s,"Methodology & Scope","19 sovereign members · EU & African Union annex · compiled 2026-07-16")
-    tf=tb(s,0.6,1.42,7.5,5.3)
+    tf=tb(s,0.6,1.42,11.3,5.3)
     bullet(tf,"Countries (19):","Argentina, Australia, Brazil, Canada, China, France, Germany, India, "
         "Indonesia, Italy, Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Türkiye, "
         "United Kingdom, United States.",first=True)
@@ -163,15 +163,6 @@ def methodology_slide():
         "via Census-derived channels (see Sources).")
     bullet(tf,"Ministers:","Each officeholder confirmed current on 2026-07-16 by live search plus an "
         "independent verification pass. Where a portfolio is split, both responsible officials are profiled.")
-    rect(s,8.5,1.42,4.23,5.1,fill=MOCHA)
-    rect(s,8.5,1.42,4.23,0.045,fill=GOLD)
-    tp=tb(s,8.8,1.68,3.7,4.7)
-    p=para(tp,True); run(p,"ABOUT THIS DOCUMENT",11,NAVY,bold=True,spacing=1.0)
-    for t in ["Prepared within the International Trade Administration, U.S. Department of Commerce, as an internal reference.",
-              "Formatted to the ITA Visual Style Guide (January 2026 edition): Trade Navy/Trade Blue palette, Open Sans typography, official document signatures.",
-              "One structured dataset generates this deck, the companion workbook, and the PDF, so figures cannot drift between formats.",
-              "Data caveats, acting officials, and items pending confirmation are tracked in a separate gaps register (GAPS.md) rather than flagged on slides."]:
-        p=tp.add_paragraph(); p.space_before=Pt(9); run(p,t,10.5,GRAY)
     footer(s)
 
 # ============ SUMMARY ============
@@ -246,15 +237,15 @@ def full_profile(s,y,h,heading,o,notes_line):
     tf=tb(s,RX,y,RW,0.24)
     p=para(tf,True); run(p,heading,10.5,BLUE,bold=True,spacing=1.2)
     tx=RX; tw=RW
-    tf=tb(s,tx,y+0.30,tw,0.30)
+    tf=tb(s,tx,y+0.28,tw,0.28)
     p=para(tf,True); run(p,o['name'],14,NAVY,bold=True); acting_run(p,o,14)
-    tf=tb(s,tx,y+0.62,tw,0.46)
+    tf=tb(s,tx,y+0.58,tw,0.38)
     p=para(tf,True); p.line_spacing=1.05; run(p,o['title'],11,GRAY,italic=True)
-    tf=tb(s,tx,y+1.10,tw,0.38)
+    tf=tb(s,tx,y+0.98,tw,0.32)
     p=para(tf,True); p.line_spacing=1.05
     run(p,o['ministry'],9.5,INK)
     if o.get('assumed_office'): run(p,f"   ·   Assumed office: {o['assumed_office']}",9.5,MUTED)
-    tf=tb(s,RX,y+1.56,RW,h-1.56)
+    tf=tb(s,RX,y+1.34,RW,h-1.34)
     p=para(tf,True); p.line_spacing=1.03; run(p,o.get('bio_display') or o.get('bio',''),11,INK)
     if notes_line:
         pn=tf.add_paragraph(); pn.space_before=Pt(5)
@@ -262,18 +253,18 @@ def full_profile(s,y,h,heading,o,notes_line):
 
 def half_profile(s,x0,y,h,o):
     tx=x0; tw=COL_W
-    tf=tb(s,tx,y+0.28,tw,1.26)
+    tf=tb(s,tx,y+0.26,tw,1.00)
     p=para(tf,True)
     if o.get('role_tag'): run(p,o['role_tag'],7.5,TEAL,bold=True,spacing=0.8)
     p2=tf.add_paragraph(); p2.space_before=Pt(2)
     run(p2,o['name'],12,NAVY,bold=True); acting_run(p2,o,12)
     p3=tf.add_paragraph(); p3.space_before=Pt(2); p3.line_spacing=1.04
     run(p3,o['title'],9,GRAY,italic=True)
-    tf=tb(s,x0,y+1.38,COL_W,0.34)
+    tf=tb(s,x0,y+1.28,COL_W,0.32)
     p=para(tf,True); p.line_spacing=1.04
     run(p,o['ministry'],8.5,INK)
     if o.get('assumed_office'): run(p,f"  ·  {o['assumed_office']}",8.5,MUTED)
-    tf=tb(s,x0,y+1.74,COL_W,h-1.74)
+    tf=tb(s,x0,y+1.62,COL_W,h-1.62)
     p=para(tf,True); p.line_spacing=1.04
     run(p,o.get('bio_display') or o.get('bio',''),10.5,INK)
 
@@ -335,30 +326,20 @@ def bloc_slide(c):
 # ============ SOURCES ============
 def sources_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
-    header_bar(s,"Sources & Notes","datasets, vintages, and measurement notes")
-    L=tb(s,0.6,1.42,6.05,5.3)
+    header_bar(s,"Sources","datasets and vintages")
+    L=tb(s,0.6,1.5,11.9,5.2)
     def head(tf,t,first=False):
-        p=para(tf,first); p.space_before=Pt(0 if first else 10); p.space_after=Pt(3)
+        p=para(tf,first); p.space_before=Pt(0 if first else 10); p.space_after=Pt(4)
         run(p,t,11.5,NAVY,bold=True,spacing=0.6)
     def li(tf,t):
-        p=tf.add_paragraph(); p.space_after=Pt(2); run(p,"•  ",10.5,GOLD,bold=True); run(p,t,10.5,INK)
+        p=tf.add_paragraph(); p.space_after=Pt(4); run(p,"•  ",11,GOLD,bold=True); run(p,t,11,INK)
     head(L,"DATASETS & VINTAGES",first=True)
     li(L,"GDP (nominal, current USD): IMF World Economic Outlook, Oct 2025 (2025 estimates), via StatisticsTimes tabulation.")
     li(L,"U.S. bilateral goods trade: U.S. Census Bureau, full-year 2025, via USTR country fact sheets and the Census/UN-COMTRADE series (Trading Economics mirror).")
     li(L,"U.S. world totals: Census/BEA FT-900, December & Annual 2025 release.")
     li(L,"Overall trade balances: national statistics offices / IMF, latest full year, goods basis unless noted.")
+    li(L,"EU & African Union annex: IMF WEO, Eurostat, USTR, and official EU/AU sources, verified 2026-07-16.")
     li(L,"Officeholders: official government sources and 2026-dated press, verified 2026-07-16 with an independent second pass.")
-    R=tb(s,6.95,1.42,5.8,5.3)
-    head(R,"MEASUREMENT NOTES",first=True)
-    li(R,"Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.")
-    li(R,"Several overall balances are converted from local currency (EUR/GBP/CAD/AUD/JPY/SAR) at ~2025 average rates; USD values carry exchange-rate uncertainty.")
-    li(R,"census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
-    head(R,"IMAGERY & FORMAT")
-    li(R,"Flags: public-domain renderings, uniform height, true aspect ratios.")
-    li(R,"Design per the ITA Visual Style Guide (Jan 2026): Trade Navy/Blue palette, Open Sans, official signatures.")
-    head(R,"SCOPE")
-    li(R,"Poland substituted for South Africa. The EU and African Union hold G20 bloc seats and are profiled in the bloc annex.")
-    li(R,"A detailed uncertainty register (acting officials, figures pending confirmation) accompanies this deck: output/GAPS.md.")
     footer(s)
 
 # ---- assemble ----
