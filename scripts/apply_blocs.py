@@ -2,7 +2,7 @@
 """Merge the EU / African Union bloc research (data/_bloc_eu.json, data/_bloc_au.json)
 into data/g20.json under 'blocs', normalize fields to the country-slide shape, and
 extend the QA roster reference. Generates a labeled flag placeholder if a download failed."""
-import json, os, re
+import json, os, re, unicodedata
 from PIL import Image, ImageDraw, ImageFont
 
 FACT_OVERRIDES = {
@@ -67,8 +67,8 @@ def norm_official(o):
         'confidence': o.get('confidence', 'Needs check'),
         'is_acting': bool(o.get('is_acting')), 'display': o.get('display', 'full'),
         'role_tag': None, 'is_primary': True,
-        'portrait_slug': re.sub(r'[^a-z]', '', (o.get('name','x').split()[-1]).lower()) and
-                         ('bloc-' + re.sub(r'[^a-z]', '', o.get('name','x').split()[-1].lower())),
+        'portrait_slug': 'bloc-' + re.sub(r'[^a-z]', '', unicodedata.normalize(
+            'NFKD', o.get('name', 'x').split()[-1]).encode('ascii', 'ignore').decode().lower()),
     }
 
 blocs = []

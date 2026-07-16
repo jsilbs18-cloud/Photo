@@ -49,6 +49,8 @@ for c in CO:
         check(1 <= len(shown) <= 2, f"{c['country']}/{key}: 1-2 displayed officials (got {len(shown)})")
         for o in shown:
             check(bool(o['name'] and o['title'] and o['ministry']), f"{c['country']}/{o['name']}: complete fields")
+            check(bool(o.get('portrait_file')) and os.path.exists(ROOT + o['portrait_file']),
+                  f"{c['country']}/{o['name']}: portrait slot present")
 
 # ---------- 5. workbook ----------
 wb = load_workbook(ROOT + 'output/g20-ministers-trade-reference.xlsx'); ws = wb.active
@@ -98,7 +100,7 @@ for idx, c in enumerate(CO):
     for o in shown:
         check(o['name'] in txt and o['title'] in txt, f"pptx name+title {c['country']}/{o['name']}")
     pics = [sh for sh in sl.shapes if sh.shape_type == 13]
-    check(len(pics) >= 1, f"pptx flag embedded {c['country']}")
+    check(len(pics) >= 1 + len(shown), f"pptx images {c['country']} ({len(pics)}>={1+len(shown)}: flag+portraits)")
     check('NEEDS CHECK' not in txt and 'VACANT / ACTING' not in txt,
           f"pptx no confidence badge {c['country']}")
 us_txt = stext(country_slides[names.index('United States')])

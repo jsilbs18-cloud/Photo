@@ -115,7 +115,7 @@ Portraits cannot be fetched from the build environment (all government hosts and
 | United States — Howard Lutnick | `assets/portraits/us-lutnick.png` | https://en.wikipedia.org/wiki/Howard_Lutnick |
 | United States — Jamieson Greer | `assets/portraits/us-greer.png` | https://ustr.gov/about/leadership/us-trade-representative |
 | European Union — Henna Virkkunen | `assets/portraits/bloc-virkkunen.png` | https://commission.europa.eu/about/organisation/college-commissioners/henna-virkkunen_en |
-| European Union — Maroš Šefčovič | `assets/portraits/bloc-efovi.png` | https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en |
+| European Union — Maroš Šefčovič | `assets/portraits/bloc-sefcovic.png` | https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en |
 | African Union — Lerato Dorothy Mataboge | `assets/portraits/bloc-mataboge.png` | https://au.int/en/commissioners/he-ms-lerato-mataboge |
 | African Union — Francisca Tatchouop Belobe | `assets/portraits/bloc-belobe.png` | https://au.int/en/commissioners/he-francisca-tatchouop-belobe |
 
