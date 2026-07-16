@@ -69,8 +69,15 @@ def _no_borders(tbl):
     tbl._tbl.tblPr.append(borders)
 
 def money(v, year=None):
+    """Prose form: spelled-out billions."""
     if v is None: return 'N/A'
     s = f"${abs(v):,.1f} billion"
+    return s if year is None else f"{s} ({year})"
+
+def money_b(v, year=None):
+    """Standardized tabular form (matches the deck and workbook): $X,XXX.XB."""
+    if v is None: return 'N/A'
+    s = f"${abs(v):,.1f}B"
     return s if year is None else f"{s} ({year})"
 
 def balance_word(v): return 'surplus' if (v or 0) >= 0 else 'deficit'
@@ -187,29 +194,29 @@ def figures_block(c, is_us=False, au=False):
         txt = (f"The United States had a nominal GDP of {money(c['gdp_usd_b'])} in {gy} and recorded an overall goods "
                f"trade deficit of {money(ob)} in {oy}. Because the United States is the reference country for the "
                f"bilateral figures in this list, world totals are shown instead.")
-        items = [f"Nominal GDP: {money(c['gdp_usd_b'], gy)}",
-                 f"Goods balance — world: {money(ob, oy)} (deficit)",
-                 f"Goods exports — world: {money(c['us_world_exports_b'], ty)}",
-                 f"Goods imports — world: {money(c['us_world_imports_b'], ty)}"]
+        items = [f"Nominal GDP: {money_b(c['gdp_usd_b'], gy)}",
+                 f"Goods balance — world: {money_b(ob, oy)} (deficit)",
+                 f"Goods exports — world: {money_b(c['us_world_exports_b'], ty)}",
+                 f"Goods imports — world: {money_b(c['us_world_imports_b'], ty)}"]
     elif au:
         txt = (f"African Union member states had an aggregate nominal GDP of approximately {money(c['gdp_usd_b'])} in {gy}. "
                f"No clean continental goods-trade balance is published. U.S.–Africa goods trade (a proxy for the AU) is "
                f"shown for {ty}.")
-        items = [f"Aggregate nominal GDP: {money(c['gdp_usd_b'], gy)}",
+        items = [f"Aggregate nominal GDP: {money_b(c['gdp_usd_b'], gy)}",
                  "Continental goods balance: N/A",
-                 f"U.S.–Africa goods exports: {money(c['us_exports_usd_b'], ty)}",
-                 f"U.S.–Africa goods imports: {money(c['us_imports_usd_b'], ty)}",
-                 f"U.S.–Africa goods {balance_word(c['us_bilateral_usd_b'])}: {money(c['us_bilateral_usd_b'], ty)}"]
+                 f"U.S.–Africa goods exports: {money_b(c['us_exports_usd_b'], ty)}",
+                 f"U.S.–Africa goods imports: {money_b(c['us_imports_usd_b'], ty)}",
+                 f"U.S.–Africa goods {balance_word(c['us_bilateral_usd_b'])}: {money_b(c['us_bilateral_usd_b'], ty)}"]
     else:
         txt = (f"{name} had a nominal GDP of {money(c['gdp_usd_b'])} in {gy} and recorded an overall {basis} trade "
                f"{balance_word(ob)} of {money(ob)} in {oy}. The United States exported {money(c['us_exports_usd_b'])} in "
                f"goods to {name} and imported {money(c['us_imports_usd_b'])}, for a U.S. goods trade "
                f"{balance_word(c['us_bilateral_usd_b'])} of {money(c['us_bilateral_usd_b'])} in {ty}.")
-        items = [f"Nominal GDP: {money(c['gdp_usd_b'], gy)}",
-                 f"Overall {basis} {balance_word(ob)}: {money(ob, oy)}",
-                 f"U.S. goods exports: {money(c['us_exports_usd_b'], ty)}",
-                 f"U.S. goods imports: {money(c['us_imports_usd_b'], ty)}",
-                 f"U.S. bilateral {balance_word(c['us_bilateral_usd_b'])}: {money(c['us_bilateral_usd_b'], ty)}"]
+        items = [f"Nominal GDP: {money_b(c['gdp_usd_b'], gy)}",
+                 f"Overall {basis} {balance_word(ob)}: {money_b(ob, oy)}",
+                 f"U.S. goods exports: {money_b(c['us_exports_usd_b'], ty)}",
+                 f"U.S. goods imports: {money_b(c['us_imports_usd_b'], ty)}",
+                 f"U.S. bilateral {balance_word(c['us_bilateral_usd_b'])}: {money_b(c['us_bilateral_usd_b'], ty)}"]
     run(intro, txt, 9.5, INK)
     key_figures(items)
 

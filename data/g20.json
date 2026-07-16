@@ -68,7 +68,7 @@
           "portrait_slug": "argentina-genua",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-argentina-genua.png"
+          "portrait_file": "assets/portraits/argentina-genua.png"
         }
       ],
       "trade_ministers": [
@@ -110,7 +110,7 @@
           "portrait_slug": "argentina-lavigne",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-argentina-lavigne.png"
+          "portrait_file": "assets/portraits/argentina-lavigne.png"
         },
         {
           "name": "Fernando Brun",
@@ -1338,7 +1338,7 @@
           "portrait_slug": "saudi-alqasabi",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-saudi-alqasabi.png"
+          "portrait_file": "assets/portraits/saudi-alqasabi.png"
         },
         {
           "name": "Mohammed bin Abdulaziz Al-Abduljabbar",
@@ -1825,7 +1825,7 @@
           "role_tag": null,
           "is_primary": true,
           "portrait_slug": "bloc-virkkunen",
-          "portrait_file": "assets/portraits/_ph-bloc-virkkunen.png"
+          "portrait_file": "assets/portraits/bloc-virkkunen.png"
         }
       ],
       "trade_ministers": [
@@ -1844,7 +1844,7 @@
           "role_tag": null,
           "is_primary": true,
           "portrait_slug": "bloc-sefcovic",
-          "portrait_file": "assets/portraits/_ph-bloc-sefcovic.png"
+          "portrait_file": "assets/portraits/bloc-sefcovic.png"
         }
       ],
       "div_note_digital": "",
@@ -1912,7 +1912,7 @@
           "role_tag": null,
           "is_primary": true,
           "portrait_slug": "bloc-mataboge",
-          "portrait_file": "assets/portraits/_ph-bloc-mataboge.png"
+          "portrait_file": "assets/portraits/bloc-mataboge.png"
         }
       ],
       "trade_ministers": [
@@ -1931,7 +1931,7 @@
           "role_tag": null,
           "is_primary": true,
           "portrait_slug": "bloc-belobe",
-          "portrait_file": "assets/portraits/_ph-bloc-belobe.png"
+          "portrait_file": "assets/portraits/bloc-belobe.png"
         },
         {
           "name": "Wamkele Mene",

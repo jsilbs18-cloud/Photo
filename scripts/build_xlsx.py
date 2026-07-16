@@ -58,7 +58,7 @@ def primary(offs):
         if o['is_primary']: return o
     return offs[0] if offs else {'name':'','title':'','ministry':''}
 
-MONEY = '$#,##0.0;($#,##0.0)'
+MONEY = '$#,##0.0"B";"\u2212"$#,##0.0"B"'
 for i, cn in enumerate(CO):
     r = i + 2
     dg = primary(cn['digital_ministers']); tr = primary(cn['trade_ministers'])
