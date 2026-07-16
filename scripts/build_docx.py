@@ -76,10 +76,13 @@ run(pv, 'Data vintage: Trade — U.S. Census goods, 2025 full year (goods basis)
     8.5, MUTED, italic=True)
 
 # ================= per-entry writers =================
-def country_heading(name, tag=None):
+def country_heading(name, tag=None, flag=None):
     p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(14)
     p.paragraph_format.keep_with_next = True
     bottom_border(p, 'B4862D', size=14, space=3)
+    if flag:
+        p.add_run().add_picture(ROOT + flag, height=Inches(0.26))
+        run(p, '   ', 14)
     run(p, name, 14, NAVY, bold=True)
     if tag: run(p, f'    ·    {tag}', 9, TEAL, bold=True, caps_spacing=True)
 
@@ -88,18 +91,34 @@ def subhead(text):
     p.paragraph_format.keep_with_next = True
     run(p, text.upper(), 9.5, BLUE, bold=True, caps_spacing=True)
 
+def _no_borders(tbl):
+    tblPr = tbl._tbl.tblPr
+    borders = OxmlElement('w:tblBorders')
+    for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
+        e = OxmlElement(f'w:{edge}'); e.set(qn('w:val'), 'none')
+        e.set(qn('w:sz'), '0'); e.set(qn('w:space'), '0'); borders.append(e)
+    tblPr.append(borders)
+
 def official_entry(o):
-    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(1)
-    p.paragraph_format.keep_with_next = True
+    tbl = doc.add_table(rows=1, cols=2)
+    _no_borders(tbl)
+    tbl.autofit = False
+    tbl.columns[0].width = Inches(0.95); tbl.columns[1].width = Inches(5.75)
+    left, right = tbl.rows[0].cells
+    left.width = Inches(0.95); right.width = Inches(5.75)
+    lp = left.paragraphs[0]; lp.paragraph_format.space_after = Pt(2)
+    if o.get('portrait_file'):
+        lp.add_run().add_picture(ROOT + o['portrait_file'], width=Inches(0.72))
+    p = right.paragraphs[0]; p.paragraph_format.space_after = Pt(1)
     run(p, o['name'], 11, NAVY, bold=True)
     if o.get('is_acting'): run(p, '  · acting', 9, ORANGE, bold=True, italic=True)
     run(p, f",  {o['title']}", 10, GRAY, italic=True)
     meta = o['ministry'] + (f"  ·  Assumed office: {o['assumed_office']}" if o.get('assumed_office') else '')
-    pm = doc.add_paragraph(); pm.paragraph_format.space_after = Pt(2)
-    pm.paragraph_format.keep_with_next = True
+    pm = right.add_paragraph(); pm.paragraph_format.space_after = Pt(2)
     run(pm, meta, 8.5, MUTED)
-    pb = doc.add_paragraph(); pb.paragraph_format.space_after = Pt(6)
+    pb = right.add_paragraph(); pb.paragraph_format.space_after = Pt(2)
     run(pb, o.get('bio_display') or o.get('bio', ''), 10, INK)
+    sp = doc.add_paragraph(); sp.paragraph_format.space_after = Pt(4)  # spacer after table
 
 def section(offs, div_note, label):
     shown = [o for o in offs if o.get('display') in ('full', 'half')]
@@ -158,7 +177,7 @@ def figures_block(c, is_us=False, au=False):
 # ================= countries =================
 for c in CO:
     is_us = c['country'] == 'United States'
-    country_heading(c['country'])
+    country_heading(c['country'], flag=c.get('flag_file'))
     figures_block(c, is_us=is_us)
     section(c['trade_ministers'], c.get('div_note_trade'), 'Trade Minister' if len(
         [o for o in c['trade_ministers'] if o.get('display') in ('full', 'half')]) == 1 else 'Trade Ministers')
@@ -174,7 +193,7 @@ run(pa, 'The European Union and African Union hold G20 seats as supranational bl
         'alongside the 19 sovereign members.', 9, GRAY, italic=True)
 for b in BL:
     au = b['country'] == 'African Union'
-    country_heading(b['country'], tag='G20 BLOC MEMBER')
+    country_heading(b['country'], tag='G20 BLOC MEMBER', flag=b.get('flag_file'))
     pf = doc.add_paragraph(); pf.paragraph_format.space_after = Pt(2)
     run(pf, '   ·   '.join(f"{f['label']}: {f['value']}" for f in b.get('facts', [])), 8.5, GRAY)
     figures_block(b, au=au)
