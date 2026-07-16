@@ -1,0 +1,76 @@
+{
+  "name": "African Union",
+  "flag_status": "ok",
+  "flag_file": "assets/flags/african-union.png",
+  "facts": [
+    {"label": "Member states", "value": "55 member states (the 55-member bloc spans the entire African continent)"},
+    {"label": "G20 status", "value": "Permanent member since 9 September 2023, admitted at the G20 New Delhi summit under India's presidency (previously an 'invited international organisation')"},
+    {"label": "Headquarters", "value": "Addis Ababa, Ethiopia"},
+    {"label": "AU Commission Chairperson", "value": "Mahmoud Ali Youssouf (Djibouti) — elected February 2025 at the 38th AU Assembly, assumed office 13 March 2025; confirmed active in the role as of June 2026 (au.int press releases)"}
+  ],
+  "gdp_usd_b": 2810,
+  "gdp_year": "2025 (IMF projection)",
+  "gdp_source": "IMF World Economic Outlook country data, continental aggregation via StatisticsTimes/Worldometers",
+  "gdp_source_url": "https://statisticstimes.com/economy/africa-gdp.php",
+  "gdp_confidence": "medium",
+  "overall_balance_usd_b": null,
+  "overall_balance_basis": "goods-only",
+  "overall_balance_year": "2024",
+  "overall_balance_source": "Afreximbank African Trade Report 2025 (total trade; no clean balance aggregate)",
+  "overall_balance_source_url": "https://media.afreximbank.com/afrexim/African-Trade-Report_2025.pdf",
+  "overall_balance_confidence": "Needs check",
+  "overall_balance_notes": "No clean, verifiable continental goods trade BALANCE aggregate was accessible (WTO/UNCTAD primary tables egress-blocked). Best clean aggregate is TOTAL merchandise trade: Afreximbank reports Africa's total merchandise trade surged 13.9% in 2024 to ~US$1,500B (intra-African trade US$220.3B, +12.4%). Secondary aggregations suggest 2024 exports ~$682B vs imports ~$719B (deficit ~$37B, narrowed from ~$80B in 2023) but these could not be verified against a primary source.",
+  "us_exports_usd_b": 40.4,
+  "us_imports_usd_b": 43.0,
+  "us_trade_year": "2025",
+  "us_trade_source": "USTR Africa regional page (U.S. Census Bureau-derived)",
+  "us_trade_source_url": "https://ustr.gov/countries-regions/africa",
+  "us_trade_confidence": "high",
+  "us_trade_notes": "U.S.-Africa proxy for the AU: figures are the USTR/Census aggregate for U.S. goods trade with the whole African continent, not an official AU-membership aggregate. Full-year 2025: exports $40.4B (+24.8% vs 2024), imports $43.0B (+8.7%), total goods trade $83.4B, U.S. goods deficit $2.6B (-64% vs 2024). census.gov and ustr.gov direct fetch egress-blocked; figures taken from USTR page excerpts via live search and internally consistent with 2024 baselines (~$32B exports / ~$39.5B imports).",
+  "digital_officials": [
+    {
+      "name": "Lerato Dorothy Mataboge",
+      "title": "Commissioner for Infrastructure and Energy (portfolio covers transport, energy and ICT/digital transformation)",
+      "ministry": "African Union Commission — Department of Infrastructure and Energy",
+      "assumed_office": "2025-03-13 (elected 12 February 2025 by the 46th AU Executive Council)",
+      "bio": "A South African trade-and-investment specialist with over 23 years' experience, Mataboge leads the AU portfolio spanning transport, energy and ICT/digital transformation. She was previously Deputy Director-General at South Africa's Department of Trade, Industry and Competition, founded and led Trade Invest Africa, and served as South Africa's chief trade and investment representative in Washington, D.C. Elected in the February 2025 AUC elections, she was sworn in with the new Commission on 13 March 2025.",
+      "source_url": "https://au.int/en/commissioners/he-ms-lerato-mataboge",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_acting": false,
+      "display": "full"
+    }
+  ],
+  "trade_officials": [
+    {
+      "name": "Francisca Tatchouop Belobe",
+      "title": "Commissioner for Economic Development, Trade, Tourism, Industry and Minerals (ETTIM)",
+      "ministry": "African Union Commission — Department of Economic Development, Trade, Tourism, Industry and Minerals",
+      "assumed_office": "September 2025 (elected by the AU Executive Council in July 2025, Malabo; sworn in mid-September 2025)",
+      "bio": "An Equatoguinean economist and politician, Tatchouop Belobe heads the AU's economic integration, trade, industry and minerals portfolio. She previously served as Vice-President of the ECCAS Commission (Economic Community of Central African States), Second Vice-President of Equatorial Guinea's National Assembly, and Minister and Deputy Minister of Economy, Trade and SME Promotion. Elected in July 2025 in Malabo to a seat left unfilled by the February 2025 elections, she was sworn in in September 2025 and was active in the role into 2026.",
+      "source_url": "https://au.int/en/commissioners/he-francisca-tatchouop-belobe",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_acting": false,
+      "display": "full"
+    },
+    {
+      "name": "Wamkele Mene",
+      "title": "Secretary-General, African Continental Free Trade Area (AfCFTA) Secretariat",
+      "ministry": "AfCFTA Secretariat, Accra (AU organ)",
+      "assumed_office": "2020 (sworn in as first Secretary-General; re-elected 18 February 2024 by the 37th AU Assembly for a second four-year term)",
+      "bio": "A South African trade lawyer and former chief trade negotiator at the WTO, Mene has led the Accra-based AfCFTA Secretariat since 2020 as its first Secretary-General, overseeing implementation of the world's largest free trade area by membership. Re-elected on 18 February 2024 for a second four-year term, he has driven the Guided Trade Initiative and protocols on digital trade and investment, and remained active in the post through at least May 2026.",
+      "source_url": "https://au-afcfta.org/2024/02/wamkele-mene-gets-second-term-as-afcfta-secretary-general/",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_acting": false,
+      "display": "note"
+    }
+  ],
+  "inconsistencies": [
+    "Continental goods trade balance left null: Afreximbank puts Africa's 2024 total merchandise trade at ~$1.5T, while secondary aggregations imply ~$1.4T (exports ~$682B + imports ~$719B, deficit ~$37B); WTO/UNCTAD primary tables were egress-blocked so the balance figure is flagged Needs check.",
+    "GDP ($2.81T, 2025) is an IMF WEO-based projection aggregated by third parties (StatisticsTimes/Worldometers over ~53-54 economies); the IMF publishes no single 'Africa' nominal GDP line and imf.org was egress-blocked, so an AU-55 aggregate would differ marginally — confidence medium.",
+    "The Feb 2025 AUC elections filled only four of six commissioner posts; ETTIM was held in an acting capacity (Moses Vilakati) until Francisca Tatchouop Belobe was elected in July 2025 and sworn in September 2025 — stale sources may still list Albert Muchanga or the acting arrangement.",
+    "U.S. trade figures are a U.S.-Africa (whole continent) proxy for the AU; USTR/Census pages could not be fetched directly (egress-blocked) and were verified via search excerpts of the USTR Africa page."
+  ]
+}

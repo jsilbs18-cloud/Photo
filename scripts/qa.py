@@ -49,8 +49,6 @@ for c in CO:
         check(1 <= len(shown) <= 2, f"{c['country']}/{key}: 1-2 displayed officials (got {len(shown)})")
         for o in shown:
             check(bool(o['name'] and o['title'] and o['ministry']), f"{c['country']}/{o['name']}: complete fields")
-            check(bool(o.get('portrait_file')) and os.path.exists(ROOT + o['portrait_file']),
-                  f"{c['country']}/{o['name']}: portrait file present")
 
 # ---------- 5. workbook ----------
 wb = load_workbook(ROOT + 'output/g20-ministers-trade-reference.xlsx'); ws = wb.active
@@ -80,7 +78,9 @@ check(len(ws.conditional_formatting._cf_rules) >= 1, "xlsx conditional formattin
 # ---------- 6. pptx ----------
 prs = Presentation(ROOT + 'output/g20-ministers-trade-deck.pptx')
 slides = list(prs.slides)
-check(len(slides) == 24, f"pptx 24 slides (got {len(slides)})")
+BL = D.get('blocs', [])
+EXPECT = 24 + len(BL)
+check(len(slides) == EXPECT, f"pptx {EXPECT} slides (got {len(slides)})")
 def stext(sl): return "\n".join(sh.text_frame.text for sh in sl.shapes if sh.has_text_frame)
 country_slides = slides[4:23]
 for idx, c in enumerate(CO):
@@ -98,8 +98,7 @@ for idx, c in enumerate(CO):
     for o in shown:
         check(o['name'] in txt and o['title'] in txt, f"pptx name+title {c['country']}/{o['name']}")
     pics = [sh for sh in sl.shapes if sh.shape_type == 13]
-    need = 1 + len(shown)  # flag + one portrait per displayed official (footer is a text signature per ITA guide)
-    check(len(pics) >= need, f"pptx images {c['country']} ({len(pics)}>={need}: flag+portraits)")
+    check(len(pics) >= 1, f"pptx flag embedded {c['country']}")
     check('NEEDS CHECK' not in txt and 'VACANT / ACTING' not in txt,
           f"pptx no confidence badge {c['country']}")
 us_txt = stext(country_slides[names.index('United States')])
@@ -110,7 +109,7 @@ check('INTERNATIONAL TRADE ADMINISTRATION' in allpptx, "pptx: ITA official frami
 
 # ---------- 7. pdf ----------
 doc = fitz.open(ROOT + 'output/g20-ministers-trade-deck.pdf')
-check(doc.page_count == 24, f"pdf 24 pages (got {doc.page_count})")
+check(doc.page_count == EXPECT, f"pdf {EXPECT} pages (got {doc.page_count})")
 for i in range(doc.page_count):
     w, h = doc[i].rect.width / 72, doc[i].rect.height / 72
     if not (abs(w - 13.333) < 0.05 and abs(h - 7.5) < 0.05):
@@ -127,7 +126,7 @@ us_pdf = pdf_country[names.index('United States')]
 check('Howard Lutnick' in us_pdf and 'Jamieson Greer' in us_pdf, "pdf US shows both officials")
 
 # ---------- 8. diacritics (auto-derived from displayed names) ----------
-dia = sorted({o['name'] for c in CO for g in ('digital_ministers','trade_ministers') for o in c[g]
+dia = sorted({o['name'] for c in CO + D.get('blocs', []) for g in ('digital_ministers','trade_ministers') for o in c[g]
               if o.get('display') in ('full','half') and any(ord(ch) > 127 for ch in o['name'])} | {'Türkiye'})
 for name in dia:
     check(name in allpptx, f"pptx diacritics: {name}")
@@ -172,14 +171,14 @@ def nlines(text, pt, width_in, style='reg'):
 
 RX, RW = 3.95, 8.78; COL_W = 4.21; H = 2.82
 tight = []
-for c in CO:
+for c in CO + BL:
     for g, div in (('digital_ministers', 'div_note_digital'), ('trade_ministers', 'div_note_trade')):
         shown = [o for o in c[g] if o.get('display') in ('full', 'half')]
         notes = [o for o in c[g] if o.get('display') == 'note']
         if len(shown) == 1:
             o = shown[0]
-            tl = nlines(o['title'], 11, RW - 1.12, 'ital')
-            ml = nlines(o['ministry'] + ('    Assumed office: ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 9.5, RW - 1.12)
+            tl = nlines(o['title'], 11, RW, 'ital')
+            ml = nlines(o['ministry'] + ('    Assumed office: ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 9.5, RW)
             bio = o.get('bio_display') or o.get('bio', '')
             bh = nlines(bio, 11, RW) * 11 * 1.03 / 72
             note_line = '; '.join(f"{n['name']} ({n['title']})" for n in notes)
@@ -192,14 +191,33 @@ for c in CO:
         elif len(shown) == 2:
             for o in shown:
                 head_h = (0.11 if o.get('role_tag') else 0) + \
-                         nlines(o['name'] + ('  · acting' if o.get('is_acting') else ''), 12, COL_W - 0.92, 'bold') * 12 * 1.1 / 72 + \
-                         nlines(o['title'], 9, COL_W - 0.92, 'ital') * 9 * 1.18 / 72 + 4/72
+                         nlines(o['name'] + ('  · acting' if o.get('is_acting') else ''), 12, COL_W, 'bold') * 12 * 1.1 / 72 + \
+                         nlines(o['title'], 9, COL_W, 'ital') * 9 * 1.18 / 72 + 4/72
                 ml = nlines(o['ministry'] + ('  ·  ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 8.5, COL_W)
                 bio = o.get('bio_display') or o.get('bio', '')
                 bh = nlines(bio, 10.5, COL_W) * 10.5 * 1.24 / 72
                 fits = head_h <= 1.26 and ml <= 2 and bh <= (H - 1.74) + 0.02
                 tight.append((max(head_h / 1.26, bh / (H - 1.74)), c['country'], g[:3], o['name'][:14]))
                 check(fits, f"fit half {c['country']}/{g[:3]}/{o['name'][:16]} head {head_h:.2f}<=1.26 min {ml}L bio {bh:.2f}<={H-1.74:.2f}")
+
+# ---------- 11b. bloc annex slides ----------
+if BL:
+    check(len(BL) == 2, f"two bloc profiles (got {len(BL)})")
+    bloc_slides = slides[23:23+len(BL)]
+    for i, b in enumerate(BL):
+        txt = stext(bloc_slides[i]); ptxt = doc[23+i].get_text()
+        check(b['country'] in txt and b['country'] in ptxt, f"bloc slide present: {b['country']}")
+        check(money(b['gdp_usd_b']) in txt and money(b['gdp_usd_b']) in ptxt, f"bloc GDP {b['country']}")
+        if b['us_bilateral_usd_b'] is not None:
+            check(abs(round(b['us_exports_usd_b']-b['us_imports_usd_b'],1)-b['us_bilateral_usd_b'])<0.05,
+                  f"bloc bilateral ties {b['country']}")
+            check(absmoney(b['us_bilateral_usd_b']) in txt, f"bloc bilateral shown {b['country']}")
+        for g in ('digital_ministers','trade_ministers'):
+            for o in b[g]:
+                if o.get('display') in ('full','half'):
+                    check(o['name'] in txt and o['name'] in ptxt, f"bloc official {b['country']}/{o['name']}")
+        pics = [sh for sh in bloc_slides[i].shapes if sh.shape_type == 13]
+        check(len(pics) >= 1, f"bloc flag embedded {b['country']}")
 
 # ---------- 12. GAPS ----------
 check(os.path.exists(ROOT + 'output/GAPS.md') and os.path.getsize(ROOT + 'output/GAPS.md') > 500, "GAPS.md non-empty")

@@ -1,0 +1,64 @@
+{
+  "name": "European Union",
+  "flag_status": "ok",
+  "flag_file": "assets/flags/european-union.png",
+  "facts": [
+    {"label": "Member states", "value": "27"},
+    {"label": "G20 status", "value": "Founding member since 1999; the only regional organization with full G20 membership (three member states — France, Germany, Italy — are also G20 members in their own right)"},
+    {"label": "Headquarters", "value": "Brussels, Belgium (seat of the European Commission and Council)"},
+    {"label": "European Commission President", "value": "Ursula von der Leyen (in office since 2019; second term began 1 December 2024, runs to 2029; confirmed in office as of July 2026)"}
+  ],
+  "gdp_usd_b": 21230,
+  "gdp_year": "2025",
+  "gdp_source": "IMF World Economic Outlook (April 2026 vintage), GDP current prices, EU",
+  "gdp_source_url": "https://www.imf.org/external/datamapper/NGDPD@WEO/EU",
+  "gdp_confidence": "high",
+  "overall_balance_usd_b": 144.7,
+  "overall_balance_basis": "goods-only",
+  "overall_balance_year": "2025",
+  "overall_balance_source": "Eurostat news article 'EU trade in goods surplus down to €128 billion in 2025' (published 2026-03-26); extra-EU trade in goods",
+  "overall_balance_source_url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260326-4",
+  "overall_balance_confidence": "Verified",
+  "overall_balance_notes": "Original figure EUR 128 billion surplus (extra-EU goods, full-year 2025; down EUR 8 bn from EUR 136 bn in 2024). Converted at 2025 annual average ECB-derived rate of 1.1306 USD/EUR = ~USD 144.7 bn. An earlier Eurostat Statistics Explained vintage showed EUR 130.0 bn (exports EUR 2,644.1 bn, imports EUR 2,514.1 bn); the March 2026 revised headline of EUR 128 bn is used here.",
+  "us_exports_usd_b": 414.4,
+  "us_imports_usd_b": 633.2,
+  "us_trade_year": "2025",
+  "us_trade_source": "USTR European Union country page (U.S. Census Bureau goods data)",
+  "us_trade_source_url": "https://ustr.gov/countries-regions/europe-middle-east/europe/european-union",
+  "us_trade_confidence": "high",
+  "us_trade_notes": "U.S. goods exports to the EU $414.4 bn in 2025 (up 12.1%, +$44.6 bn vs 2024); U.S. goods imports from the EU $633.2 bn (up 4.5%, +$27.5 bn); U.S. goods trade deficit $218.8 bn (down 7.3%). Total two-way goods trade ~$1,047.6 bn. census.gov and direct ustr.gov fetch are egress-blocked in this environment; figures obtained via search-engine excerpt of the USTR page (internally consistent: 414.4+633.2=1,047.6; 633.2-414.4=218.8).",
+  "digital_officials": [
+    {
+      "name": "Henna Virkkunen",
+      "title": "Executive Vice-President for Tech Sovereignty, Security and Democracy",
+      "ministry": "European Commission — Tech Sovereignty, Security and Democracy (Digital and Frontier Technologies portfolio)",
+      "assumed_office": "2024-12-01",
+      "bio": "Finnish politician of the National Coalition Party (EPP), born 1972 in Joutsa. A former journalist, she sat in Finland's Parliament from 2007 to 2014, serving as Minister of Education (2008-2011), of Public Administration and Local Government (2011-2014), and of Transport and Local Government (2014). An MEP from 2014 to 2024, she became Executive Vice-President on 1 December 2024, leading EU digital, AI, cybersecurity, platform-regulation and democracy policy.",
+      "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/henna-virkkunen_en",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_acting": false,
+      "display": "full"
+    }
+  ],
+  "trade_officials": [
+    {
+      "name": "Maroš Šefčovič",
+      "title": "Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency",
+      "ministry": "European Commission — Trade and Economic Security",
+      "assumed_office": "2024-12-01",
+      "bio": "Slovak diplomat and politician, born 1966. A career diplomat and Slovakia's Permanent Representative to the EU (2004-2009), he has served in every European Commission since 2009, including as Vice-President for the Energy Union and Executive Vice-President for the European Green Deal. A veteran Brexit negotiator, he took the trade portfolio on 1 December 2024 and led the EU side of the 2025 U.S.-EU tariff framework agreed at Turnberry.",
+      "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en",
+      "as_of": "2026-07-16",
+      "confidence": "Verified",
+      "is_acting": false,
+      "display": "full"
+    }
+  ],
+  "inconsistencies": [
+    "Eurostat vintage discrepancy on 2025 extra-EU goods surplus: EUR 130.0 bn (Statistics Explained, exports EUR 2,644.1 bn / imports EUR 2,514.1 bn) vs EUR 128 bn (Eurostat news headline, 2026-03-26). The revised EUR 128 bn headline was used.",
+    "USD conversion of the extra-EU balance is derived, not official: EUR 128 bn x 1.1306 (2025 annual average USD/EUR, per ECB reference-rate history via exchangerates.org.uk) = ~USD 144.7 bn.",
+    "Direct fetches of imf.org, ustr.gov, ec.europa.eu (Eurostat) and en.wikipedia.org returned HTTP 403 through the environment proxy; all figures were verified via search-engine excerpts quoting those primary sources, corroborated across multiple independent results (e.g., EU 2025 GDP $21.23 tn from IMF WEO Apr-2026 also reported as $21,243 bn by TradingEconomics/World Bank).",
+    "Mirror-statistics gap (expected, methodological): USTR/Census puts 2025 U.S. goods imports from the EU at $633.2 bn, while Eurostat reports EU goods exports to the U.S. of EUR 554.9 bn (~$627 bn) — within the normal CIF/FOB and coverage divergence."
+  ]
+}

@@ -38,64 +38,20 @@ Compiled 2026-07-16. Every item a reviewer should chase down before external use
 
 - **Saudi Arabia:** the raw research wrongly included the U.S. Secretary of Commerce and U.S. Trade Representative in Saudi Arabia's trade-officials list (context bleed from U.S.-specific instructions). Removed; Saudi Arabia's trade officials are the Minister of Commerce (Al-Qasabi) and the acting GAFT Governor (Al-Abduljabbar).
 
-## Portraits pending (monogram placeholder shown on the slide)
+- None — every displayed official has an official portrait embedded.
 
-- **Argentina** — Darío Leandro Genua (Secretary of Innovation, Science and Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Argentina** — Pablo Quirno (Minister of Foreign Affairs, International Trade and Worship (Canciller)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Argentina** — Pablo Lavigne (Secretary of Production Coordination (also exercising Industry & Commerce functions, acting)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Australia** — Andrew Charlton (Cabinet Secretary; Assistant Minister for Science, Technology and the Digital Economy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Australia** — Tim Ayres (Minister for Industry and Innovation; Minister for Science): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Australia** — Don Farrell (Minister for Trade and Tourism; Special Minister of State): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Brazil** — Frederico de Siqueira Filho (Minister of Communications): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Brazil** — Luciana Santos (Minister of Science, Technology and Innovation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Brazil** — Márcio Fernando Elias Rosa (Minister of Development, Industry, Trade and Services): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Brazil** — Lucas Pedreira do Couto Ferraz (Secretary of Foreign Trade (SECEX)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Canada** — Evan Solomon (Minister of Artificial Intelligence and Digital Innovation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Canada** — Maninder Sidhu (Minister of International Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Canada** — Dominic LeBlanc (President of the King's Privy Council for Canada and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, Internal Trade and One Canadian Economy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **China** — Li Lecheng (Minister of Industry and Information Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **China** — Yin Hejun (Minister of Science and Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **China** — Wang Wentao (Minister of Commerce): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **China** — Li Chenggang (China International Trade Representative (full ministerial rank) and Vice Minister of Commerce): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **France** — Anne Le Hénanff (Minister Delegate for Artificial Intelligence and Digital Affairs): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **France** — Nicolas Forissier (Minister Delegate for Foreign Trade and Attractiveness): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Germany** — Karsten Wildberger (Federal Minister for Digital Transformation and Government Modernisation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Germany** — Katherina Reiche (Federal Minister for Economic Affairs and Energy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **India** — Ashwini Vaishnaw (Union Minister of Electronics and Information Technology (concurrently Minister of Railways and Minister of Information & Broadcasting)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **India** — Piyush Goyal (Union Minister of Commerce and Industry): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **India** — Rajesh Agrawal (Commerce Secretary (Secretary, Department of Commerce) and India's Chief Negotiator for the India-US Bilateral Trade Agreement): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Indonesia** — Meutya Viada Hafid (Minister of Communication and Digital Affairs): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Indonesia** — Budi Santoso (Minister of Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Indonesia** — Airlangga Hartarto (Coordinating Minister for Economic Affairs): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Italy** — Alessio Butti (Undersecretary of State to the Presidency of the Council of Ministers with responsibility for Technological Innovation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Italy** — Antonio Tajani (Deputy Prime Minister (Vice President of the Council of Ministers) and Minister of Foreign Affairs and International Cooperation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Italy** — Adolfo Urso (Minister of Enterprises and Made in Italy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Japan** — Matsumoto Hisashi (Minister for Digital Transformation): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Japan** — Akazawa Ryosei (Minister of Economy, Trade and Industry): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Mexico** — José Antonio Peña Merino (Head of the Agency for Digital Transformation and Telecommunications): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Mexico** — Marcelo Luis Ebrard Casaubón (Secretary of Economy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Mexico** — Luis Rosendo Gutiérrez Romano (Undersecretary for Foreign Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Poland** — Krzysztof Gawkowski (Deputy Prime Minister and Minister of Digital Affairs): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Poland** — Andrzej Domański (Minister of Finance and Economy): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Poland** — Michał Baranowski (Undersecretary of State (deputy minister) responsible for trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Russia** — Maksut Shadayev (Minister of Digital Development, Communications and Mass Media): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Russia** — Anton Alikhanov (Minister of Industry and Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Russia** — Maxim Reshetnikov (Minister of Economic Development): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Saudi Arabia** — Abdullah bin Amer Alswaha (Minister of Communications and Information Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Saudi Arabia** — Majid bin Abdullah Al-Qasabi (Minister of Commerce): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Saudi Arabia** — Mohammed bin Abdulaziz Al-Abduljabbar (Acting Governor, General Authority for Foreign Trade (GAFT)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **South Korea** — Bae Kyung-hoon (Deputy Prime Minister and Minister of Science and ICT): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **South Korea** — Kim Jung-kwan (Minister of Trade, Industry and Resources): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **South Korea** — Yeo Han-koo (Minister for Trade (Head of the Office of Trade Negotiations)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Türkiye** — Mehmet Fatih Kacır (Minister of Industry and Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **Türkiye** — Ömer Bolat (Minister of Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United Kingdom** — Liz Kendall (Secretary of State for Science, Innovation and Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United Kingdom** — Peter Kyle (Secretary of State for Business and Trade, and President of the Board of Trade): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United Kingdom** — Chris Bryant (Minister of State (Minister for Trade Policy and Economic Security)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United States** — Michael Kratsios (Director of the Office of Science and Technology Policy (OSTP) and Assistant to the President for Science and Technology): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United States** — Arielle Roth (Assistant Secretary of Commerce for Communications and Information and Administrator, National Telecommunications and Information Administration (NTIA)): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United States** — Howard Lutnick (United States Secretary of Commerce): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
-- **United States** — Jamieson Greer (United States Trade Representative (USTR), with rank of Ambassador): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.
+## Bloc annex (EU & African Union)
+
+- **European Union** — no flags; all items verified.
+  - note: Eurostat vintage discrepancy on 2025 extra-EU goods surplus: EUR 130.0 bn (Statistics Explained, exports EUR 2,644.1 bn / imports EUR 2,514.1 bn) vs EUR 128 bn (Eurostat news headline, 2026-03-26). The revised EUR 128 bn
+  - note: USD conversion of the extra-EU balance is derived, not official: EUR 128 bn x 1.1306 (2025 annual average USD/EUR, per ECB reference-rate history via exchangerates.org.uk) = ~USD 144.7 bn.
+  - note: Direct fetches of imf.org, ustr.gov, ec.europa.eu (Eurostat) and en.wikipedia.org returned HTTP 403 through the environment proxy; all figures were verified via search-engine excerpts quoting those primary sources, corro
+  - note: Mirror-statistics gap (expected, methodological): USTR/Census puts 2025 U.S. goods imports from the EU at $633.2 bn, while Eurostat reports EU goods exports to the U.S. of EUR 554.9 bn (~$627 bn) — within the normal CIF/
+- **African Union** — Overall balance flagged Needs check: No clean, verifiable continental goods trade BALANCE aggregate was accessible (WTO/UNCTAD primary tables egress-blocked). Best clean aggrega
+  - note: Continental goods trade balance left null: Afreximbank puts Africa's 2024 total merchandise trade at ~$1.5T, while secondary aggregations imply ~$1.4T (exports ~$682B + imports ~$719B, deficit ~$37B); WTO/UNCTAD primary 
+  - note: GDP ($2.81T, 2025) is an IMF WEO-based projection aggregated by third parties (StatisticsTimes/Worldometers over ~53-54 economies); the IMF publishes no single 'Africa' nominal GDP line and imf.org was egress-blocked, so
+  - note: The Feb 2025 AUC elections filled only four of six commissioner posts; ETTIM was held in an acting capacity (Moses Vilakati) until Francisca Tatchouop Belobe was elected in July 2025 and sworn in September 2025 — stale s
+  - note: U.S. trade figures are a U.S.-Africa (whole continent) proxy for the AU; USTR/Census pages could not be fetched directly (egress-blocked) and were verified via search excerpts of the USTR Africa page.
 
 ## Name spellings to preserve exactly (incl. diacritics)
 

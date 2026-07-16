@@ -100,7 +100,7 @@ def footer(s, idx=None, total=None, dark=False):
     tp=tb(s,10.2,7.10,2.53,0.3); p=para(tp,True); p.alignment=PP_ALIGN.RIGHT
     run(p,"trade.gov",8.5,col,bold=True)
     if idx is not None:
-        run(p,f"    {idx} / {total}",8,sub)
+        run(p,f"    {idx}" if isinstance(idx,str) else f"    {idx} / {total}",8,sub)
 
 # ============ TITLE (ITA template: Trade Navy + diagonal ribbons) ============
 def title_slide():
@@ -150,14 +150,14 @@ def bullet(tf,label,text,first=False):
 # ============ METHODOLOGY ============
 def methodology_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
-    header_bar(s,"Methodology & Scope","19 G20 sovereign members · compiled 2026-07-16")
+    header_bar(s,"Methodology & Scope","19 sovereign members · EU & African Union annex · compiled 2026-07-16")
     tf=tb(s,0.6,1.42,7.5,5.3)
     bullet(tf,"Countries (19):","Argentina, Australia, Brazil, Canada, China, France, Germany, India, "
         "Indonesia, Italy, Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Türkiye, "
         "United Kingdom, United States.",first=True)
     bullet(tf,"Substitution:","Poland is covered in place of South Africa — a deliberate substitution, not an omission.")
-    bullet(tf,"Bloc seats excluded:","The European Union and African Union hold G20 seats but are "
-        "supranational blocs, not sovereign countries, and are not profiled.")
+    bullet(tf,"Bloc members:","The European Union and African Union hold G20 seats as supranational "
+        "blocs; they are profiled in the bloc annex following the country pages.")
     bullet(tf,"GDP:","Nominal (current USD), IMF World Economic Outlook 2025, single vintage across all 19.")
     bullet(tf,"U.S. bilateral trade:","U.S. Census Bureau goods trade, 2025 full year (goods basis), "
         "via Census-derived channels (see Sources).")
@@ -227,7 +227,7 @@ def left_panel(s,c):
     datum(s,lx,ly,lw,f"NOMINAL GDP ({gy})",money(c['gdp_usd_b']))
     obs,obc,obw=signed(c['overall_balance_usd_b'])
     basis='goods' if 'goods-only' in c['overall_balance_basis'] else ('g+s' if 'services' in c['overall_balance_basis'] else '')
-    datum(s,lx,ly+step,lw,f"OVERALL TRADE BALANCE ({oy})",obs,vcolor=INK,sub=f"{obw} · {basis}")
+    datum(s,lx,ly+step,lw,f"OVERALL TRADE BALANCE ({oy})",obs,vcolor=INK,sub=(f"{obw} · {basis}" if c['overall_balance_usd_b'] is not None else None))
     if us and c.get('us_world_exports_b') is not None:
         datum(s,lx,ly+2*step,lw,f"GOODS EXPORTS — WORLD ({ty})",money(c['us_world_exports_b']))
         datum(s,lx,ly+3*step,lw,f"GOODS IMPORTS — WORLD ({ty})",money(c['us_world_imports_b']))
@@ -245,10 +245,7 @@ def acting_run(p,o,size=11.0):
 def full_profile(s,y,h,heading,o,notes_line):
     tf=tb(s,RX,y,RW,0.24)
     p=para(tf,True); run(p,heading,10.5,BLUE,bold=True,spacing=1.2)
-    if o.get('portrait_file'):
-        w=pic(s,o['portrait_file'],RX,y+0.30,1.19)
-        rect(s,RX,y+0.30,w,1.19,line=SLATE,line_w=1.0)
-    tx=RX+1.12; tw=RW-1.12
+    tx=RX; tw=RW
     tf=tb(s,tx,y+0.30,tw,0.30)
     p=para(tf,True); run(p,o['name'],14,NAVY,bold=True); acting_run(p,o,14)
     tf=tb(s,tx,y+0.62,tw,0.46)
@@ -261,13 +258,10 @@ def full_profile(s,y,h,heading,o,notes_line):
     p=para(tf,True); p.line_spacing=1.03; run(p,o.get('bio_display') or o.get('bio',''),11,INK)
     if notes_line:
         pn=tf.add_paragraph(); pn.space_before=Pt(5)
-        run(pn,"Also: ",9,BLUE,bold=True,italic=True); run(pn,notes_line,9,GRAY,italic=True)
+        run(pn,notes_line,9,GRAY,italic=True)
 
 def half_profile(s,x0,y,h,o):
-    if o.get('portrait_file'):
-        w=pic(s,o['portrait_file'],x0,y+0.28,1.00)
-        rect(s,x0,y+0.28,w,1.00,line=SLATE,line_w=1.0)
-    tx=x0+0.92; tw=COL_W-0.92
+    tx=x0; tw=COL_W
     tf=tb(s,tx,y+0.28,tw,1.26)
     p=para(tf,True)
     if o.get('role_tag'): run(p,o['role_tag'],7.5,TEAL,bold=True,spacing=0.8)
@@ -316,6 +310,28 @@ def country_slide(c,idx):
     section(s,BLK[1],"TRADE / COMMERCE",c['trade_ministers'],c.get('div_note_trade'))
     footer(s,idx,19)
 
+# ============ BLOC ANNEX (EU / AU) ============
+def bloc_slide(c):
+    s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
+    fh=0.60
+    w=pic(s,c['flag_file'],0.6,0.36,fh)
+    rect(s,0.6,0.36,w,fh,line=SLATE,line_w=1.0)
+    tf=tb(s,2.1,0.20,10.6,0.60,anchor=MSO_ANCHOR.MIDDLE)
+    p=para(tf,True); run(p,c['country'],26,NAVY,bold=True)
+    run(p,"   ·   G20 BLOC MEMBER",10.5,TEAL,bold=True,spacing=1.0)
+    facts='    ·    '.join(f"{f['label']}: {f['value']}" for f in c.get('facts',[]))
+    tff=tb(s,2.1,0.80,10.6,0.30)
+    p=para(tff,True); run(p,facts,9.5,GRAY)
+    rect(s,0.6,1.13,12.13,0.035,fill=GOLD)
+    left_panel(s,c)
+    if c.get('panel_note'):
+        tfn=tb(s,LP_X+0.20,6.42,LP_W-0.4,0.32)
+        p=para(tfn,True); p.line_spacing=1.0; run(p,c['panel_note'],7.5,GRAY,italic=True)
+    section(s,BLK[0],"DIGITAL / TECHNOLOGY",c['digital_ministers'],c.get('div_note_digital'))
+    hline(s,RX,4.08,RW,color=TAN,weight=1.0)
+    section(s,BLK[1],"TRADE / COMMERCE",c['trade_ministers'],c.get('div_note_trade'))
+    footer(s,"Bloc annex")
+
 # ============ SOURCES ============
 def sources_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
@@ -339,10 +355,9 @@ def sources_slide():
     li(R,"census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
     head(R,"IMAGERY & FORMAT")
     li(R,"Flags: public-domain renderings, uniform height, true aspect ratios.")
-    li(R,"Portraits: official government portraits; monogram placeholders mark any still to be supplied.")
     li(R,"Design per the ITA Visual Style Guide (Jan 2026): Trade Navy/Blue palette, Open Sans, official signatures.")
     head(R,"SCOPE")
-    li(R,"Poland substituted for South Africa. EU and AU are G20 members but hold bloc seats and are not covered.")
+    li(R,"Poland substituted for South Africa. The EU and African Union hold G20 bloc seats and are profiled in the bloc annex.")
     li(R,"A detailed uncertainty register (acting officials, figures pending confirmation) accompanies this deck: output/GAPS.md.")
     footer(s)
 
@@ -353,6 +368,8 @@ summary_slide(CO[:10],1,2)
 summary_slide(CO[10:],2,2)
 for i,c in enumerate(CO,1):
     country_slide(c,i)
+for b in D.get('blocs', []):
+    bloc_slide(b)
 sources_slide()
 prs.save(ROOT+'output/g20-ministers-trade-deck.pptx')
 print(f"Wrote output/g20-ministers-trade-deck.pptx — {len(prs.slides._sldIdLst)} slides "

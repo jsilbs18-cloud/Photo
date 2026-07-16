@@ -47,7 +47,8 @@ def footer(idx=None,total=None,dark=False):
         parts.append(f'<div style="position:absolute;left:0.6in;top:7.02in;width:12.13in;height:1px;background:{TAN}"></div>')
     parts.append(box(0.6,7.10,8.6,"",f'<div style="font-size:8pt;font-weight:700;color:{col}">{SIGNATURE}</div>'))
     parts.append(box(0.6,7.28,8.6,"",f'<div style="font-size:7pt;color:{sub}">GDP: IMF WEO 2025 · U.S. goods trade: U.S. Census 2025 · officeholders verified 2026-07-16</div>'))
-    pg=f'&nbsp;&nbsp;&nbsp;<span style="font-weight:400;color:{sub};font-size:8pt">{idx} / {total}</span>' if idx is not None else ''
+    lab=(idx if isinstance(idx,str) else f'{idx} / {total}') if idx is not None else None
+    pg=f'&nbsp;&nbsp;&nbsp;<span style="font-weight:400;color:{sub};font-size:8pt">{lab}</span>' if lab else ''
     parts.append(box(10.2,7.10,2.53,"text-align:right",f'<div style="font-size:8.5pt;font-weight:700;color:{col}">trade.gov{pg}</div>'))
     return ''.join(parts)
 
@@ -91,7 +92,7 @@ def methodology_slide():
     left=(b("Countries (19):","Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, "
               "Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Türkiye, United Kingdom, United States.")
           +b("Substitution:","Poland is covered in place of South Africa — a deliberate substitution, not an omission.")
-          +b("Bloc seats excluded:","The European Union and African Union hold G20 seats but are supranational blocs, not sovereign countries, and are not profiled.")
+          +b("Bloc members:","The European Union and African Union hold G20 seats as supranational blocs; they are profiled in the bloc annex following the country pages.")
           +b("GDP:","Nominal (current USD), IMF World Economic Outlook 2025, single vintage across all 19.")
           +b("U.S. bilateral trade:","U.S. Census Bureau goods trade, 2025 full year (goods basis), via Census-derived channels (see Sources).")
           +b("Ministers:","Each officeholder confirmed current on 2026-07-16 by live search plus an independent verification pass. Where a portfolio is split, both responsible officials are profiled."))
@@ -104,7 +105,7 @@ def methodology_slide():
     panel=(f'<div style="position:absolute;left:8.5in;top:1.42in;width:4.23in;height:5.1in;background:{MOCHA}"></div>'
            f'<div style="position:absolute;left:8.5in;top:1.42in;width:4.23in;height:0.045in;background:{GOLD}"></div>'
            +box(8.8,1.66,3.7,"",f'<div style="font-size:11pt;font-weight:700;color:{NAVY};letter-spacing:1px">ABOUT THIS DOCUMENT</div>{about}'))
-    S.append(f'<div class="slide">{header_bar("Methodology & Scope","19 G20 sovereign members · compiled 2026-07-16")}'
+    S.append(f'<div class="slide">{header_bar("Methodology & Scope","19 sovereign members · EU & African Union annex · compiled 2026-07-16")}'
              f'{box(0.6,1.42,7.5,"",left)}{panel}{footer()}</div>')
 
 # ---------- SUMMARY ----------
@@ -152,7 +153,7 @@ def left_panel(c):
     parts.append(datum(lx,ly,lw,f"NOMINAL GDP ({gy})",money(c['gdp_usd_b'])))
     obs,obc,obw=signed(c['overall_balance_usd_b'])
     basis='goods' if 'goods-only' in c['overall_balance_basis'] else ('g+s' if 'services' in c['overall_balance_basis'] else '')
-    parts.append(datum(lx,ly+step,lw,f"OVERALL TRADE BALANCE ({oy})",obs,vcolor=INK,sub=f"{obw} · {basis}"))
+    parts.append(datum(lx,ly+step,lw,f"OVERALL TRADE BALANCE ({oy})",obs,vcolor=INK,sub=(f"{obw} · {basis}" if c['overall_balance_usd_b'] is not None else None)))
     if us and c.get('us_world_exports_b') is not None:
         parts.append(datum(lx,ly+2*step,lw,f"GOODS EXPORTS — WORLD ({ty})",money(c['us_world_exports_b'])))
         parts.append(datum(lx,ly+3*step,lw,f"GOODS IMPORTS — WORLD ({ty})",money(c['us_world_imports_b'])))
@@ -176,21 +177,19 @@ def portrait_html(o,l,t,h):
 
 def full_profile(y,h,heading,o,notes_line):
     parts=[box(RX,y,RW,"",f'<div style="font-size:10.5pt;font-weight:700;color:{BLUE};letter-spacing:1.2px">{esc(heading)}</div>')]
-    parts.append(portrait_html(o,RX,y+0.30,1.19))
-    tx=RX+1.12; tw=RW-1.12
+    tx=RX; tw=RW
     parts.append(box(tx,y+0.30,tw,"",f'<div style="font-size:14pt;font-weight:700;color:{NAVY}">{esc(o["name"])}{acting_html(o,14)}</div>'))
     parts.append(box(tx,y+0.62,tw,"",f'<div style="font-size:11pt;font-style:italic;color:{GRAY};line-height:1.15">{esc(o["title"])}</div>'))
     ao=f'&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:{MUTED}">Assumed office: {esc(o["assumed_office"])}</span>' if o.get('assumed_office') else ''
     parts.append(box(tx,y+1.10,tw,"",f'<div style="font-size:9.5pt;color:{INK};line-height:1.15">{esc(o["ministry"])}{ao}</div>'))
-    note=(f'<div style="margin-top:5pt;font-size:9pt;font-style:italic;color:{GRAY};line-height:1.2">'
-          f'<b style="color:{BLUE}">Also:</b> {esc(notes_line)}</div>') if notes_line else ''
+    note=(f'<div style="margin-top:5pt;font-size:9pt;font-style:italic;color:{GRAY};line-height:1.2">{esc(notes_line)}</div>') if notes_line else ''
     parts.append(box(RX,y+1.56,RW,f"height:{h-1.56}in;overflow:hidden",
         f'<div style="font-size:11pt;color:{INK};line-height:1.28">{esc(o.get("bio_display") or o.get("bio",""))}</div>{note}'))
     return ''.join(parts)
 
 def half_profile(x0,y,h,o):
-    parts=[portrait_html(o,x0,y+0.28,1.00)]
-    tx=x0+0.92; tw=COL_W-0.92
+    parts=[]
+    tx=x0; tw=COL_W
     tag=f'<div style="font-size:7.5pt;font-weight:700;color:{TEAL};letter-spacing:.8px">{esc(o["role_tag"])}</div>' if o.get('role_tag') else ''
     parts.append(box(tx,y+0.28,tw,f"height:1.26in;overflow:hidden",
         f'{tag}<div style="font-size:12pt;font-weight:700;color:{NAVY};margin-top:2pt">{esc(o["name"])}{acting_html(o,12)}</div>'
@@ -230,6 +229,26 @@ def country_slide(c,idx):
     parts.append(footer(idx,19))
     S.append(f'<div class="slide">{"".join(parts)}</div>')
 
+# ---------- BLOC ANNEX ----------
+def bloc_slide(c):
+    parts=[]
+    fh=0.60; fw=fh*img_ar(c['flag_file'])
+    parts.append(f'<img src="{data_uri(c["flag_file"])}" style="position:absolute;left:0.6in;top:0.36in;height:{fh}in;border:1pt solid {SLATE}">')
+    parts.append(box(2.1,0.20,10.6,"height:0.60in;display:flex;align-items:center",
+        f'<div style="font-size:26pt;font-weight:700;color:{NAVY}">{esc(c["country"])}'
+        f'<span style="font-size:10.5pt;font-weight:700;color:{TEAL};letter-spacing:1px">&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;G20 BLOC MEMBER</span></div>'))
+    facts='&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;'.join(f"{esc(f['label'])}: {esc(f['value'])}" for f in c.get('facts',[]))
+    parts.append(box(2.1,0.83,10.6,"",f'<div style="font-size:9.5pt;color:{GRAY}">{facts}</div>'))
+    parts.append(f'<div style="position:absolute;left:0.6in;top:1.13in;width:12.13in;height:0.035in;background:{GOLD}"></div>')
+    parts.append(left_panel(c))
+    if c.get('panel_note'):
+        parts.append(box(LP_X+0.20,6.42,LP_W-0.4,"",f'<div style="font-size:7.5pt;font-style:italic;color:{GRAY};line-height:1.1">{esc(c["panel_note"])}</div>'))
+    parts.append(section(BLK[0],"DIGITAL / TECHNOLOGY",c['digital_ministers'],c.get('div_note_digital')))
+    parts.append(f'<div style="position:absolute;left:{RX}in;top:4.08in;width:{RW}in;height:1px;background:{TAN}"></div>')
+    parts.append(section(BLK[1],"TRADE / COMMERCE",c['trade_ministers'],c.get('div_note_trade')))
+    parts.append(footer("Bloc annex"))
+    S.append(f'<div class="slide">{"".join(parts)}</div>')
+
 # ---------- SOURCES ----------
 def sources_slide():
     def head(t,first=False): return f'<div style="font-size:11.5pt;font-weight:700;color:{NAVY};letter-spacing:.5px;margin:{0 if first else 10}pt 0 3pt 0">{esc(t)}</div>'
@@ -246,10 +265,9 @@ def sources_slide():
         +li("census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
         +head("IMAGERY & FORMAT")
         +li("Flags: public-domain renderings, uniform height, true aspect ratios.")
-        +li("Portraits: official government portraits; monogram placeholders mark any still to be supplied.")
         +li("Design per the ITA Visual Style Guide (Jan 2026): Trade Navy/Blue palette, Open Sans, official signatures.")
         +head("SCOPE")
-        +li("Poland substituted for South Africa. EU and AU are G20 members but hold bloc seats and are not covered.")
+        +li("Poland substituted for South Africa. The EU and African Union hold G20 bloc seats and are profiled in the bloc annex.")
         +li("A detailed uncertainty register (acting officials, figures pending confirmation) accompanies this deck: output/GAPS.md."))
     S.append(f'<div class="slide">{header_bar("Sources & Notes","datasets, vintages, and measurement notes")}'
              f'{box(0.6,1.42,6.05,"",left)}{box(6.95,1.42,5.8,"",right)}{footer()}</div>')
@@ -257,6 +275,7 @@ def sources_slide():
 # ---- assemble ----
 title_slide(); methodology_slide(); summary_slide(CO[:10],1,2); summary_slide(CO[10:],2,2)
 for i,c in enumerate(CO,1): country_slide(c,i)
+for b in D.get('blocs', []): bloc_slide(b)
 sources_slide()
 
 CSS=f"""<style>

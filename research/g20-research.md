@@ -1019,3 +1019,19 @@ The following changes were requested by the preparer and independently verified 
 - Deck reformatted to the ITA Visual Style Guide (January 2026): Trade Navy/Trade Blue palette, Trade Gold rules, Open Sans typography, DOC seal white-line rendering on the title, and the approved document footer signature.
 - Poland: Krzysztof Paszyk NOT added despite the request — verification shows his ministry was liquidated in the 23–24 July 2025 reshuffle and he left government (TVN24); Domański (Finance & Economy) and Baranowski (deputy minister for trade) are Poland's current trade officials.
 
+
+### 7.4 Bloc annex added; portraits removed (2026-07-16, user-directed)
+
+Per the preparer's direction, the portrait slots were removed from all profile slides, and the two G20 bloc members are now profiled in a two-slide annex (previously excluded by scope). Both bloc profiles were built from live research on 2026-07-16 (full records: `data/_bloc_eu.json`, `data/_bloc_au.json`).
+
+**European Union** — GDP 21,230B (2025, high); U.S. goods trade 2025: exports $414.4B / imports $633.2B (balance $-218.8B).
+- [digital/full] **Henna Virkkunen** — Executive Vice-President for Tech Sovereignty, Security and Democracy (European Commission — Tech Sovereignty, Security and Democracy (Digital and Frontier Technologies portfolio)); assumed 2024-12-01; Verified. Source: https://commission.europa.eu/about/organisation/college-commissioners/henna-virkkunen_en
+- [trade/full] **Maroš Šefčovič** — Commissioner for Trade and Economic Security; Interinstitutional Relations and Transparency (European Commission — Trade and Economic Security); assumed 2024-12-01; Verified. Source: https://commission.europa.eu/about/organisation/college-commissioners/maros-sefcovic_en
+
+**African Union** — GDP 2,810B (2025 (IMF projection), medium); U.S. goods trade 2025: exports $40.4B / imports $43.0B (balance $-2.6B).
+- [digital/full] **Lerato Dorothy Mataboge** — Commissioner for Infrastructure and Energy (portfolio covers transport, energy and ICT/digital transformation) (African Union Commission — Department of Infrastructure and Energy); assumed 2025-03-13; Verified. Source: https://au.int/en/commissioners/he-ms-lerato-mataboge
+- [trade/full] **Francisca Tatchouop Belobe** — Commissioner for Economic Development, Trade, Tourism, Industry and Minerals (ETTIM) (African Union Commission — Department of Economic Development, Trade, Tourism, Industry and Minerals); assumed September 2025; Verified. Source: https://au.int/en/commissioners/he-francisca-tatchouop-belobe
+- [trade/note] **Wamkele Mene** — Secretary-General, African Continental Free Trade Area (AfCFTA) Secretariat (AfCFTA Secretariat, Accra (AU organ)); assumed 2020; Verified. Source: https://au-afcfta.org/2024/02/wamkele-mene-gets-second-term-as-afcfta-secretary-general/
+- FLAG: Overall balance flagged Needs check: No clean, verifiable continental goods trade BALANCE aggregate was accessible (WTO/UNCTAD primary tables egress-blocked). Best clean aggrega
+
+Notes: the AU's U.S. trade figures are U.S.–Africa goods totals (proxy — Census publishes no AU aggregate); the AU continental goods balance is not published as a clean aggregate and is shown N/A (flagged in GAPS.md). The EU profile is fully verified, including the 2025 U.S.–EU tariff framework context in the Šefčovič bio.

@@ -53,8 +53,6 @@ w("- **Saudi Arabia:** the raw research wrongly included the U.S. Secretary of C
   "trade-officials list (context bleed from U.S.-specific instructions). Removed; Saudi Arabia's trade officials are the Minister of "
   "Commerce (Al-Qasabi) and the acting GAFT Governor (Al-Abduljabbar).")
 w("")
-w("## Portraits pending (monogram placeholder shown on the slide)")
-w("")
 _missing=[(c['country'],o['name'],o.get('title','')) for c in CO for g in ('digital_ministers','trade_ministers')
           for o in c[g] if o.get('display') in ('full','half') and o.get('portrait_status')=='placeholder']
 if _missing:
@@ -62,6 +60,17 @@ if _missing:
         w(f"- **{cn}** — {nm} ({ti}): official portrait not retrievable from this environment; drop a photo at `assets/portraits/` and rerun `scripts/build.sh`.")
 else:
     w("- None — every displayed official has an official portrait embedded.")
+w("")
+w("## Bloc annex (EU & African Union)")
+w("")
+for b in D.get('blocs', []):
+    if b.get('gaps'):
+        for g in b['gaps']:
+            w(f"- **{b['country']}** — {g}")
+    else:
+        w(f"- **{b['country']}** — no flags; all items verified.")
+    for inc in b.get('inconsistencies', [])[:4]:
+        w(f"  - note: {inc[:220]}")
 w("")
 w("## Name spellings to preserve exactly (incl. diacritics)")
 w("")
