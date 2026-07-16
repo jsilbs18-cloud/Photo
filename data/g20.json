@@ -1050,7 +1050,7 @@
           "portrait_slug": "mexico-pena",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-mexico-pena.png"
+          "portrait_file": "assets/portraits/mexico-pena.png"
         }
       ],
       "trade_ministers": [
@@ -1138,7 +1138,7 @@
           "portrait_slug": "poland-gawkowski",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-poland-gawkowski.png"
+          "portrait_file": "assets/portraits/poland-gawkowski.png"
         }
       ],
       "trade_ministers": [
@@ -1160,7 +1160,7 @@
           "portrait_slug": "poland-domanski",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-poland-domanski.png"
+          "portrait_file": "assets/portraits/poland-domanski.png"
         },
         {
           "name": "Michał Baranowski",
@@ -1180,7 +1180,7 @@
           "portrait_slug": "poland-baranowski",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-poland-baranowski.png"
+          "portrait_file": "assets/portraits/poland-baranowski.png"
         }
       ],
       "div_note_digital": "Digital portfolio unchanged by the July 2025 reshuffle: the Ministry of Digital Affairs (Ministerstwo Cyfryzacji) is led by Krzysztof Gawkowski (Nowa Lewica), who is simultaneously Deputy Prime Minister and Government Plenipotentiary for Cybersecurity — Poland's counterpart for digital economy, AI, and cyber issues.",
@@ -1231,7 +1231,7 @@
           "portrait_slug": "russia-shadayev",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-russia-shadayev.png"
+          "portrait_file": "assets/portraits/russia-shadayev.png"
         }
       ],
       "trade_ministers": [
@@ -1253,7 +1253,7 @@
           "portrait_slug": "russia-alikhanov",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-russia-alikhanov.png"
+          "portrait_file": "assets/portraits/russia-alikhanov.png"
         },
         {
           "name": "Maxim Reshetnikov",
@@ -1273,7 +1273,7 @@
           "portrait_slug": "russia-reshetnikov",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-russia-reshetnikov.png"
+          "portrait_file": "assets/portraits/russia-reshetnikov.png"
         }
       ],
       "div_note_digital": "Digital government, telecommunications, IT-sector policy, and internet/media regulation are consolidated under the Ministry of Digital Development, Communications and Mass Media (Shadayev).",
@@ -1316,7 +1316,7 @@
           "portrait_slug": "saudi-alswaha",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-saudi-alswaha.png"
+          "portrait_file": "assets/portraits/saudi-alswaha.png"
         }
       ],
       "trade_ministers": [
@@ -1358,7 +1358,7 @@
           "portrait_slug": "saudi-abduljabbar",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-saudi-abduljabbar.png"
+          "portrait_file": "assets/portraits/saudi-abduljabbar.png"
         }
       ],
       "div_note_digital": "",
@@ -1405,7 +1405,7 @@
           "portrait_slug": "korea-bae",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-korea-bae.png"
+          "portrait_file": "assets/portraits/korea-bae.png"
         }
       ],
       "trade_ministers": [
@@ -1427,7 +1427,7 @@
           "portrait_slug": "korea-kim",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-korea-kim.png"
+          "portrait_file": "assets/portraits/korea-kim.png"
         },
         {
           "name": "Yeo Han-koo",
@@ -1447,7 +1447,7 @@
           "portrait_slug": "korea-yeo",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-korea-yeo.png"
+          "portrait_file": "assets/portraits/korea-yeo.png"
         }
       ],
       "div_note_digital": "",
@@ -1490,7 +1490,7 @@
           "portrait_slug": "turkiye-kacir",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-turkiye-kacir.png"
+          "portrait_file": "assets/portraits/turkiye-kacir.png"
         },
         {
           "name": "Ümit Önal",
@@ -1541,7 +1541,7 @@
           "portrait_slug": "turkiye-bolat",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-turkiye-bolat.png"
+          "portrait_file": "assets/portraits/turkiye-bolat.png"
         }
       ],
       "div_note_digital": "No standalone digital ministry: cybersecurity (Önal, Cybersecurity Presidency) and telecom/digital infrastructure (Uraloğlu, Transport & Infrastructure) sit outside the Industry & Technology Ministry.",
@@ -1584,7 +1584,7 @@
           "portrait_slug": "uk-kendall",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-uk-kendall.png"
+          "portrait_file": "assets/portraits/uk-kendall.png"
         },
         {
           "name": "Ian Murray",
@@ -1636,7 +1636,7 @@
           "portrait_slug": "uk-kyle",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-uk-kyle.png"
+          "portrait_file": "assets/portraits/uk-kyle.png"
         },
         {
           "name": "Chris Bryant",
@@ -1656,7 +1656,7 @@
           "portrait_slug": "uk-bryant",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-uk-bryant.png"
+          "portrait_file": "assets/portraits/uk-bryant.png"
         }
       ],
       "div_note_digital": "",
@@ -1700,7 +1700,7 @@
           "portrait_slug": "us-kratsios",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-us-kratsios.png"
+          "portrait_file": "assets/portraits/us-kratsios.png"
         },
         {
           "name": "Arielle Roth",
@@ -1720,7 +1720,7 @@
           "portrait_slug": "us-roth",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-us-roth.png"
+          "portrait_file": "assets/portraits/us-roth.png"
         }
       ],
       "trade_ministers": [
@@ -1742,7 +1742,7 @@
           "portrait_slug": "us-lutnick",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-us-lutnick.png"
+          "portrait_file": "assets/portraits/us-lutnick.png"
         },
         {
           "name": "Jamieson Greer",
@@ -1762,7 +1762,7 @@
           "portrait_slug": "us-greer",
           "portrait_raw": null,
           "portrait_status": "missing",
-          "portrait_file": "assets/portraits/_ph-us-greer.png"
+          "portrait_file": "assets/portraits/us-greer.png"
         }
       ],
       "div_note_digital": "",

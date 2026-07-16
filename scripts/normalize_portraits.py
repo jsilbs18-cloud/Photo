@@ -21,7 +21,9 @@ def normalize(src, dst):
         im = im.crop((x0, 0, x0 + nw, im.height))
     elif ar < target:
         im = im.crop((0, 0, im.width, int(im.width / target)))
-    im.resize((W, H), Image.LANCZOS).save(dst, 'PNG')
+    if im.width > W:
+        im = im.resize((W, H), Image.LANCZOS)
+    im.save(dst, 'PNG')
 
 def initials(name):
     parts = [p for p in name.replace('-', ' ').split() if p and p[0].isalpha()]
