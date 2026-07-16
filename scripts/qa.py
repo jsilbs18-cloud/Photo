@@ -17,6 +17,15 @@ def check(c, m): (PASS if c else FAIL).append(('PASS' if c else 'FAIL') + ': ' +
 
 def money(v): return 'N/A' if v is None else f"${v:,.1f}B"
 def absmoney(v): return None if v is None else f"${abs(v):,.1f}B"
+MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+def fmt_date(v):   # must match the builders' date rendering
+    m = re.match(r'^(\d{4})-(\d{2})(?:-(\d{2}))?$', v)
+    if m:
+        y, mo, d = m.group(1), int(m.group(2)), m.group(3)
+        return f"{MON[mo-1]} {int(d)}, {y}" if d else f"{MON[mo-1]} {y}"
+    m = re.match(r'^([A-Z][a-z]+) (\d{4})$', v)
+    if m: return f"{m.group(1)[:3]} {m.group(2)}"
+    return v
 
 names = [c['country'] for c in CO]
 
@@ -81,10 +90,10 @@ check(len(ws.conditional_formatting._cf_rules) >= 1, "xlsx conditional formattin
 prs = Presentation(ROOT + 'output/g20-ministers-trade-deck.pptx')
 slides = list(prs.slides)
 BL = D.get('blocs', [])
-EXPECT = 24 + len(BL)
+EXPECT = 23 + len(BL)   # title + 2 summaries + 19 countries + blocs + combined methodology/sources
 check(len(slides) == EXPECT, f"pptx {EXPECT} slides (got {len(slides)})")
 def stext(sl): return "\n".join(sh.text_frame.text for sh in sl.shapes if sh.has_text_frame)
-country_slides = slides[4:23]
+country_slides = slides[3:22]
 for idx, c in enumerate(CO):
     sl = country_slides[idx]; txt = stext(sl)
     check(c['country'] in txt, f"pptx slide {idx+1} is {c['country']}")
@@ -108,6 +117,11 @@ check('Howard Lutnick' in us_txt and 'Jamieson Greer' in us_txt, "pptx US shows 
 allpptx = "\n".join(stext(s) for s in slides)
 check('Prepared for' not in allpptx, "pptx: 'Prepared for' removed")
 check('INTERNATIONAL TRADE ADMINISTRATION' in allpptx, "pptx: ITA official framing present")
+last = stext(slides[-1])
+check('Methodology, Sources & Notes' in last and all(h in last for h in
+      ('SCOPE & METHODOLOGY', 'DATASETS & VINTAGES', 'DATA CAVEATS')),
+      "pptx: combined final slide has all three sections")
+check(sum('Methodology' in stext(s) for s in slides) == 1, "pptx: methodology appears only on final slide")
 
 # ---------- 7. pdf ----------
 doc = fitz.open(ROOT + 'output/g20-ministers-trade-deck.pdf')
@@ -116,7 +130,7 @@ for i in range(doc.page_count):
     w, h = doc[i].rect.width / 72, doc[i].rect.height / 72
     if not (abs(w - 13.333) < 0.05 and abs(h - 7.5) < 0.05):
         check(False, f"pdf page {i+1} size {w:.2f}x{h:.2f}")
-pdf_country = [doc[p].get_text() for p in range(4, 23)]
+pdf_country = [doc[p].get_text() for p in range(3, 22)]
 for idx, c in enumerate(CO):
     txt = pdf_country[idx]
     check(c['country'] in txt, f"pdf page is {c['country']}")
@@ -126,6 +140,10 @@ for idx, c in enumerate(CO):
 allpdf = "\n".join(doc[p].get_text() for p in range(doc.page_count))
 us_pdf = pdf_country[names.index('United States')]
 check('Howard Lutnick' in us_pdf and 'Jamieson Greer' in us_pdf, "pdf US shows both officials")
+last_pdf = doc[doc.page_count - 1].get_text()
+check('Methodology, Sources & Notes' in last_pdf and all(h in last_pdf for h in
+      ('SCOPE & METHODOLOGY', 'DATASETS & VINTAGES', 'DATA CAVEATS')),
+      "pdf: combined final page has all three sections")
 
 # ---------- 8. diacritics (auto-derived from displayed names) ----------
 dia = sorted({o['name'] for c in CO + D.get('blocs', []) for g in ('digital_ministers','trade_ministers') for o in c[g]
@@ -182,7 +200,7 @@ for c in CO + BL:
             o = shown[0]
             tw_full = RW - (1.0 if o.get('portrait_file') else 0)
             tl = nlines(o['title'], 11, tw_full, 'ital')
-            ml = nlines(o['ministry'] + ('    Assumed office: ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 9.5, tw_full)
+            ml = nlines(o['ministry'] + ('    Assumed office: ' + fmt_date(o['assumed_office']) if o.get('assumed_office') else ''), 9.5, tw_full)
             bio = o.get('bio_display') or o.get('bio', '')
             bh = nlines(bio, 10.5, RW, 'serif') * 10.5 * 1.35 / 72
             note_line = '; '.join(f"{n['name']} ({n['title']})" for n in notes)
@@ -198,7 +216,7 @@ for c in CO + BL:
                 head_h = (0.11 if o.get('role_tag') else 0) + \
                          nlines(o['name'] + ('  · acting' if o.get('is_acting') else ''), 12, tw_half, 'bold') * 12 * 1.1 / 72 + \
                          nlines(o['title'], 9, tw_half, 'ital') * 9 * 1.18 / 72 + 4/72
-                ml = nlines(o['ministry'] + ('  ·  ' + o.get('assumed_office', '') if o.get('assumed_office') else ''), 8.5, COL_W)
+                ml = nlines(o['ministry'] + ('  ·  ' + fmt_date(o['assumed_office']) if o.get('assumed_office') else ''), 8.5, COL_W)
                 bio = o.get('bio_display') or o.get('bio', '')
                 bh = nlines(bio, 9.5, COL_W, 'serif') * 9.5 * 1.35 / 72
                 fits = head_h <= 1.00 and ml <= 2 and bh <= (H - 1.62) + 0.02
@@ -208,9 +226,9 @@ for c in CO + BL:
 # ---------- 11b. bloc annex slides ----------
 if BL:
     check(len(BL) == 2, f"two bloc profiles (got {len(BL)})")
-    bloc_slides = slides[23:23+len(BL)]
+    bloc_slides = slides[22:22+len(BL)]
     for i, b in enumerate(BL):
-        txt = stext(bloc_slides[i]); ptxt = doc[23+i].get_text()
+        txt = stext(bloc_slides[i]); ptxt = doc[22+i].get_text()
         check(b['country'] in txt and b['country'] in ptxt, f"bloc slide present: {b['country']}")
         check(money(b['gdp_usd_b']) in txt and money(b['gdp_usd_b']) in ptxt, f"bloc GDP {b['country']}")
         if b['us_bilateral_usd_b'] is not None:

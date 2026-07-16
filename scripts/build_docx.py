@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build output/g20-ministers-trade-list.docx from data/g20.json — one page per
 country, ITA Visual Style Guide format. Same source of truth as the deck."""
-import json
+import json, re
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT
@@ -19,6 +19,16 @@ ORANGE = RGBColor(0xD4, 0x61, 0x27); TEAL = RGBColor(0x00, 0x75, 0x82)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF); LTBLUE = RGBColor(0xB9, 0xC9, 0xD9)
 SLATE = RGBColor(0xB1, 0xBB, 0xCA)
 FONT = 'Open Sans'
+
+MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+def fmt_date(v):
+    m = re.match(r'^(\d{4})-(\d{2})(?:-(\d{2}))?$', v)
+    if m:
+        y, mo, d = m.group(1), int(m.group(2)), m.group(3)
+        return f"{MON[mo-1]} {int(d)}, {y}" if d else f"{MON[mo-1]} {y}"
+    m = re.match(r'^([A-Z][a-z]+) (\d{4})$', v)
+    if m: return f"{m.group(1)[:3]} {m.group(2)}"
+    return v
 
 doc = Document()
 sec = doc.sections[0]
@@ -156,7 +166,7 @@ def official_entry(o):
     run(p, o['name'], 10.5, NAVY, bold=True)
     if o.get('is_acting'): run(p, '  · acting', 9, ORANGE, bold=True, italic=True)
     run(p, f",  {o['title']}", 9.5, GRAY, italic=True)
-    meta = o['ministry'] + (f"  ·  Assumed office: {o['assumed_office']}" if o.get('assumed_office') else '')
+    meta = o['ministry'] + (f"  ·  Assumed office: {fmt_date(o['assumed_office'])}" if o.get('assumed_office') else '')
     pm = tight(right.add_paragraph(), 0, 1); run(pm, meta, 8, MUTED)
     pb = tight(right.add_paragraph(), 0, 0); run(pb, o.get('bio_display') or o.get('bio', ''), 9.5, INK)
     spacer = tight(doc.add_paragraph(), 0, 2); run(spacer, ' ', 2)   # minimal gap; keeps adjacent tables separate

@@ -2,13 +2,13 @@
 """Build output/g20-ministers-trade-deck.pptx from data/g20.json.
 Styled per the ITA Visual Style Guide (Jan 2026): Trade Navy/Blue palette,
 Trade Gold heading rules, Open Sans, DOC seal + official footer signature."""
-import json, os
+import json, os, re
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE
-from PIL import Image
+from PIL import Image, ImageFont
 
 ROOT = '/home/user/Photo/'
 D = json.load(open(ROOT + 'data/g20.json'))
@@ -72,6 +72,16 @@ def run(p,text,size,color=INK,bold=False,italic=False,spacing=None,font=None):
     return r
 
 def money(v): return 'N/A' if v is None else f"${v:,.1f}B"
+MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+def fmt_date(v):
+    m = re.match(r'^(\d{4})-(\d{2})(?:-(\d{2}))?$', v)
+    if m:
+        y, mo, d = m.group(1), int(m.group(2)), m.group(3)
+        return f"{MON[mo-1]} {int(d)}, {y}" if d else f"{MON[mo-1]} {y}"
+    m = re.match(r'^([A-Z][a-z]+) (\d{4})$', v)
+    if m: return f"{m.group(1)[:3]} {m.group(2)}"
+    return v
+def nb(t): return t.replace(' ', ' ')   # NBSP-join so dates never break mid-line
 def signed(v):
     if v is None: return ('N/A', GRAY, '')
     return (f"{'+' if v>=0 else '−'}${abs(v):,.1f}B", POS if v>=0 else NEG,
@@ -173,7 +183,7 @@ def summary_slide(rows, part, total):
     cols=[("Country",0.6,3.4,'l'),("GDP (2025)",4.0,2.0,'r'),
           ("U.S. exports to",6.05,2.2,'r'),("U.S. imports from",8.30,2.3,'r'),
           ("U.S. bilateral balance",10.65,2.1,'r')]
-    y0=1.42; rh=0.475
+    y0=1.42; rh=5.2/(len(rows)+1)   # both parts end at the same baseline (6.62)
     rect(s,0.5,y0,12.33,rh,fill=NAVY)
     for name,x,w,al in cols:
         tf=tb(s,x,y0+0.06,w,rh-0.1,anchor=MSO_ANCHOR.MIDDLE)
@@ -208,11 +218,11 @@ def datum(s,x,y,w,label,value,vcolor=NAVY,sub=None):
     if sub: run(p2,"  "+sub,9.5,GRAY)
 
 def left_panel(s,c):
-    rect(s,LP_X,1.42,LP_W,5.35,fill=TAN)
-    rect(s,LP_X,1.42,LP_W,0.045,fill=GOLD)
-    tf=tb(s,LP_X+0.20,1.58,LP_W-0.4,0.3)
+    rect(s,LP_X,1.26,LP_W,5.70,fill=TAN)
+    rect(s,LP_X,1.26,LP_W,0.045,fill=GOLD)
+    tf=tb(s,LP_X+0.20,1.44,LP_W-0.4,0.3)
     p=para(tf,True); run(p,"TRADE & ECONOMY",10.5,BLUE,bold=True,spacing=1.0)
-    lx=LP_X+0.20; lw=LP_W-0.40; ly=1.98; step=0.96
+    lx=LP_X+0.20; lw=LP_W-0.40; ly=1.90; step=1.02
     gy,ty,oy=c['gdp_year'],c['us_trade_year'],c['overall_balance_year']
     us = c['country']=='United States'
     datum(s,lx,ly,lw,f"NOMINAL GDP ({gy})",money(c['gdp_usd_b']))
@@ -248,7 +258,7 @@ def full_profile(s,y,h,heading,o,notes_line):
     tf=tb(s,tx,y+0.98,tw,0.32)
     p=para(tf,True); p.line_spacing=1.05
     run(p,o['ministry'],9.5,INK)
-    if o.get('assumed_office'): run(p,f"   ·   Assumed office: {o['assumed_office']}",9.5,MUTED)
+    if o.get('assumed_office'): run(p,"  ·  "+nb(f"Assumed office: {fmt_date(o['assumed_office'])}"),9.5,MUTED)
     tf=tb(s,RX,y+1.34,RW,h-1.34)
     p=para(tf,True); p.line_spacing=1.12; run(p,o.get('bio_display') or o.get('bio',''),10.5,INK,font='Merriweather')
     if notes_line:
@@ -271,7 +281,7 @@ def half_profile(s,x0,y,h,o):
     tf=tb(s,x0,y+1.28,COL_W,0.32)
     p=para(tf,True); p.line_spacing=1.04
     run(p,o['ministry'],8.5,INK)
-    if o.get('assumed_office'): run(p,f"  ·  {o['assumed_office']}",8.5,MUTED)
+    if o.get('assumed_office'): run(p," ·  "+nb(fmt_date(o['assumed_office'])),8.5,MUTED)
     tf=tb(s,x0,y+1.62,COL_W,h-1.62)
     p=para(tf,True); p.line_spacing=1.12
     run(p,o.get('bio_display') or o.get('bio',''),9.5,INK,font='Merriweather')
@@ -324,43 +334,83 @@ def bloc_slide(c):
     rect(s,0.6,1.13,12.13,0.035,fill=GOLD)
     left_panel(s,c)
     if c.get('panel_note'):
-        tfn=tb(s,LP_X+0.20,6.42,LP_W-0.4,0.32)
+        tfn=tb(s,LP_X+0.20,6.52,LP_W-0.4,0.32)
         p=para(tfn,True); p.line_spacing=1.0; run(p,c['panel_note'],7.5,GRAY,italic=True)
     section(s,BLK[0],"DIGITAL / TECHNOLOGY",c['digital_ministers'],c.get('div_note_digital'))
     hline(s,RX,4.08,RW,color=TAN,weight=1.0)
     section(s,BLK[1],"TRADE / COMMERCE",c['trade_ministers'],c.get('div_note_trade'))
     footer(s,"Bloc annex")
 
-# ============ SOURCES ============
+# ============ METHODOLOGY, SOURCES & NOTES (combined final slide) ============
+# Three equal tinted panels (mirroring the country-page data panel: top 1.26,
+# bottom 6.96, gold top rule, heading at 1.44, content from 1.90). Bullet
+# spacing per panel is computed from font metrics so all columns fill evenly.
+SRC_COLS=[
+ ("SCOPE & METHODOLOGY",[
+  ("19 members:","Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Türkiye, United Kingdom, United States."),
+  ("Substitution:","Poland is covered in place of South Africa — a deliberate substitution, not an omission."),
+  ("Bloc members:","The European Union and African Union hold G20 seats as supranational blocs; both are profiled in the annex."),
+  ("Ministers:","Each officeholder confirmed current on 2026-07-16 by live search plus an independent verification pass; split portfolios show every responsible official."),
+  ("Figures:","USD billions throughout, one decimal. Positive balance = surplus (green); negative = deficit (orange)."),
+ ]),
+ ("DATASETS & VINTAGES",[
+  (None,"GDP: IMF World Economic Outlook, Oct 2025 (2025 estimates, nominal USD), single vintage across all members."),
+  (None,"U.S. bilateral goods trade: U.S. Census Bureau, full-year 2025, via USTR fact sheets and Census-derived series."),
+  (None,"U.S. world totals: Census/BEA FT-900, December & Annual 2025 release."),
+  (None,"Overall balances: national statistics offices / IMF, latest full year, goods basis unless noted."),
+  (None,"EU & AU annex: IMF WEO, Eurostat, USTR, and official EU/AU sources."),
+  (None,"Officeholders: official government sources and 2026-dated press, dual-verified 2026-07-16."),
+ ]),
+ ("DATA CAVEATS",[
+  (None,"Australia's balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025."),
+  (None,"Several balances are converted from local currency at ~2025 average rates; USD values carry exchange-rate uncertainty."),
+  (None,"census.gov and imf.org were not directly reachable at build time; figures come from official-data-derived channels."),
+  (None,"African Union: U.S. figures are U.S.–Africa goods totals (proxy); no continental goods balance is published (N/A)."),
+  (None,"Acting officials: Argentina's domestic commerce portfolio and Saudi Arabia's GAFT governorship."),
+  (None,"Full uncertainty register: output/GAPS.md."),
+ ])]
+SRC_PW=3.84; SRC_GAP=0.305; SRC_PX=[0.6+i*(SRC_PW+SRC_GAP) for i in range(3)]
+SRC_INSET=0.22; SRC_CW=SRC_PW-2*SRC_INSET; SRC_PT_SZ=11
+
+def src_nlines(text, pt, width_in):
+    f=ImageFont.truetype('/usr/local/share/fonts/ita/OpenSans-Regular.ttf', round(pt*96/72))
+    maxw=width_in*96; lines=1; cur=0.0; sp=f.getlength(' ')
+    for word in text.split():
+        wl=f.getlength(word)
+        if cur==0: cur=wl
+        elif cur+sp+wl<=maxw: cur+=sp+wl
+        else: lines+=1; cur=wl
+    return lines
+
+def src_gaps():
+    """Per-column inter-bullet gap (pt) so every column fills ~1.90->6.60 evenly."""
+    gaps=[]
+    for _,items in SRC_COLS:
+        total=sum(src_nlines("•  "+((lab+"  ") if lab else "")+txt, SRC_PT_SZ, SRC_CW)
+                  for lab,txt in items)*SRC_PT_SZ*1.18/72
+        g=(6.60-1.90-total)*72/max(1,len(items)-1)
+        gaps.append(max(7.0,min(16.0,g)))
+    return gaps
+
 def sources_slide():
     s=slide(); rect(s,0,0,SW,SH,fill=WHITE)
-    header_bar(s,"Sources & Data Caveats","datasets, vintages, and measurement caveats")
-    L=tb(s,0.6,1.5,5.9,5.2)
-    def head(tf,t,first=False):
-        p=para(tf,first); p.space_before=Pt(0 if first else 10); p.space_after=Pt(4)
-        run(p,t,11.5,NAVY,bold=True,spacing=0.6)
-    def li(tf,t):
-        p=tf.add_paragraph(); p.space_after=Pt(4); run(p,"•  ",11,GOLD,bold=True); run(p,t,11,INK)
-    head(L,"DATASETS & VINTAGES",first=True)
-    li(L,"GDP (nominal, current USD): IMF World Economic Outlook, Oct 2025 (2025 estimates), via StatisticsTimes tabulation.")
-    li(L,"U.S. bilateral goods trade: U.S. Census Bureau, full-year 2025, via USTR country fact sheets and the Census/UN-COMTRADE series (Trading Economics mirror).")
-    li(L,"U.S. world totals: Census/BEA FT-900, December & Annual 2025 release.")
-    li(L,"Overall trade balances: national statistics offices / IMF, latest full year, goods basis unless noted.")
-    li(L,"EU & African Union annex: IMF WEO, Eurostat, USTR, and official EU/AU sources, verified 2026-07-16.")
-    li(L,"Officeholders: official government sources and 2026-dated press, verified 2026-07-16 with an independent second pass.")
-    R=tb(s,6.9,1.5,5.85,5.2)
-    head(R,"DATA CAVEATS",first=True)
-    li(R,"Basis exceptions: Australia's overall balance is goods+services; India's is fiscal year 2025-26. All others goods-only, calendar 2025.")
-    li(R,"Several overall balances are converted from local currency (EUR/GBP/CAD/AUD/JPY/SAR) at ~2025 average rates; USD values carry exchange-rate uncertainty.")
-    li(R,"census.gov and imf.org were not directly reachable from the build environment; figures come from official-data-derived channels.")
-    li(R,"African Union: U.S. trade figures are U.S.–Africa goods totals (proxy); no clean continental goods balance is published (shown N/A).")
-    li(R,"Acting officials: Argentina's domestic commerce portfolio (Lavigne) and Saudi Arabia's GAFT governorship are held on an acting basis.")
-    li(R,"Full uncertainty register (confidence flags, items to re-verify): output/GAPS.md.")
+    header_bar(s,"Methodology, Sources & Notes","scope · datasets · caveats · compiled 2026-07-16")
+    for px,(title,items),gap in zip(SRC_PX,SRC_COLS,src_gaps()):
+        rect(s,px,1.26,SRC_PW,5.70,fill=TAN)
+        rect(s,px,1.26,SRC_PW,0.045,fill=GOLD)
+        tf=tb(s,px+SRC_INSET,1.44,SRC_CW,0.3)
+        p=para(tf,True); run(p,title,10.5,BLUE,bold=True,spacing=1.0)
+        tf=tb(s,px+SRC_INSET,1.90,SRC_CW,6.86-1.90)
+        for j,(lab,txt) in enumerate(items):
+            p=para(tf,j==0); p.line_spacing=1.18
+            if j<len(items)-1: p.space_after=Pt(gap)
+            run(p,"•  ",SRC_PT_SZ,GOLD,bold=True)
+            if lab: run(p,lab+"  ",SRC_PT_SZ,NAVY,bold=True)
+            run(p,txt,SRC_PT_SZ,INK)
     footer(s)
 
 # ---- assemble ----
 title_slide()
-methodology_slide()
 summary_slide(CO[:10],1,2)
 summary_slide(CO[10:],2,2)
 for i,c in enumerate(CO,1):
