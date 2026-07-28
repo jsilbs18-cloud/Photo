@@ -1,85 +1,103 @@
-# Raw Data Sources for Multi-Sector Deal Analysis
+# Raw Data Sources for Multi-Sector Deal Analysis — Direct Dataset Links
 
-A reference guide to free (and a few industry-standard paid) sources of raw, downloadable data
-across energy, nuclear, pharma, minerals/mining, and cross-sector deal research. Nearly every
-free source below offers bulk CSV/Excel downloads or a public API, so the data can be pulled
-into Excel, Tableau, Power BI, or Python for mapping and modeling.
+Direct links to specific downloadable datasets and APIs across energy, nuclear, pharma,
+minerals/mining, and cross-sector deal research. Nearly everything below is free and comes as
+CSV/Excel bulk downloads or a documented API, ready to pull into Excel, Tableau, Power BI, or
+Python for mapping and modeling.
+
+*Links compiled and checked against current sources July 2026. Government URLs occasionally move —
+if one breaks, the dataset name + agency in a search engine will find the new home.*
 
 ---
 
 ## Energy (power, oil & gas, renewables)
 
-| Source | What you get | Access |
+| Dataset | Link | What it is |
 |---|---|---|
-| **U.S. EIA** — [eia.gov](https://www.eia.gov) | The single best free energy dataset: electricity generation/capacity, petroleum, natural gas, coal, prices, consumption, forecasts. Forms EIA-860/EIA-923 give plant-level and generator-level detail for every U.S. power plant. | Free API (`api.eia.gov`, register for key) + bulk CSV/Excel downloads |
-| **FERC** — [ferc.gov](https://www.ferc.gov) | Utility financials (Form 1), electric quarterly reports, gas pipeline filings, rate cases | Free downloads (eLibrary, eForms) |
-| **EPA eGRID & CAMPD** — [epa.gov/egrid](https://www.epa.gov/egrid), [campd.epa.gov](https://campd.epa.gov) | Emissions, heat rates, and fuel data for every U.S. power plant; hourly stack-level emissions (CEMS) | Free bulk downloads + API |
-| **NREL** — [nrel.gov](https://www.nrel.gov) | Renewable resource maps (solar/wind), Annual Technology Baseline (cost/performance by technology) | Free API + downloads |
-| **Global Energy Monitor** — [globalenergymonitor.org](https://globalenergymonitor.org) | Worldwide asset-level trackers: every coal/gas/wind/solar/nuclear plant, pipelines, LNG terminals, steel plants — with lat/long coordinates, ideal for mapping | Free spreadsheet downloads |
-| **Ember** — [ember-energy.org](https://ember-energy.org) | Global electricity generation and emissions by country/fuel, monthly | Free CSVs |
-| **Energy Institute Statistical Review** (formerly BP) | Long-run global energy production/consumption by country and fuel | Free Excel workbook, annual |
-| **IEA** — [iea.org](https://www.iea.org) | Global energy balances, demand forecasts | Some free; full datasets paid |
-| **Our World in Data** — [ourworldindata.org/energy](https://ourworldindata.org/energy) | Cleaned, merged global energy/emissions series | Free CSVs on GitHub |
+| EIA Form EIA-860 | https://www.eia.gov/electricity/data/eia860/ | Generator-level data for every U.S. power plant ≥1 MW (capacity, fuel, location, owner, planned units). Yearly ZIPs of Excel files, 1990–present. |
+| EIA Form EIA-923 | https://www.eia.gov/electricity/data/eia923/ | Plant-level monthly generation, fuel consumption, and fuel receipts/costs. Yearly ZIPped Excel. |
+| EIA Open Data API | https://www.eia.gov/opendata/ | Free API (register for key) covering all EIA series — electricity, petroleum, gas, coal, prices. JSON. |
+| EIA bulk data files | https://www.eia.gov/opendata/bulkfiles.php | Entire EIA datasets as single ZIP downloads. |
+| EIA petroleum data hub | https://www.eia.gov/petroleum/data.php | Raw petroleum supply, production, stocks, and price tables. XLS/CSV/API. |
+| EPA eGRID | https://www.epa.gov/egrid/download-data | Emissions, heat rates, and resource mix for every U.S. plant. Annual Excel workbooks. |
+| EPA CAMPD custom download | https://campd.epa.gov/data/custom-data-download | Hourly stack-level (CEMS) emissions data; bulk files at https://campd.epa.gov/data/bulk-data-files. CSV. |
+| FERC Form 1 | https://www.ferc.gov/general-information-0/electric-industry-forms/form-1-electric-utility-annual-report | Utility annual financial/operating reports (XBRL for 2021+; historical DB files linked from the page). |
+| Global Energy Monitor trackers | https://globalenergymonitor.org/download-data | Unit-level spreadsheets of every coal/gas/wind/solar plant worldwide **with coordinates** — ideal for mapping. Free XLSX behind a short email form. |
+| Ember yearly electricity data | https://ember-energy.org/data/yearly-electricity-data/ | Generation, capacity, emissions, demand for 200+ countries. Free CSV; monthly version at https://ember-energy.org/data/monthly-electricity-data/. |
+| Energy Institute Statistical Review | https://www.energyinst.org/statistical-review/resources-and-data-downloads | Global energy production/consumption by country and fuel, 1965–present. One consolidated Excel workbook. |
+| NREL Annual Technology Baseline | https://atb.nrel.gov/electricity/2025/data | Technology cost/performance projections (solar, wind, storage, gas…). Excel/CSV/Parquet. Check for a newer edition — URL pattern is /electricity/&lt;year&gt;/data. |
+| Our World in Data energy | https://github.com/owid/energy-data | Cleaned country-year panel merging EI, EIA, and Ember data. Direct CSV: https://owid-public.owid.io/data/energy/owid-energy-data.csv |
 
 ## Nuclear
 
-| Source | What you get | Access |
+| Dataset | Link | What it is |
 |---|---|---|
-| **IAEA PRIS** — [pris.iaea.org](https://pris.iaea.org) | The canonical database of every power reactor on Earth: status, type, capacity, operator, generation history, construction dates | Free, browsable + annual reports |
-| **U.S. NRC** — [nrc.gov](https://www.nrc.gov) | Daily power reactor status reports, license info, event reports, full document library (ADAMS) | Free downloads |
-| **EIA nuclear data** | U.S. nuclear generation, capacity factors, outages, uranium marketing annual (utility uranium purchases and prices) | Free API/CSV |
-| **World Nuclear Association** — [world-nuclear.org](https://world-nuclear.org) | Country profiles, reactor database, fuel cycle data | Mostly free |
-| **UxC / TradeTech** | Uranium spot and term prices — the industry benchmarks | Paid (Cameco's site republishes UxC spot/term indicators free) |
+| IAEA PRIS country statistics | https://pris.iaea.org/pris/countrystatistics/countrystatisticslandingpage.aspx | The canonical database of every power reactor on Earth — status, capacity, operator, generation history. Reactors-by-status list: https://pris.iaea.org/pris/worldstatistics/operationalreactorsbycountry.aspx |
+| IAEA "Nuclear Power Reactors in the World" | https://www.iaea.org/publications/15943/nuclear-power-reactors-in-the-world | Annual RDS-2 reference publication with full reactor tables (2025 edition, data through end-2024). PDF. |
+| NRC daily power reactor status | https://www.nrc.gov/reading-rm/doc-collections/event-status/reactor-status/index | Daily % power for every U.S. reactor — raw text files, last 365 days plus yearly archives back to 2000. |
+| NRC list of power reactor units | https://www.nrc.gov/reactors/operating/list-power-reactor-units | All licensed U.S. units with docket, type, location, owner/operator. |
+| EIA nuclear & uranium data | https://www.eia.gov/nuclear/data.php | U.S. nuclear generation, capacity, daily outages. XLS/CSV/API. |
+| EIA Uranium Marketing Annual | https://www.eia.gov/uranium/marketing/ | U.S. utility uranium purchases, prices, and contract data. XLS tables. |
+| Cameco uranium prices | https://www.cameco.com/invest/markets/uranium-price | Free monthly spot and long-term uranium price indicators (UxC/TradeTech averages). |
+| Global Energy Monitor Nuclear Tracker | https://globalenergymonitor.org/projects/global-nuclear-power-tracker/download-data/ | ~1,750 nuclear units worldwide with status, capacity, coordinates, owner. Free XLSX. |
+| World Nuclear Performance Report | https://world-nuclear.org/our-association/publications/global-trends-reports/world-nuclear-performance-report | Annual industry performance report; browsable reactor database at https://world-nuclear.org/nuclear-reactor-database/summary |
+| NRC ADAMS document search | https://adams-search.nrc.gov/ | Full-text search of 3M+ NRC licensing and inspection documents. |
 
 ## Pharma / Life Sciences
 
-| Source | What you get | Access |
+| Dataset | Link | What it is |
 |---|---|---|
-| **openFDA** — [open.fda.gov](https://open.fda.gov) | Drug approvals, labels, adverse events, recalls, device data | Free API + bulk JSON downloads |
-| **Drugs@FDA / Orange Book / Purple Book** | Every approved drug; Orange Book lists patents and exclusivity expirations (key for generics/LOE analysis); Purple Book covers biologics/biosimilars | Free downloadable data files |
-| **ClinicalTrials.gov** | All registered clinical trials worldwide: phase, sponsor, indication, status, results | Free API (v2) + full bulk download |
-| **CMS** — [data.cms.gov](https://data.cms.gov) | Medicare Part B/D drug spending by drug, drug pricing (NADAC), Open Payments (industry payments to physicians) | Free API + CSV |
-| **EMA** — [ema.europa.eu](https://www.ema.europa.eu) | European drug approvals (EPARs), shortages | Free downloads |
-| **NIH RePORTER** — [reporter.nih.gov](https://reporter.nih.gov) | Every NIH research grant — useful for spotting early-stage science and academic spinouts | Free API + bulk |
-| **PatentsView (USPTO)** — [patentsview.org](https://patentsview.org) | Full U.S. patent data, assignees, citations | Free API + bulk |
-| **Evaluate Pharma, IQVIA, Citeline** | Drug sales forecasts, pipeline intelligence, prescription volumes | Paid — industry standard for pharma deal work |
+| openFDA drug APIs | https://open.fda.gov/apis/drug/ | APIs for approvals, labels, adverse events (FAERS), recalls, NDC directory, shortages. JSON; bulk downloads: https://open.fda.gov/apis/downloads |
+| FDA Orange Book data files | https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files | Every approved drug with **patent and exclusivity expirations** — the key file for generic-entry / LOE analysis. ZIP of tab-delimited text. |
+| FDA Purple Book | https://purplebooksearch.fda.gov/downloads | All licensed biologics with biosimilar/interchangeable status and exclusivity. CSV/Excel. |
+| Drugs@FDA data files | https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-data-files | Every drug approval since 1939. Weekly-updated ZIP of tab-delimited tables. |
+| ClinicalTrials.gov API v2 | https://clinicaltrials.gov/data-api/api | REST API for every registered trial — phase, sponsor, indication, status, results. JSON. Bulk download of all records: https://clinicaltrials.gov/data-api/how-download-study-records |
+| CMS Medicare Part D spending by drug | https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-part-d-spending-by-drug | Annual Medicare spending per drug. CSV + API. |
+| CMS NADAC drug pricing | https://www.medicaid.gov/medicaid/nadac | Weekly retail pharmacy drug acquisition costs by NDC. CSV + API via data.medicaid.gov. |
+| CMS Open Payments | https://openpaymentsdata.cms.gov/datasets | All industry payments to physicians and teaching hospitals. ZIP/CSV per program year. |
+| NIH RePORTER ExPORTER | https://reporter.nih.gov/exporter | Bulk NIH grant data (projects, abstracts, patents, linked publications) by fiscal year. Zipped CSV. |
+| PatentsView | https://patentsview.org/downloads/data-downloads | Full USPTO patent data as bulk TSV tables; search API docs: https://search.patentsview.org/docs/ |
+| EMA medicines data | https://www.ema.europa.eu/en/medicines/download-medicine-data | Spreadsheet of all EMA-authorised medicines and their assessment reports. XLSX. |
 
 ## Minerals / Mining
 
-| Source | What you get | Access |
+| Dataset | Link | What it is |
 |---|---|---|
-| **USGS National Minerals Information Center** — [usgs.gov/centers/national-minerals-information-center](https://www.usgs.gov/centers/national-minerals-information-center) | Mineral Commodity Summaries (annual production, reserves, prices for ~90 commodities by country) + Minerals Yearbook. The starting point for any minerals market map | Free PDF/Excel |
-| **SEDAR+** — [sedarplus.ca](https://www.sedarplus.ca) | Canadian securities filings, including **NI 43-101 technical reports** — full geology, resource/reserve estimates, and economics for mining projects worldwide (most global miners list in Canada) | Free |
-| **SEC EDGAR** — [sec.gov/edgar](https://www.sec.gov/edgar) | U.S. filings incl. S-K 1300 technical report summaries for U.S.-listed miners | Free full-text search + API + bulk |
-| **USGS MRDS / geologic maps** | Mineral occurrence and deposit database with coordinates — good for mapping | Free downloads |
-| **British Geological Survey** — World Mineral Production | Global production statistics by commodity and country | Free |
-| **Geoscience Australia / Natural Resources Canada** | National resource inventories, deposit databases, geophysical data | Free |
-| **World Bank "Pink Sheet"** | Monthly commodity prices (metals, energy, ag) back decades | Free Excel |
-| **LME** — [lme.com](https://www.lme.com) | Metals prices (delayed free; real-time paid) | Mixed |
-| **S&P Global Market Intelligence (Capital IQ Pro / Metals & Mining)** | Mine-level production, costs, ownership — the industry standard | Paid |
+| USGS Mineral Commodity Summaries 2026 | https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf | Production, reserves, and prices for 90+ commodities by country — the starting point for any minerals market map. CSV data release: https://www.sciencebase.gov/catalog/item/696a75d5d4be0228872d3bf8 |
+| USGS Minerals Yearbook | https://www.usgs.gov/publications/minerals-yearbook-volume-i-metals-and-minerals | Deep annual chapters per commodity with statistical tables. PDF + XLSX. |
+| USGS MRDS / USMIN deposit databases | https://mrdata.usgs.gov/mrds/ | Mineral deposits worldwide **with coordinates** (shapefile/CSV/KML); successor U.S. database: https://mrdata.usgs.gov/deposit/ |
+| SEDAR+ filings search | https://www.sedarplus.ca/ | Canadian filings including **NI 43-101 technical reports** — full geology, resource estimates, and project economics for most of the world's mining projects. Free PDFs. |
+| BGS World Mineral Statistics | https://www.bgs.ac.uk/mineralsuk/statistics/world-mineral-statistics/world-mineral-statistics-data-download/ | World mineral production by country, 70+ commodities. Excel extract tool + API. |
+| World Bank Pink Sheet | https://www.worldbank.org/en/research/commodity-markets | Monthly commodity prices (metals, energy, ag) back to 1960. XLSX. |
+| LME market data | https://www.lme.com/en/market-data | Free delayed metals prices and warehouse stocks (registration required); historical: https://www.lme.com/market-data/accessing-market-data/historical-data |
+| Geoscience Australia OZMIN | https://portal.ga.gov.au/ | 1,000+ Australian mineral deposits across ~60 commodities. CSV/geodatabase; also mirrored on data.gov.au. |
 
-## Cross-Sector: Companies, Deals, Macro, Trade
+## Cross-Sector: Filings, Macro, Trade
 
-| Source | What you get | Access |
+| Dataset | Link | What it is |
 |---|---|---|
-| **SEC EDGAR** | All U.S. public company filings — 10-Ks, 8-Ks (deal announcements), S-1s, 13D/G (activist stakes), merger proxies | Free API + full-text search + bulk data |
-| **FRED** — [fred.stlouisfed.org](https://fred.stlouisfed.org) | 800k+ macro and commodity time series | Free API + CSV |
-| **UN Comtrade** — [comtrade.un.org](https://comtrade.un.org) | Bilateral trade flows by commodity code — excellent for mapping who buys/sells what (e.g., uranium, lithium, APIs) between countries | Free API |
-| **World Bank / IMF / OECD / Eurostat open data** | Country-level economic, industry, and commodity indicators | Free APIs |
-| **data.gov / data.europa.eu** | Master portals indexing thousands of government datasets | Free |
-| **USAspending.gov** | Every U.S. federal contract and grant — who's winning DOE/DOD/HHS money | Free API + bulk |
-| **Bloomberg, S&P Capital IQ, PitchBook, LSEG/Refinitiv** | Deal comps, ownership, private company data | Paid — standard for deal teams |
-| **Wood Mackenzie, Rystad (energy); CRU, Benchmark Mineral Intelligence (metals/battery)** | Asset-level cost curves and forecasts | Paid |
+| SEC EDGAR full-text search | https://www.sec.gov/edgar/search/ | Search every U.S. filing since 2001 — 10-Ks, 8-K deal announcements, S-1s, 13D/G stakes, merger proxies. |
+| SEC EDGAR APIs & bulk data | https://www.sec.gov/search-filings/edgar-application-programming-interfaces | Free JSON APIs (data.sec.gov) plus nightly bulk ZIPs of all company facts and submissions. |
+| FRED API | https://fred.stlouisfed.org/docs/api/fred/ | 800k+ macro and commodity time series. Free key; every series also downloadable as CSV from its page. |
+| UN Comtrade | https://comtradeplus.un.org/ | Bilateral trade flows by commodity code — maps who buys/sells uranium, lithium, APIs, etc. between countries. API portal: https://comtradedeveloper.un.org/ |
+| USAspending custom download | https://www.usaspending.gov/download_center/custom_award_data | Every U.S. federal contract and grant, filterable, as CSV ZIPs. Open API (no key): https://api.usaspending.gov/ |
+| World Bank Indicators API | https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation | ~16,000 country-level economic series. JSON/XML, no key required. |
+
+## Paid platforms (when free data runs out)
+
+Standard tools deal teams buy for private-company coverage, cost curves, and convenience:
+**Bloomberg, S&P Capital IQ Pro, PitchBook, LSEG/Refinitiv** (deals & comps);
+**Wood Mackenzie, Rystad** (energy assets); **CRU, Benchmark Mineral Intelligence** (metals/battery);
+**Evaluate Pharma, IQVIA, Citeline** (drug forecasts & pipelines);
+**UxC, TradeTech** (uranium price benchmarks).
 
 ---
 
 ## Practical notes for deal mapping
 
-- **Start free, then buy depth.** Government sources (EIA, USGS, FDA, EDGAR, IAEA) are authoritative
-  and free; paid platforms mainly add convenience, private-company coverage, and cost curves.
-- **Asset-level + coordinates = maps.** EIA-860, Global Energy Monitor, IAEA PRIS, and USGS MRDS all
-  include locations, so plants/mines/reactors can be dropped straight onto a map.
-- **Follow the filings.** For any specific deal target: EDGAR (US) and SEDAR+ (Canada) technical
-  reports and 10-Ks contain more raw operational detail than any aggregator.
-- **APIs beat scraping.** EIA, openFDA, ClinicalTrials.gov, FRED, Comtrade, and EDGAR all have
-  documented free APIs — easy to automate refreshes for a living dashboard.
+- **Asset-level + coordinates = maps.** EIA-860, Global Energy Monitor trackers, IAEA PRIS, and
+  USGS MRDS/USMIN all include locations — plants, reactors, and mines can be dropped straight onto a map.
+- **Follow the filings.** For any specific target: EDGAR (US) and SEDAR+ (Canada) contain more raw
+  operational detail than any aggregator — especially NI 43-101 and S-K 1300 technical reports for miners.
+- **APIs beat scraping.** EIA, openFDA, ClinicalTrials.gov, FRED, Comtrade, and EDGAR all have free
+  documented APIs — easy to automate refreshes for a living dashboard.
