@@ -14,9 +14,9 @@ const C = {
 const FONT = "Arial";
 
 const STAGE = {
-  ann: { label: "Announced",    dot: C.annDot, bg: C.annBg, tx: C.annTx, w: 0.96 },
-  act: { label: "Active",       dot: C.actDot, bg: C.actBg, tx: C.actTx, w: 0.76 },
-  con: { label: "Consultation", dot: C.conDot, bg: C.conBg, tx: C.conTx, w: 1.08 },
+  ann: { label: "Announced",    dot: C.annDot, bg: C.annBg, tx: C.annTx },
+  act: { label: "Active",       dot: C.actDot, bg: C.actBg, tx: C.actTx },
+  con: { label: "Consultation", dot: C.conDot, bg: C.conBg, tx: C.conTx },
 };
 
 const pres = new pptxgen();
@@ -112,7 +112,7 @@ pipe.forEach(([n, st], i) => {
 const headerCell = (t, opts = {}) => ({
   text: t,
   options: {
-    fontFace: FONT, fontSize: 8, bold: true, color: C.muted, charSpacing: 1,
+    fontFace: FONT, fontSize: 6.5, bold: true, color: C.muted, charSpacing: 0,
     valign: "middle", margin: [0.02, 0.03, 0.02, 0.03],
     border: [{ type: "none" }, { type: "none" }, { type: "solid", pt: 1.25, color: C.hairline }, { type: "none" }],
     ...opts,
@@ -121,60 +121,63 @@ const headerCell = (t, opts = {}) => ({
 const dataCell = (t, opts = {}) => ({
   text: t,
   options: {
-    fontFace: FONT, fontSize: 9.5, color: C.ink,
+    fontFace: FONT, fontSize: 9, color: C.ink,
     valign: "middle", margin: [0.02, 0.03, 0.02, 0.03],
     border: [{ type: "none" }, { type: "none" }, { type: "solid", pt: 0.75, color: C.hairline }, { type: "none" }],
     ...opts,
   },
 });
+// Stage lives IN the cell (tinted fill + colored label), so it always moves
+// with its row — long company/sector names can wrap without breaking alignment.
+const stageCell = (stKey) => {
+  const st = STAGE[stKey];
+  return {
+    text: [
+      { text: "● ", options: { fontSize: 6.5, color: st.dot } },
+      { text: st.label, options: { fontSize: 8, bold: true, color: st.tx } },
+    ],
+    options: {
+      fontFace: FONT, fill: { color: st.bg },
+      valign: "middle", margin: [0.02, 0.03, 0.02, 0.06],
+      border: [{ type: "none" }, { type: "none" }, { type: "solid", pt: 0.75, color: C.hairline }, { type: "none" }],
+    },
+  };
+};
 
-const ROW_H = 0.375;
 const TABLE_Y = 2.81;
+const TABLE_W = 4.95;
+// Company | Sector | Stage | Size ($B) | Owner's Rep | Warrants
+const COL_W = [1.14, 0.94, 0.92, 0.55, 0.74, 0.66];
 
-function countrySection({ x, w, colW, name, flag, accent, meta, rows, startNum, headerFontSize = 8, headerSpacing = 1 }) {
+function countrySection({ x, name, flag, accent, meta, rows, startNum, rowH }) {
   flag(x, 2.365, 0.30, 0.205);
   slide.addText(name, { x: x + 0.38, y: 2.32, w: 1.6, h: 0.3, margin: 0, fontFace: FONT, fontSize: 14, bold: true, color: C.ink, charSpacing: 1 });
-  slide.addText(meta, { x: x + w - 3.0, y: 2.375, w: 3.0, h: 0.22, margin: 0, align: "right", fontFace: FONT });
-  slide.addShape(pres.ShapeType.rect, { x, y: 2.69, w, h: 0.028, fill: { color: accent }, line: { type: "none" } });
+  slide.addText(meta, { x: x + TABLE_W - 3.0, y: 2.375, w: 3.0, h: 0.22, margin: 0, align: "right", fontFace: FONT });
+  slide.addShape(pres.ShapeType.rect, { x, y: 2.69, w: TABLE_W, h: 0.028, fill: { color: accent }, line: { type: "none" } });
 
-  const hOpts = { fontSize: headerFontSize, charSpacing: headerSpacing };
   const tableRows = [[
-    headerCell("COMPANY", hOpts),
-    headerCell("SECTOR", hOpts),
-    headerCell("STAGE", hOpts),
-    headerCell("DEAL SIZE", { ...hOpts, align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
-    headerCell("OWNER’S REP", { ...hOpts, margin: [0.02, 0.03, 0.02, 0.06] }),
-    headerCell("WARRANTS %", { ...hOpts, align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
+    headerCell("COMPANY"),
+    headerCell("SECTOR"),
+    headerCell("STAGE"),
+    headerCell("SIZE ($B)", { align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
+    headerCell("OWNER’S REP", { margin: [0.02, 0.03, 0.02, 0.06] }),
+    headerCell("WARRANTS", { align: "right", margin: [0.02, 0.06, 0.02, 0.03] }),
   ]];
   rows.forEach((stKey, i) => {
     tableRows.push([
       dataCell(`Company ${startNum + i}`, { bold: true }),
-      dataCell("Sector", { color: C.ink2, fontSize: 9 }),
-      dataCell(""), // stage pill overlaid below
-      dataCell("$X.X B", { align: "right", margin: [0.02, 0.10, 0.02, 0.03] }),
+      dataCell("Sector", { color: C.ink2, fontSize: 8.5 }),
+      stageCell(stKey),
+      dataCell("$X.X B", { align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
       dataCell("First Last", { color: C.ink2, margin: [0.02, 0.03, 0.02, 0.06] }),
-      dataCell("X.X%", { align: "right", margin: [0.02, 0.10, 0.02, 0.03] }),
+      dataCell("X.X%", { align: "right", margin: [0.02, 0.06, 0.02, 0.03] }),
     ]);
   });
   slide.addTable(tableRows, {
-    x, y: TABLE_Y, w, colW,
-    rowH: [0.28, ...rows.map(() => ROW_H)],
+    x, y: TABLE_Y, w: TABLE_W, colW: COL_W,
+    rowH: [0.28, ...rows.map(() => rowH)],
     autoPage: false,
   });
-
-  // stage pills over the Stage column
-  rows.forEach((stKey, i) => {
-    addPill(x + colW[0] + colW[1] + 0.05, TABLE_Y + 0.28 + i * ROW_H + (ROW_H - 0.24) / 2, STAGE[stKey]);
-  });
-}
-
-function addPill(x, y, st, wOverride) {
-  const w = wOverride || st.w;
-  slide.addShape(pres.ShapeType.roundRect, { x, y, w, h: 0.24, rectRadius: 0.12, fill: { color: st.bg }, line: { type: "none" } });
-  slide.addText([
-    { text: "● ", options: { fontSize: 6.5, color: st.dot } },
-    { text: st.label, options: { fontSize: 8, bold: true, color: st.tx } },
-  ], { x, y, w, h: 0.24, margin: 0, align: "center", valign: "middle", fontFace: FONT });
 }
 
 const metaRuns = (deals, ph) => [
@@ -182,24 +185,21 @@ const metaRuns = (deals, ph) => [
   { text: "  ·  " + ph, options: { fontSize: 10, color: C.ink2 } },
 ];
 
-// Both tables identical width, sharing one column layout.
-const TABLE_W = 4.93;
-const COL_W = [0.91, 0.62, 1.14, 0.63, 0.82, 0.81];
 countrySection({
-  x: 0.42, w: TABLE_W, colW: COL_W,
+  x: 0.42,
   name: "JAPAN", flag: flagJP, accent: C.jpRed,
   meta: metaRuns("13 deals", "$XX.X B total"),
   rows: ["ann", "ann", "ann", "ann", "ann", "ann", "con", "con", "con", "act", "act", "act", "act"],
   startNum: 1,
-  headerFontSize: 7, headerSpacing: 0,
+  rowH: 0.375,
 });
 countrySection({
-  x: 5.65, w: TABLE_W, colW: COL_W,
+  x: 5.63,
   name: "KOREA", flag: flagKR, accent: C.krBlue,
   meta: metaRuns("6 deals", "$XX.X B total"),
   rows: ["con", "con", "con", "act", "act", "act"],
   startNum: 14,
-  headerFontSize: 7, headerSpacing: 0,
+  rowH: 0.60, // taller rows: multi-line company/sector names fit without reflowing anything
 });
 
 // ---------- footer ----------
@@ -208,20 +208,12 @@ slide.addText("Data as of July 29, 2026", {
   x: 7.0, y: 8.16, w: 3.58, h: 0.2, margin: 0, align: "right", fontFace: FONT, fontSize: 7.5, color: C.muted,
 });
 
-// ---------- off-page helper (visible while editing, never prints) ----------
-slide.addText("SPARE STAGE TAGS — copy (Ctrl/Cmd-drag) onto any row.\nThis area is off the page and never prints.", {
-  x: 11.25, y: 2.5, w: 2.2, h: 0.55, margin: 0, fontFace: FONT, fontSize: 8, bold: true, color: C.muted,
-});
-addPill(11.25, 3.15, STAGE.ann);
-addPill(11.25, 3.50, STAGE.con);
-addPill(11.25, 3.85, STAGE.act);
-
 slide.addNotes(
   "FILL-IN GUIDE\n" +
   "1. Type over every gray/placeholder value: Company 1-19, Sector, the $X.X B deal sizes (all in billions), First Last (owner's rep), X.X% (warrants), the summary tiles, and the two '$XX.X B total' figures next to JAPAN and KOREA.\n" +
-  "2. Stage tags are already set to the plan: Japan = 6 Announced, 3 Consultation, 4 Active. Korea = 3 Consultation, 3 Active (none announced). To change one anyway, delete it and Ctrl/Cmd-drag a spare tag from the right of the page into place. The spares sit off the page and never print.\n" +
-  "3. Add/remove rows: click in a table, use Table Layout > Insert/Delete Rows. If you change row counts, drag the tags to keep them aligned with their rows, and update the counts in the summary strip.\n" +
-  "4. Rows are grouped by stage: Announced first, then Consultation, then Active.\n" +
+  "2. Stage labels are now part of each table row (colored cell), so long company or sector names can wrap onto extra lines without knocking anything out of alignment. Korea's rows are extra tall to fit longer names.\n" +
+  "3. Stages are pre-set to the plan: Japan = 6 Announced, 3 Consultation, 4 Active. Korea = 3 Consultation, 3 Active. To change one: retype the label, then copy the look from any row that already has that stage (select that cell's text, Home > Format Painter, click the cell to change) or set the cell shading + font color manually.\n" +
+  "4. Add/remove rows: click in a table, use Table Layout > Insert/Delete Rows — everything stays aligned automatically. Update the counts in the summary strip if totals change.\n" +
   "5. Export for the meeting: File > Export/Save As > PDF. The page is exactly US Letter landscape, so it also prints 1:1."
 );
 
