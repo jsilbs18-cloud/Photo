@@ -143,7 +143,8 @@ function countrySection({ x, w, colW, name, flag, accent, meta, rows, startNum, 
     headerCell("SECTOR", hOpts),
     headerCell("STAGE", hOpts),
     headerCell("DEAL SIZE", { ...hOpts, align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
-    headerCell("OWNER’S REP", { ...hOpts, margin: [0.02, 0.03, 0.02, 0.10] }),
+    headerCell("OWNER’S REP", { ...hOpts, margin: [0.02, 0.03, 0.02, 0.06] }),
+    headerCell("WARRANTS %", { ...hOpts, align: "right", margin: [0.02, 0.08, 0.02, 0.03] }),
   ]];
   rows.forEach((stKey, i) => {
     tableRows.push([
@@ -151,7 +152,8 @@ function countrySection({ x, w, colW, name, flag, accent, meta, rows, startNum, 
       dataCell("Sector", { color: C.ink2, fontSize: 9 }),
       dataCell(""), // stage pill overlaid below
       dataCell("$X.X B", { align: "right", margin: [0.02, 0.10, 0.02, 0.03] }),
-      dataCell("First Last", { color: C.ink2, margin: [0.02, 0.03, 0.02, 0.12] }),
+      dataCell("First Last", { color: C.ink2, margin: [0.02, 0.03, 0.02, 0.06] }),
+      dataCell("X.X%", { align: "right", margin: [0.02, 0.10, 0.02, 0.03] }),
     ]);
   });
   slide.addTable(tableRows, {
@@ -180,21 +182,24 @@ const metaRuns = (deals, ph) => [
   { text: "  ·  " + ph, options: { fontSize: 10, color: C.ink2 } },
 ];
 
+// Both tables identical width, sharing one column layout.
+const TABLE_W = 4.93;
+const COL_W = [0.91, 0.62, 1.14, 0.63, 0.82, 0.81];
 countrySection({
-  x: 0.42, w: 5.60, colW: [1.42, 0.98, 1.20, 0.80, 1.20],
+  x: 0.42, w: TABLE_W, colW: COL_W,
   name: "JAPAN", flag: flagJP, accent: C.jpRed,
   meta: metaRuns("13 deals", "$XX.X B total"),
   rows: ["ann", "ann", "ann", "ann", "ann", "ann", "con", "con", "con", "act", "act", "act", "act"],
   startNum: 1,
-  headerSpacing: 0.5,
+  headerFontSize: 7, headerSpacing: 0,
 });
 countrySection({
-  x: 6.28, w: 4.30, colW: [0.94, 0.64, 1.16, 0.68, 0.88],
+  x: 5.65, w: TABLE_W, colW: COL_W,
   name: "KOREA", flag: flagKR, accent: C.krBlue,
   meta: metaRuns("6 deals", "$XX.X B total"),
   rows: ["con", "con", "con", "act", "act", "act"],
   startNum: 14,
-  headerFontSize: 7.5, headerSpacing: 0,
+  headerFontSize: 7, headerSpacing: 0,
 });
 
 // ---------- footer ----------
@@ -213,7 +218,7 @@ addPill(11.25, 3.85, STAGE.act);
 
 slide.addNotes(
   "FILL-IN GUIDE\n" +
-  "1. Type over every gray/placeholder value: Company 1-19, Sector, the $X.X B deal sizes (all in billions), First Last (owner's rep), the summary tiles, and the two '$XX.X B total' figures next to JAPAN and KOREA.\n" +
+  "1. Type over every gray/placeholder value: Company 1-19, Sector, the $X.X B deal sizes (all in billions), First Last (owner's rep), X.X% (warrants), the summary tiles, and the two '$XX.X B total' figures next to JAPAN and KOREA.\n" +
   "2. Stage tags are already set to the plan: Japan = 6 Announced, 3 Consultation, 4 Active. Korea = 3 Consultation, 3 Active (none announced). To change one anyway, delete it and Ctrl/Cmd-drag a spare tag from the right of the page into place. The spares sit off the page and never print.\n" +
   "3. Add/remove rows: click in a table, use Table Layout > Insert/Delete Rows. If you change row counts, drag the tags to keep them aligned with their rows, and update the counts in the summary strip.\n" +
   "4. Rows are grouped by stage: Announced first, then Consultation, then Active.\n" +
